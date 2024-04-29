@@ -9,6 +9,9 @@ public class Player {
     private String name;
     private int earnedPoints;
 
+    public Player() {
+
+    }
 
     public Player(int playerID, String name, int earnedPoint) {
         this.playerID = playerID;
@@ -40,7 +43,6 @@ public class Player {
     public void setEarnedPoints(int earnedPoints) {
         this.earnedPoints = earnedPoints;
     }
-
 
 
     @Override
