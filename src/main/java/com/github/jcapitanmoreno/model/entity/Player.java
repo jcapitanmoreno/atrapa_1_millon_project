@@ -10,6 +10,7 @@ public class Player {
     private int earnedPoints;
 
     public Player() {
+        this.playerID = -1;
 
     }
 
