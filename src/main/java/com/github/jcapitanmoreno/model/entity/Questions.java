@@ -9,6 +9,10 @@ public class Questions {
     private String questionText;
     private ArrayList<String> answers;
 
+    public Questions(){
+        this.questionID = -1;
+    }
+
     public Questions(int questionID, Game gameID, String questionText, ArrayList<String> answers) {
         this.questionID = questionID;
         this.gameID = gameID;

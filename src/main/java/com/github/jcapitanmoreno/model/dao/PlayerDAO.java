@@ -11,7 +11,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PlayerDAO implements DAO<Player, String> {
+public class PlayerDAO implements DAO<Player, Integer> {
 
     private final static String INSERT="INSERT INTO player (playerID, name) VALUES (?,?)";
     private final static String UPDATE="UPDATE player SET name=?, earnedPoints=? WHERE playerID=?";
@@ -22,12 +22,12 @@ public class PlayerDAO implements DAO<Player, String> {
     @Override
     public Player save(Player entity) {
         Player result = entity;
-        if(entity==null || entity.getPlayerID()==null) return result;
+        if(entity==null || entity.getPlayerID()==-1) return result;
         Player p = findById(entity.getPlayerID());  //si no está devuelve un autor por defecto
-        if(p.getPlayerID()==null){
+        if(p.getPlayerID()==-1){
             //INSERT
             try(PreparedStatement pst = ConnectionMariaDB.getConnection().prepareStatement(INSERT, Statement.RETURN_GENERATED_KEYS)) {
-                pst.setString(1,entity.getPlayerID());
+                pst.setInt(1,entity.getPlayerID());
                 pst.setString(2,entity.getName());
                 pst.executeUpdate();
                 //si fuera autoincremental yo tendría que leer getGeneratedKeys() -> setDNI
@@ -44,8 +44,8 @@ public class PlayerDAO implements DAO<Player, String> {
             //UPDATE
             try(PreparedStatement pst = ConnectionMariaDB.getConnection().prepareStatement(UPDATE)) {
                 pst.setString(1,entity.getName());
-                pst.setString(2,entity.getEarnedPoints());
-                pst.setString(3,entity.getPlayerID());
+                pst.setInt(2,entity.getEarnedPoints());
+                pst.setInt(3,entity.getPlayerID());
                 pst.executeUpdate();
             } catch (SQLException e) {
                 e.printStackTrace();
@@ -56,21 +56,21 @@ public class PlayerDAO implements DAO<Player, String> {
 
     @Override
     public Player delete(Player entity) throws SQLException {
-        if(entity==null || entity.getPlayerID()==null) return entity;
+        if(entity==null || entity.getPlayerID()==-1) return entity;
         try(PreparedStatement pst = ConnectionMariaDB.getConnection().prepareStatement(DELETE)) {
-            pst.setString(1,entity.getPlayerID());
+            pst.setInt(1,entity.getPlayerID());
             pst.executeUpdate();
         }
         return entity;
     }
 
     @Override
-    public Player findById(String key) {
+    public Player findById(Integer key) {
         Player result = new Player();
-        if(key==null) return result;
+        if(key==-1) return result;
 
         try(PreparedStatement pst = ConnectionMariaDB.getConnection().prepareStatement(FINDBYID)) {
-            pst.setString(1,key);
+            pst.setInt(1,key);
             ResultSet res = pst.executeQuery();
             if(res.next()){
                 result.setPlayerID(res.getInt("playerID"));
