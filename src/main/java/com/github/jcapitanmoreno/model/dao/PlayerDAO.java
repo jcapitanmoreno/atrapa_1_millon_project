@@ -96,7 +96,7 @@ public class PlayerDAO implements DAO<Player, Integer> {
             ResultSet res = pst.executeQuery();
             while(res.next()){
                 Player p = new Player();
-                p.setPlayerID(res.getInt("dni"));
+                p.setPlayerID(res.getInt("playerID"));
                 p.setName(res.getString("name"));
                 p.setEarnedPoints(res.getInt("earnerPoints"));
                 //Lazy
