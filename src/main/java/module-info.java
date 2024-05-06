@@ -6,4 +6,9 @@ module com.github.jcapitanmoreno {
 
     opens com.github.jcapitanmoreno to javafx.fxml;
     exports com.github.jcapitanmoreno;
+    opens com.github.jcapitanmoreno.model.connection to java.xml.bind;
+    exports com.github.jcapitanmoreno.view;
+    opens com.github.jcapitanmoreno.view to javafx.fxml;
+
+
 }

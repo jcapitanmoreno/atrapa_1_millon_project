@@ -22,33 +22,36 @@ public class PlayerDAO implements DAO<Player, Integer> {
     @Override
     public Player save(Player entity) {
         Player result = entity;
-        if(entity==null || entity.getPlayerID()==-1) return result;
-        Player p = findById(entity.getPlayerID());  //si no está devuelve un autor por defecto
-        if(p.getPlayerID()==-1){
-            //INSERT
-            try(PreparedStatement pst = ConnectionMariaDB.getConnection().prepareStatement(INSERT, Statement.RETURN_GENERATED_KEYS)) {
-                pst.setInt(1,entity.getPlayerID());
-                pst.setString(2,entity.getName());
-                pst.executeUpdate();
-                //si fuera autoincremental yo tendría que leer getGeneratedKeys() -> setDNI
-                        /*  ResultSet res = pst.getGeneratedKeys();
-                            if(rs.next()){
-                                entity.setDni(rs.getStrng(1));
-                             }
-                         */
+        if(entity==null || entity.getPlayerID()==-1){
+            result = null;
+        }else {
+            Player p = findById(entity.getPlayerID());  //si no está devuelve un autor por defecto
+            if(p.getPlayerID()==-1){
+                //INSERT
+                try(PreparedStatement pst = ConnectionMariaDB.getConnection().prepareStatement(INSERT, Statement.RETURN_GENERATED_KEYS)) {
+                    pst.setInt(1,entity.getPlayerID());
+                    pst.setString(2,entity.getName());
+                    pst.executeUpdate();
+                    //si fuera autoincremental yo tendría que leer getGeneratedKeys() -> setDNI
+                    ResultSet res = pst.getGeneratedKeys();
+                    if(res.next()){
+                        entity.setPlayerID(res.getInt(1));
+                    }
 
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-        }else{
-            //UPDATE
-            try(PreparedStatement pst = ConnectionMariaDB.getConnection().prepareStatement(UPDATE)) {
-                pst.setString(1,entity.getName());
-                pst.setInt(2,entity.getEarnedPoints());
-                pst.setInt(3,entity.getPlayerID());
-                pst.executeUpdate();
-            } catch (SQLException e) {
-                e.printStackTrace();
+
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }else{
+                //UPDATE
+                try(PreparedStatement pst = ConnectionMariaDB.getConnection().prepareStatement(UPDATE)) {
+                    pst.setString(1,entity.getName());
+                    pst.setInt(2,entity.getEarnedPoints());
+                    pst.setInt(3,entity.getPlayerID());
+                    pst.executeUpdate();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
             }
         }
         return result;
@@ -56,10 +59,13 @@ public class PlayerDAO implements DAO<Player, Integer> {
 
     @Override
     public Player delete(Player entity) throws SQLException {
-        if(entity==null || entity.getPlayerID()==-1) return entity;
-        try(PreparedStatement pst = ConnectionMariaDB.getConnection().prepareStatement(DELETE)) {
-            pst.setInt(1,entity.getPlayerID());
-            pst.executeUpdate();
+        if(entity==null || entity.getPlayerID()==-1){
+            entity = null;
+        }else {
+            try(PreparedStatement pst = ConnectionMariaDB.getConnection().prepareStatement(DELETE)) {
+                pst.setInt(1,entity.getPlayerID());
+                pst.executeUpdate();
+            }
         }
         return entity;
     }
@@ -67,22 +73,24 @@ public class PlayerDAO implements DAO<Player, Integer> {
     @Override
     public Player findById(Integer key) {
         Player result = new Player();
-        if(key==-1) return result;
-
-        try(PreparedStatement pst = ConnectionMariaDB.getConnection().prepareStatement(FINDBYID)) {
-            pst.setInt(1,key);
-            ResultSet res = pst.executeQuery();
-            if(res.next()){
-                result.setPlayerID(res.getInt("playerID"));
-                result.setName(res.getString("name"));
-                result.setEarnedPoints(res.getInt("earnerPoints"));
-                //Lazy
-                //BookDAO bDAO = new BookDAO();
-                //result.setBooks(bDAO.findByAuthor(result));
+        if(key==-1) {
+            result = null;
+        } else {
+            try(PreparedStatement pst = ConnectionMariaDB.getConnection().prepareStatement(FINDBYID)) {
+                pst.setInt(1,key);
+                ResultSet res = pst.executeQuery();
+                if(res.next()){
+                    result.setPlayerID(res.getInt("playerID"));
+                    result.setName(res.getString("name"));
+                    result.setEarnedPoints(res.getInt("earnerPoints"));
+                    //Lazy
+                    //BookDAO bDAO = new BookDAO();
+                    //result.setBooks(bDAO.findByAuthor(result));
+                }
+                res.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
             }
-            res.close();
-        } catch (SQLException e) {
-            e.printStackTrace();
         }
         return result;
     }

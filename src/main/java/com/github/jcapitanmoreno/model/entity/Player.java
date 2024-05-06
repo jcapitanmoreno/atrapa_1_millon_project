@@ -7,6 +7,7 @@ public class Player {
 
     private int playerID;
     private String name;
+    private String password;
     private int earnedPoints;
 
     public Player() {
@@ -14,11 +15,20 @@ public class Player {
 
     }
 
-    public Player(int playerID, String name, int earnedPoint) {
+    public Player(int playerID, String name, int earnedPoint, String password) {
         this.playerID = playerID;
         this.name = name;
         this.earnedPoints = earnedPoints;
+        this.password = password;
 
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     public int getPlayerID() {
@@ -62,8 +72,9 @@ public class Player {
     @Override
     public String toString() {
         return "Player{" +
-                "playerID='" + playerID + '\'' +
+                "playerID=" + playerID +
                 ", name='" + name + '\'' +
+                ", password='" + password + '\'' +
                 ", earnedPoints=" + earnedPoints +
                 '}';
     }
