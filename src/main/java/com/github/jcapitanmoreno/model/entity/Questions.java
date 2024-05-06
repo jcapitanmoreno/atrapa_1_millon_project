@@ -1,19 +1,20 @@
 package com.github.jcapitanmoreno.model.entity;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Objects;
 
 public class Questions {
     private int questionID;
     private Game gameID;
     private String questionText;
-    private ArrayList<String> answers;
+    private String[] answers;
 
     public Questions(){
         this.questionID = -1;
     }
 
-    public Questions(int questionID, Game gameID, String questionText, ArrayList<String> answers) {
+    public Questions(int questionID, Game gameID, String questionText, String[] answers) {
         this.questionID = questionID;
         this.gameID = gameID;
         this.questionText = questionText;
@@ -44,11 +45,11 @@ public class Questions {
         this.questionText = questionText;
     }
 
-    public ArrayList<String> getAnswers() {
+    public String[] getAnswers() {
         return answers;
     }
 
-    public void setAnswers(ArrayList<String> answers) {
+    public void setAnswers(String[] answers) {
         this.answers = answers;
     }
 
@@ -57,12 +58,12 @@ public class Questions {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Questions questions = (Questions) o;
-        return questionID == questions.questionID && Objects.equals(gameID, questions.gameID) && Objects.equals(questionText, questions.questionText) && Objects.equals(answers, questions.answers);
+        return questionID == questions.questionID || Objects.equals(gameID, questions.gameID);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(questionID, gameID, questionText, answers);
+        return Objects.hash(questionID, gameID);
     }
 
     @Override
@@ -71,7 +72,7 @@ public class Questions {
                 "questionID=" + questionID +
                 ", gameID=" + gameID +
                 ", questionText='" + questionText + '\'' +
-                ", answers=" + answers +
+                ", answers=" + Arrays.toString(answers) +
                 '}';
     }
 }
