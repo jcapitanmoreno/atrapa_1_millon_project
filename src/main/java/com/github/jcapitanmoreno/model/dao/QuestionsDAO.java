@@ -31,11 +31,11 @@ public class QuestionsDAO implements DAO<Questions, Integer> {
                 //INSERT
                 try (PreparedStatement pst = ConnectionMariaDB.getConnection().prepareStatement(INSERT, Statement.RETURN_GENERATED_KEYS)) {
                     pst.setInt(1, entity.getQuestionID());
-                    pst.setInt(2, entity.getGameID().getGameID());
+                    pst.setInt(2, entity.getGame().getGameID());
                     pst.setString(3, entity.getQuestionText());
-                    pst.setString(4, entity.getAnswers()[1]);
-                    pst.setString(5, entity.getAnswers()[2]);
-                    pst.setString(6, entity.getAnswers()[3]);
+                    pst.setString(4, entity.getPossibleAnswers()[1]);
+                    pst.setString(5, entity.getPossibleAnswers()[2]);
+                    pst.setString(6, entity.getPossibleAnswers()[3]);
 
                     pst.executeUpdate();
                     //si fuera autoincremental yo tendría que leer getGeneratedKeys() -> setDNI
@@ -51,9 +51,9 @@ public class QuestionsDAO implements DAO<Questions, Integer> {
                 //UPDATE
                 try (PreparedStatement pst = ConnectionMariaDB.getConnection().prepareStatement(UPDATE)) {
                     pst.setString(1, entity.getQuestionText());
-                    pst.setString(2, entity.getAnswers()[1]);
-                    pst.setString(3, entity.getAnswers()[2]);
-                    pst.setString(4, entity.getAnswers()[3]);
+                    pst.setString(2, entity.getPossibleAnswers()[1]);
+                    pst.setString(3, entity.getPossibleAnswers()[2]);
+                    pst.setString(4, entity.getPossibleAnswers()[3]);
                     pst.executeUpdate();
                 } catch (SQLException e) {
                     e.printStackTrace();
@@ -88,11 +88,11 @@ public class QuestionsDAO implements DAO<Questions, Integer> {
                 if (res.next()) {
                     result.setQuestionID(res.getInt("questionID"));
                     result.setQuestionText(res.getString("questionText"));
-                    String[] answers = new String[3];
-                    answers[0] = res.getString("answers_1");
-                    answers[1] = res.getString("answers_2");
-                    answers[2] = res.getString("answers_3");
-                    result.setAnswers(answers);
+                    String[] possibleAnswers = new String[3];
+                    possibleAnswers[0] = res.getString("answers_1");
+                    possibleAnswers[1] = res.getString("answers_2");
+                    possibleAnswers[2] = res.getString("answers_3");
+                    result.setPossibleAnswers(possibleAnswers);
                     //Lazy
                     //BookDAO bDAO = new BookDAO();
                     //result.setBooks(bDAO.findByAuthor(result));
@@ -116,11 +116,11 @@ public class QuestionsDAO implements DAO<Questions, Integer> {
                 Questions q = new Questions();
                 q.setQuestionID(res.getInt("questionID"));
                 q.setQuestionText(res.getString("questionText"));
-                String[] answers = new String[3];
-                answers[0] = res.getString("answers_1");
-                answers[1] = res.getString("answers_2");
-                answers[2] = res.getString("answers_3");
-                q.setAnswers(answers);
+                String[] possibleAnswers = new String[3];
+                possibleAnswers[0] = res.getString("answers_1");
+                possibleAnswers[1] = res.getString("answers_2");
+                possibleAnswers[2] = res.getString("answers_3");
+                q.setPossibleAnswers(possibleAnswers);
                 //Lazy
                 // a.setBooks(BookDAO.build().findByAuthor(a));
                 result.add(q);
