@@ -1,8 +1,7 @@
 package com.github.jcapitanmoreno.model.dao;
 
 import com.github.jcapitanmoreno.model.connection.ConnectionMariaDB;
-import com.github.jcapitanmoreno.model.entity.Player;
-import com.github.jcapitanmoreno.model.entity.Questions;
+import com.github.jcapitanmoreno.model.entity.Question;
 
 import java.io.IOException;
 import java.sql.PreparedStatement;
@@ -12,7 +11,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-public class QuestionsDAO implements DAO<Questions, Integer> {
+public class QuestionsDAO implements DAO<Question, Integer> {
 
     private final static String INSERT = "INSERT INTO questions (questionID, gameID, questionText, answers_1, answers_2, answers_3) VALUES (?,?,?,?,?,?)";
     private final static String UPDATE = "UPDATE questions SET questionText=?, answers_1=?, answers_2=?, answers_3=? WHERE questionID=?";
@@ -20,22 +19,21 @@ public class QuestionsDAO implements DAO<Questions, Integer> {
     private final static String FINDBYID = "SELECT * FROM questions WHERE questionID=?";
     private final static String DELETE = "DELETE FROM questions WHERE questionID=?";
 
+
     @Override
-    public Questions save(Questions entity) {
-        Questions result = entity;
+    public Question save(Question entity) {
+        Question result = entity;
         if (entity == null || entity.getQuestionID() == -1){
             result = null;
         } else {
-            Questions q = findById(entity.getQuestionID());  //si no está devuelve un autor por defecto
+            Question q = findById(entity.getQuestionID());  //si no está devuelve un autor por defecto
             if (q.getQuestionID() == -1) {
                 //INSERT
                 try (PreparedStatement pst = ConnectionMariaDB.getConnection().prepareStatement(INSERT, Statement.RETURN_GENERATED_KEYS)) {
                     pst.setInt(1, entity.getQuestionID());
                     pst.setInt(2, entity.getGame().getGameID());
                     pst.setString(3, entity.getQuestionText());
-                    pst.setString(4, entity.getPossibleAnswers()[1]);
-                    pst.setString(5, entity.getPossibleAnswers()[2]);
-                    pst.setString(6, entity.getPossibleAnswers()[3]);
+
 
                     pst.executeUpdate();
                     //si fuera autoincremental yo tendría que leer getGeneratedKeys() -> setDNI
@@ -51,9 +49,6 @@ public class QuestionsDAO implements DAO<Questions, Integer> {
                 //UPDATE
                 try (PreparedStatement pst = ConnectionMariaDB.getConnection().prepareStatement(UPDATE)) {
                     pst.setString(1, entity.getQuestionText());
-                    pst.setString(2, entity.getPossibleAnswers()[1]);
-                    pst.setString(3, entity.getPossibleAnswers()[2]);
-                    pst.setString(4, entity.getPossibleAnswers()[3]);
                     pst.executeUpdate();
                 } catch (SQLException e) {
                     e.printStackTrace();
@@ -64,7 +59,7 @@ public class QuestionsDAO implements DAO<Questions, Integer> {
     }
 
     @Override
-    public Questions delete(Questions entity) throws SQLException {
+    public Question delete(Question entity) throws SQLException {
         if (entity == null || entity.getQuestionID() == -1){
             entity = null;
         }else {
@@ -77,8 +72,8 @@ public class QuestionsDAO implements DAO<Questions, Integer> {
     }
 
     @Override
-    public Questions findById(Integer key) {
-        Questions result = new Questions();
+    public Question findById(Integer key) {
+        Question result = new Question();
         if (key == -1){
             result = null;
         } else {
@@ -88,11 +83,6 @@ public class QuestionsDAO implements DAO<Questions, Integer> {
                 if (res.next()) {
                     result.setQuestionID(res.getInt("questionID"));
                     result.setQuestionText(res.getString("questionText"));
-                    String[] possibleAnswers = new String[3];
-                    possibleAnswers[0] = res.getString("answers_1");
-                    possibleAnswers[1] = res.getString("answers_2");
-                    possibleAnswers[2] = res.getString("answers_3");
-                    result.setPossibleAnswers(possibleAnswers);
                     //Lazy
                     //BookDAO bDAO = new BookDAO();
                     //result.setBooks(bDAO.findByAuthor(result));
@@ -106,21 +96,16 @@ public class QuestionsDAO implements DAO<Questions, Integer> {
     }
 
     @Override
-    public List<Questions> findAll() {
-        List<Questions> result = new ArrayList<>();
+    public List<Question> findAll() {
+        List<Question> result = new ArrayList<>();
 
         try (PreparedStatement pst = ConnectionMariaDB.getConnection().prepareStatement(FINDALL)) {
 
             ResultSet res = pst.executeQuery();
             while (res.next()) {
-                Questions q = new Questions();
+                Question q = new Question();
                 q.setQuestionID(res.getInt("questionID"));
                 q.setQuestionText(res.getString("questionText"));
-                String[] possibleAnswers = new String[3];
-                possibleAnswers[0] = res.getString("answers_1");
-                possibleAnswers[1] = res.getString("answers_2");
-                possibleAnswers[2] = res.getString("answers_3");
-                q.setPossibleAnswers(possibleAnswers);
                 //Lazy
                 // a.setBooks(BookDAO.build().findByAuthor(a));
                 result.add(q);

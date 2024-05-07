@@ -8,7 +8,7 @@ public class Game {
     private int gameID;
     private LocalDate gameDate;
 
-    private List<Questions> questions;
+    private List<Question> questions;
 
     public Game(int gameID, LocalDate gameDate) {
         this.gameID = gameID;
