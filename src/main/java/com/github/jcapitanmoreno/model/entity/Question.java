@@ -1,33 +1,32 @@
 package com.github.jcapitanmoreno.model.entity;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
 
-public class Questions {
+public class Question {
     private int questionID;
     private Game game;
     private String questionText;
-    private String[] possibleAnswers;
+    private List<Answer> possibleAnswers;
     private List<Answer> answers;
 
-    public Questions(){
+    public Question(){
         this.questionID = -1;
     }
 
-    public Questions(int questionID, Game gameID, String questionText, String[] answers) {
+    public Question(int questionID, Game gameID, String questionText, String[] answers) {
         this.questionID = questionID;
         this.game = game;
         this.questionText = questionText;
         this.possibleAnswers = possibleAnswers;
     }
 
-    public String[] getPossibleAnswers() {
+    public List<Answer> getPossibleAnswers() {
         return possibleAnswers;
     }
 
-    public void setPossibleAnswers(String[] possibleAnswers) {
+    public void setPossibleAnswers(List<Answer> possibleAnswers) {
         this.possibleAnswers = possibleAnswers;
     }
 
@@ -67,8 +66,8 @@ public class Questions {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Questions questions = (Questions) o;
-        return questionID == questions.questionID;
+        Question question = (Question) o;
+        return questionID == question.questionID;
     }
 
     @Override
@@ -82,7 +81,9 @@ public class Questions {
                 "questionID=" + questionID +
                 ", gameID=" + game.getGameID()+
                 ", questionText='" + questionText + '\'' +
-                ", answers=" + Arrays.toString(possibleAnswers) +
+                ", answers=" + Arrays.toString(new List[]{possibleAnswers}) +
                 '}';
     }
+
+
 }
