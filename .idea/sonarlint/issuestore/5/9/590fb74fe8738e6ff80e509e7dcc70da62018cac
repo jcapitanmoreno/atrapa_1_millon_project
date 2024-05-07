@@ -1,0 +1,9 @@
+
+†
+java:S4165"jRemove this useless assignment; "earnedPoints" already holds the assigned value along all execution paths.(ÑÈ°s8»Ù‚‘õ1
+T
+java:S1172"2Remove this unused method parameter "earnedPoint".(°ÑýÖÿÿÿÿÿ8ÆÙ‚‘õ1
+K
+java:S1656"/Remove or correct this useless self-assignment.(ÑÈ°s8ÖÙ‚‘õ1
+M
+java:S1068"+Remove this unused "answers" private field.(»¶­“ùÿÿÿÿ8ØÙ‚‘õ1

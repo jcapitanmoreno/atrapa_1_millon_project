@@ -1,11 +1,14 @@
 package com.github.jcapitanmoreno.model.entity;
 
 import java.time.LocalDate;
+import java.util.List;
 import java.util.Objects;
 
 public class Game {
     private int gameID;
     private LocalDate gameDate;
+
+    private List<Questions> questions;
 
     public Game(int gameID, LocalDate gameDate) {
         this.gameID = gameID;

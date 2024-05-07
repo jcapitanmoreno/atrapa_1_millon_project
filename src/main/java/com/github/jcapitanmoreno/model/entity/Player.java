@@ -1,6 +1,7 @@
 package com.github.jcapitanmoreno.model.entity;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 public class Player {
@@ -9,6 +10,7 @@ public class Player {
     private String name;
     private String password;
     private int earnedPoints;
+    private List<Answer> answers;
 
     public Player() {
         this.playerID = -1;

@@ -2,13 +2,15 @@ package com.github.jcapitanmoreno.model.entity;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 import java.util.Objects;
 
 public class Questions {
     private int questionID;
-    private Game gameID;
+    private Game game;
     private String questionText;
-    private String[] answers;
+    private String[] possibleAnswers;
+    private List<Answer> answers;
 
     public Questions(){
         this.questionID = -1;
@@ -16,8 +18,24 @@ public class Questions {
 
     public Questions(int questionID, Game gameID, String questionText, String[] answers) {
         this.questionID = questionID;
-        this.gameID = gameID;
+        this.game = game;
         this.questionText = questionText;
+        this.possibleAnswers = possibleAnswers;
+    }
+
+    public String[] getPossibleAnswers() {
+        return possibleAnswers;
+    }
+
+    public void setPossibleAnswers(String[] possibleAnswers) {
+        this.possibleAnswers = possibleAnswers;
+    }
+
+    public List<Answer> getAnswers() {
+        return answers;
+    }
+
+    public void setAnswers(List<Answer> answers) {
         this.answers = answers;
     }
 
@@ -29,12 +47,12 @@ public class Questions {
         this.questionID = questionID;
     }
 
-    public Game getGameID() {
-        return gameID;
+    public Game getGame() {
+        return game;
     }
 
-    public void setGameID(Game gameID) {
-        this.gameID = gameID;
+    public void setGame(Game gameID) {
+        this.game = gameID;
     }
 
     public String getQuestionText() {
@@ -45,34 +63,26 @@ public class Questions {
         this.questionText = questionText;
     }
 
-    public String[] getAnswers() {
-        return answers;
-    }
-
-    public void setAnswers(String[] answers) {
-        this.answers = answers;
-    }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Questions questions = (Questions) o;
-        return questionID == questions.questionID || Objects.equals(gameID, questions.gameID);
+        return questionID == questions.questionID;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(questionID, gameID);
+        return Objects.hash(questionID);
     }
 
     @Override
     public String toString() {
         return "Questions{" +
                 "questionID=" + questionID +
-                ", gameID=" + gameID +
+                ", gameID=" + game.getGameID()+
                 ", questionText='" + questionText + '\'' +
-                ", answers=" + Arrays.toString(answers) +
+                ", answers=" + Arrays.toString(possibleAnswers) +
                 '}';
     }
 }

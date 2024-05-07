@@ -5,32 +5,32 @@ import java.time.LocalTime;
 import java.util.Objects;
 
 public class Answer {
-    private Questions questionsID;
-    private Player playerID;
+    private Questions questions;
+    private Player player;
     private LocalTime time;
     private int playerAnswer;
 
-    public Answer(Questions questionsID, Player playerID, LocalTime time, int playerAnswer) {
-        this.questionsID = questionsID;
-        this.playerID = playerID;
+    public Answer(Questions questions, Player player, LocalTime time, int playerAnswer) {
+        this.questions = questions;
+        this.player = player;
         this.time = time;
         this.playerAnswer = playerAnswer;
     }
 
     public Questions getQuestionsID() {
-        return questionsID;
+        return questions;
     }
 
     public void setQuestionsID(Questions questionsID) {
-        this.questionsID = questionsID;
+        this.questions = questionsID;
     }
 
     public Player getPlayerID() {
-        return playerID;
+        return player;
     }
 
     public void setPlayerID(Player playerID) {
-        this.playerID = playerID;
+        this.player = playerID;
     }
 
     public LocalTime getTime() {
@@ -54,19 +54,19 @@ public class Answer {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Answer answer = (Answer) o;
-        return Objects.equals(questionsID, answer.questionsID) && Objects.equals(playerID, answer.playerID) && Objects.equals(time, answer.time);
+        return Objects.equals(questions, answer.questions) && Objects.equals(player, answer.player) && Objects.equals(time, answer.time);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(questionsID, playerID, time);
+        return Objects.hash(questions, player, time);
     }
 
     @Override
     public String toString() {
         return "Answer{" +
-                "questionsID=" + questionsID +
-                ", playerID=" + playerID +
+                "questionsID=" + questions.getQuestionID() +
+                ", playerID=" + player.getPlayerID() +
                 ", time=" + time +
                 ", playerAnswer=" + playerAnswer +
                 '}';
