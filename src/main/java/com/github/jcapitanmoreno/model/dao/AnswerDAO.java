@@ -12,22 +12,23 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.List;
 
-public abstract class AnswerDAO implements DAO<Answer, String>{
+public  class AnswerDAO implements DAO<Answer, String>{
 
     private final static String INSERT = "INSERT INTO answer (questionID, playerID, time, answerText, validate) VALUES (?,?,?,?,?)";
     private final static String FINDANSWERBYQUESTIONID = "SELECT * FROM `answer` WHERE questionsID=?";
     private final static String FINDANSWERBYPLAYERID = "SELECT * FROM `answer` WHERE playerID=?";
     @Override
-    public Answer save(Answer entity, Question entity2, Player entity3) {
+    public Answer save(Answer entity) {
         Answer result = entity;
         if (entity == null || entity.getAnswerText() == null){
             result = null;
         } else {
                 //INSERT
                 try (PreparedStatement pst = ConnectionMariaDB.getConnection().prepareStatement(INSERT, Statement.RETURN_GENERATED_KEYS)) {
+                    pst.setInt(1, entity.getQuestion().getQuestionID());
+                    pst.setInt(2, entity.getPlayer().getPlayerID());
+                    pst.setTime(3, java.sql.Time.valueOf(entity.getTime()));
                     pst.setString(4, entity.getAnswerText());
-                    pst.setInt(2, entity3.getPlayerID());
-                    pst.set(3, entity.getTime());
                     pst.setBoolean(5, entity.isValidateAnswer());
                     pst.executeUpdate();
 
@@ -38,8 +39,10 @@ public abstract class AnswerDAO implements DAO<Answer, String>{
         return result;
     }
 
+
+
     @Override
-    public Object delete(Object entity) throws SQLException {
+    public Answer delete(Answer entity) throws SQLException {
         return null;
     }
 

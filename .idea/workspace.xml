@@ -5,12 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f0d20c5e-8e38-4af7-a24f-374416dd6d68" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/model/dao/AnswerDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/model/entity/Session.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/view/AppController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/view/UserMenuController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/view/View.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/3/133354a10992c1ee53e448e2f08b62742f6ecd71" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/3/133354a10992c1ee53e448e2f08b62742f6ecd71" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/8/287def0538fe8c8921a73452716e62abdb495f41" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/1/4114a390cb42976f9374dccb398c8d467ce24406" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/1/4114a390cb42976f9374dccb398c8d467ce24406" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/9/590fb74fe8738e6ff80e509e7dcc70da62018cac" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/9/590fb74fe8738e6ff80e509e7dcc70da62018cac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/7/97e7fff5b3767fd2fad265148f38f7b6ac3bd975" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/e/9ee8a6b09cd6aba1c2de0b7c0ee9f0ca9457a0db" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/e/9ee8a6b09cd6aba1c2de0b7c0ee9f0ca9457a0db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/2/8/287def0538fe8c8921a73452716e62abdb495f41" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/9/7/97e7fff5b3767fd2fad265148f38f7b6ac3bd975" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/model/dao/QuestionsDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/model/dao/QuestionsDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/model/entity/Answer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/model/entity/Answer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/model/entity/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/model/entity/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/model/entity/Questions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/model/entity/Question.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/connection.xml" beforeDir="false" afterPath="$PROJECT_DIR$/connection.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/model/dao/AnswerDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/model/dao/AnswerDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/view/AdmLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/view/AdmLoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/view/UserMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/view/UsersName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/view/UsersNameController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +85,7 @@
     <attachedChunks>
       <set>
         <option value="jdk-21.0.1-openjdk-21.0.1-3183f394aec4-7d648f2c" />
+        <option value="jdk-21.0.1-openjdk-21.0.1-f644763e9732-f98dd351" />
       </set>
     </attachedChunks>
   </component>
@@ -86,6 +101,8 @@
       <workItem from="1714639659962" duration="3660000" />
       <workItem from="1715008052365" duration="11042000" />
       <workItem from="1715108096764" duration="7515000" />
+      <workItem from="1715157530345" duration="2780000" />
+      <workItem from="1715162722111" duration="3584000" />
     </task>
     <servers />
   </component>
