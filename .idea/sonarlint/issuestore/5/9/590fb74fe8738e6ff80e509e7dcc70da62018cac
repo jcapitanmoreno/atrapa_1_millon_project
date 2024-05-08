@@ -1,9 +1,11 @@
 
-†
-java:S4165"jRemove this useless assignment; "earnedPoints" already holds the assigned value along all execution paths.(ÑÈ°s8»Ù‚‘õ1
-T
-java:S1172"2Remove this unused method parameter "earnedPoint".(°ÑıÖÿÿÿÿÿ8ÆÙ‚‘õ1
-K
-java:S1656"/Remove or correct this useless self-assignment.(ÑÈ°s8ÖÙ‚‘õ1
+¬
+java:S4165"jRemove this useless assignment; "earnedPoints" already holds the assigned value along all execution paths.(ÑÈ°s8Õöİ»õ1J$a7e50a92-94c5-4069-b2cc-1f5390e7636c
+z
+java:S1172"2Remove this unused method parameter "earnedPoint".(°ÑıÖÿÿÿÿÿ8èöİ»õ1J$b181b3e0-e9ad-4020-9d2c-826127325bb5
+q
+java:S1656"/Remove or correct this useless self-assignment.(ÑÈ°s8÷İ»õ1J$4efe2c5f-ecb7-4903-8862-45995f471a63
 M
-java:S1068"+Remove this unused "answers" private field.(»¶­“ùÿÿÿÿ8ØÙ‚‘õ1
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8ß¿’¿õ1
+s
+java:S1068"+Remove this unused "answers" private field.(»¶­“ùÿÿÿÿ8š÷İ»õ1J$f66a82ec-acc8-4b98-a020-0f0676697d9f

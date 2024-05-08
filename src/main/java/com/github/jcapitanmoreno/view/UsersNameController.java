@@ -1,18 +1,18 @@
 package com.github.jcapitanmoreno.view;
 
-import java.io.IOException;
-
-import com.github.jcapitanmoreno.App;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.scene.shape.Circle;
 
-public class UsersName {
+public class UsersNameController {
     @FXML
     private TextField name;
     @FXML
-    private Button jugar;
+    private Button entrar;
 
-    public void
+    private Circle secretAdminEnter;
+
+
 
 }

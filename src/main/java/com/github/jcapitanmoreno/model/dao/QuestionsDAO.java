@@ -32,6 +32,9 @@ public class QuestionsDAO implements DAO<Question, Integer> {
                 try (PreparedStatement pst = ConnectionMariaDB.getConnection().prepareStatement(INSERT, Statement.RETURN_GENERATED_KEYS)) {
                     pst.setInt(1, entity.getQuestionID());
                     pst.setInt(2, entity.getGame().getGameID());
+                    entity.getPossibleAnswers().get(1).getAnswerText();
+                    entity.getPossibleAnswers().get(2).getAnswerText();
+                    entity.getPossibleAnswers().get(3).getAnswerText();
                     pst.setString(3, entity.getQuestionText());
 
 
