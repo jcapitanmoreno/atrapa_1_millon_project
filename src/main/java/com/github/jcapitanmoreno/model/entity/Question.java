@@ -9,7 +9,6 @@ public class Question {
     private Game game;
     private String questionText;
     private List<Answer> possibleAnswers;
-    private List<Answer> answers;
 
     private Player playerInsertQuestion;
 
@@ -17,12 +16,11 @@ public class Question {
         this.questionID = -1;
     }
 
-    public Question(int questionID, Game game, String questionText, List<Answer> possibleAnswers, List<Answer> answers, Player playerInsertQuestion) {
+    public Question(int questionID, Game game, String questionText, List<Answer> possibleAnswers, Player playerInsertQuestion) {
         this.questionID = questionID;
         this.game = game;
         this.questionText = questionText;
         this.possibleAnswers = possibleAnswers;
-        this.answers = answers;
         this.playerInsertQuestion = playerInsertQuestion;
     }
 
@@ -40,14 +38,6 @@ public class Question {
 
     public void setPossibleAnswers(List<Answer> possibleAnswers) {
         this.possibleAnswers = possibleAnswers;
-    }
-
-    public List<Answer> getAnswers() {
-        return answers;
-    }
-
-    public void setAnswers(List<Answer> answers) {
-        this.answers = answers;
     }
 
     public int getQuestionID() {
@@ -93,7 +83,6 @@ public class Question {
                 ", game=" + game.getGameID() +
                 ", questionText='" + questionText + '\'' +
                 ", possibleAnswers=" + Arrays.toString(new List[]{possibleAnswers}) +
-                ", answers=" + answers +
                 ", playerInsertQuestion=" + playerInsertQuestion.getPlayerID() +
                 '}';
     }
