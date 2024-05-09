@@ -1,14 +1,20 @@
 
 É
-java:S1186O"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(æÔ«÷þÿÿÿÿ8á²Ù¸õ1J$97466b3e-e7ad-47f0-b509-51576bd79fb6
+java:S1186O"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(æÔ«÷þÿÿÿÿ8á²Ù¸õ1J$02aad7d2-aca4-4840-8e03-cc8492b1e271
 
-java:S1124"EReorder the modifiers to comply with the Java Language Specification.(ÁÔ—ªøÿÿÿÿ8î²Ù¸õ1J$dff1d748-e1bf-44cb-ad93-00f226e2cce0
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(ÁÔ—ªøÿÿÿÿ8î²Ù¸õ1J$f596adbc-da22-4254-8ad9-d66343a3a0a8
 ˆ
-java:S1124"EReorder the modifiers to comply with the Java Language Specification.(¨÷žð8ï²Ù¸õ1J$e68a2e7f-d52d-49e3-92ef-4a3ad3b4bf1d
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(¨÷žð8ï²Ù¸õ1J$4c6e8492-c7cf-4ddd-ab55-a307f5e8ca28
 ˆ
-java:S1124"EReorder the modifiers to comply with the Java Language Specification.(¥‘ó¬8ð²Ù¸õ1J$ef083181-fa09-4414-9abe-b3b92531627d
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(¥‘ó¬8ð²Ù¸õ1J$01eb582d-0971-4304-b897-34e02d2583a7
 b
-java:S6905"Don't use the query "SELECT *".(¨÷žð8¢³Ù¸õ1J$5fd14d96-4d77-443b-80e9-03b08b1cde55
-ƒ	java:S125>"<This block of commented-out lines of code should be removed.(„âõØûÿÿÿÿ8¨³Ù¸õ1J$e98cbd74-9a7e-43c8-ac87-0460c9db5f54
+java:S6905"Don't use the query "SELECT *".(¨÷žð8¢³Ù¸õ1J$80ee8bad-bcc0-408e-856c-1c76332f48e5
+ƒ	java:S125>"<This block of commented-out lines of code should be removed.(„âõØûÿÿÿÿ8¨³Ù¸õ1J$741c3069-770c-47e0-b7d2-a8c3059c85db
+n
+java:S1168K"+Return an empty collection instead of null.(¥¹ï8ºØ„äõ1J$f4cc8975-dd3a-4f82-b665-5a4bde7d1d9f
+’
+java:S1128"JRemove this unused import 'com.github.jcapitanmoreno.model.entity.Player'.(‡¨âÎÿÿÿÿÿ8ÆØ„äõ1J$e725c18a-c392-4257-bb9b-8dd19498e1e3
+”
+java:S1128"LRemove this unused import 'com.github.jcapitanmoreno.model.entity.Question'.(éîåÜýÿÿÿÿ8ÇØ„äõ1J$3ae6f8ad-2e16-4f01-a0d0-a18c9cd6f1ca
 {
-java:S1068"8Remove this unused "FINDANSWERBYPLAYERID" private field.(¥‘ó¬8­³Ù¸õ1J$833c4fb3-c150-4818-82a4-80228fa3bfb3
+java:S1068"8Remove this unused "FINDANSWERBYPLAYERID" private field.(¥‘ó¬8­³Ù¸õ1J$26f675ea-f25f-46a4-8374-d970fccdd72a

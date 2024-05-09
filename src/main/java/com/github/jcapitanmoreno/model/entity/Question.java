@@ -11,15 +11,27 @@ public class Question {
     private List<Answer> possibleAnswers;
     private List<Answer> answers;
 
+    private Player playerInsertQuestion;
+
     public Question(){
         this.questionID = -1;
     }
 
-    public Question(int questionID, Game gameID, String questionText, String[] answers) {
+    public Question(int questionID, Game game, String questionText, List<Answer> possibleAnswers, List<Answer> answers, Player playerInsertQuestion) {
         this.questionID = questionID;
         this.game = game;
         this.questionText = questionText;
         this.possibleAnswers = possibleAnswers;
+        this.answers = answers;
+        this.playerInsertQuestion = playerInsertQuestion;
+    }
+
+    public Player getPlayerInsertQuestion() {
+        return playerInsertQuestion;
+    }
+
+    public void setPlayerInsertQuestion(Player playerInsertQuestion) {
+        this.playerInsertQuestion = playerInsertQuestion;
     }
 
     public List<Answer> getPossibleAnswers() {
@@ -74,16 +86,15 @@ public class Question {
     public int hashCode() {
         return Objects.hash(questionID);
     }
-
     @Override
     public String toString() {
-        return "Questions{" +
+        return "Question{" +
                 "questionID=" + questionID +
-                ", gameID=" + game.getGameID()+
+                ", game=" + game.getGameID() +
                 ", questionText='" + questionText + '\'' +
-                ", answers=" + Arrays.toString(new List[]{possibleAnswers}) +
+                ", possibleAnswers=" + Arrays.toString(new List[]{possibleAnswers}) +
+                ", answers=" + answers +
+                ", playerInsertQuestion=" + playerInsertQuestion.getPlayerID() +
                 '}';
     }
-
-
 }

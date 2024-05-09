@@ -14,15 +14,15 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.github.jcapitanmoreno.view.UsersNameController">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#78a3b2" height="130.0" layoutX="10.0" layoutY="15.0" stroke="BLACK" strokeType="INSIDE" width="581.0" />
       <ImageView fitHeight="130.0" fitWidth="432.0" layoutX="135.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../java/com/github/jcapitanmoreno/utils/IMG/atrame%20que%20me%20atrapas.png" />
+            <Image url="@IMG/atrapame%20que%20me%20atrapas.png" />
          </image>
       </ImageView>
-      <Circle layoutX="369.0" layoutY="100.0" radius="14.0" stroke="BLACK" strokeType="INSIDE">
+      <Circle layoutX="369.0" layoutY="100.0" onMouseClicked="#changeToADM" radius="14.0" stroke="BLACK" strokeType="INSIDE">
          <fill>
             <RadialGradient centerX="0.47790055248618785" centerY="0.4786729857819905" radius="0.5">
                <stops>

@@ -13,7 +13,7 @@ import java.util.List;
 
 public class QuestionsDAO implements DAO<Question, Integer> {
 
-    private final static String INSERT = "INSERT INTO questions (questionID, gameID, questionText, answers_1, answers_2, answers_3) VALUES (?,?,?,?,?,?)";
+    private final static String INSERT = "INSERT INTO questions (questionID, gameID, questionText, answers_1, answers_2, answers_3,) VALUES (?,?,?,?,?,?)";
     private final static String UPDATE = "UPDATE questions SET questionText=?, answers_1=?, answers_2=?, answers_3=? WHERE questionID=?";
     private final static String FINDALL = "SELECT * FROM questions";
     private final static String FINDBYID = "SELECT * FROM questions WHERE questionID=?";
@@ -32,10 +32,10 @@ public class QuestionsDAO implements DAO<Question, Integer> {
                 try (PreparedStatement pst = ConnectionMariaDB.getConnection().prepareStatement(INSERT, Statement.RETURN_GENERATED_KEYS)) {
                     pst.setInt(1, entity.getQuestionID());
                     pst.setInt(2, entity.getGame().getGameID());
-                    entity.getPossibleAnswers().get(1).getAnswerText();
-                    entity.getPossibleAnswers().get(2).getAnswerText();
-                    entity.getPossibleAnswers().get(3).getAnswerText();
                     pst.setString(3, entity.getQuestionText());
+                    pst.setString(4,entity.getPossibleAnswers().get(1).getAnswerText());
+                    pst.setString(5,entity.getPossibleAnswers().get(2).getAnswerText());
+                    pst.setString(6,entity.getPossibleAnswers().get(3).getAnswerText());
 
 
                     pst.executeUpdate();
@@ -52,6 +52,9 @@ public class QuestionsDAO implements DAO<Question, Integer> {
                 //UPDATE
                 try (PreparedStatement pst = ConnectionMariaDB.getConnection().prepareStatement(UPDATE)) {
                     pst.setString(1, entity.getQuestionText());
+                    pst.setString(4,entity.getPossibleAnswers().get(1).getAnswerText());
+                    pst.setString(5,entity.getPossibleAnswers().get(2).getAnswerText());
+                    pst.setString(6,entity.getPossibleAnswers().get(3).getAnswerText());
                     pst.executeUpdate();
                 } catch (SQLException e) {
                     e.printStackTrace();
