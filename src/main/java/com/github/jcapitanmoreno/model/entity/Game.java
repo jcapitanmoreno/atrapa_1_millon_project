@@ -10,6 +10,10 @@ public class Game {
 
     private List<Question> questions;
 
+    public Game(){
+
+    }
+
     public Game(int gameID, LocalDate gameDate) {
         this.gameID = gameID;
         this.gameDate = gameDate;
