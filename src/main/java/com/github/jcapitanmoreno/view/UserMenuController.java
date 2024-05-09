@@ -1,10 +1,24 @@
 package com.github.jcapitanmoreno.view;
 
-import java.io.IOException;
+import javafx.fxml.Initializable;
 
-public class UserMenuController extends Controller {
+import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
+
+public class UserMenuController extends Controller implements Initializable {
     @Override
     public void onOpen(Object input) throws IOException {
+
+    }
+
+    @Override
+    public void onClose(Object output) {
+
+    }
+
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
 
     }
 }

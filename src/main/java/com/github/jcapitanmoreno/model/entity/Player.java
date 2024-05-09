@@ -8,29 +8,21 @@ public class Player {
 
     private int playerID;
     private String name;
-    private String password;
     private int earnedPoints;
     private List<Answer> answers;
+    private List<Question> questionsInserted;
 
     public Player() {
         this.playerID = -1;
 
     }
 
-    public Player(int playerID, String name, int earnedPoint, String password) {
+    public Player(int playerID, String name, int earnedPoint) {
         this.playerID = playerID;
         this.name = name;
         this.earnedPoints = earnedPoints;
-        this.password = password;
 
-    }
 
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
     }
 
     public int getPlayerID() {
@@ -76,7 +68,6 @@ public class Player {
         return "Player{" +
                 "playerID=" + playerID +
                 ", name='" + name + '\'' +
-                ", password='" + password + '\'' +
                 ", earnedPoints=" + earnedPoints +
                 '}';
     }

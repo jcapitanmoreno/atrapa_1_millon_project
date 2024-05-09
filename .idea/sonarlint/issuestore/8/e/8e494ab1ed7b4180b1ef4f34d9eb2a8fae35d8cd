@@ -1,3 +1,15 @@
 
-L
-java:S2696"6Make the enclosing method "static" or remove this set.(¯Ø—•
+ 
+java:S1104"]Make currentController a static final constant or non-public and provide accessors if needed.(½«İ8ıŸíéõ1J$be7451b0-5039-4b48-89e0-1517834ac476
+”
+java:S1104"QMake stage a static final constant or non-public and provide accessors if needed.(œ‰à8şŸíéõ1J$f64a318f-938f-49f3-b542-2da306c68fcc
+z
+java:S1444"7Make this "public static currentController" field final(½«İ8€ íéõ1J$1a159d77-0ece-46d4-873e-d2b12c9d21fa
+n
+java:S1444"+Make this "public static stage" field final(œ‰à8€ íéõ1J$4419e96a-6395-47ad-93e0-e3b9968dd261
+œ
+java:S1450"TRemove the "scene" field and declare it as a local variable in the relevant methods.(™ëøıÿÿÿÿ8Ÿ íéõ1J$c9b6c6a8-b4a6-4eee-a39a-ea79bc80bf58
+y
+java:S2696"6Make the enclosing method "static" or remove this set.(ÕãÏ³8© íéõ1J$f5b8bb89-003d-4ade-90e1-ebe4104410c4
+~
+java:S2696"6Make the enclosing method "static" or remove this set.(ßÆÎ­şÿÿÿÿ8¼ íéõ1J$8085671b-0ea1-4753-812a-226ec840989b

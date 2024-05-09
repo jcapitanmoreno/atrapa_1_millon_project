@@ -19,14 +19,10 @@ p
 @src/main/java/com/github/jcapitanmoreno/model/entity/Answer.java,e\5\e5ac916f6aee2a476cff80f2a3e943def7e7f0c4
 o
 ?src/main/java/com/github/jcapitanmoreno/model/entity/Admin.java,c\6\c6ec7a3916a446de47a348dcf8d51657698fb4e1
-k
-;src/main/java/com/github/jcapitanmoreno/view/UsersName.java,4\1\4114a390cb42976f9374dccb398c8d467ce24406
 h
 8src/main/java/com/github/jcapitanmoreno/view/Scenes.java,b\d\bd70d7d62980000b31347dc302a6fb4ed360809e
 l
 <src/main/java/com/github/jcapitanmoreno/view/Controller.java,c\b\cb031f88a06b00fb6bc9e9c5c9f9265d7fdda64b
-j
-:src/main/java/com/github/jcapitanmoreno/view/AdmLogin.java,4\4\443afbf047d9f6ff9836e5ba2ef7306fbf9bda2f
 r
 Bsrc/main/java/com/github/jcapitanmoreno/model/entity/Question.java,a\b\ab1e65fe4cd7c8cc272c9e9d21fba3ec3e6db670
 p
