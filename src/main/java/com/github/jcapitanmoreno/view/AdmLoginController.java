@@ -5,10 +5,11 @@ import com.github.jcapitanmoreno.model.dao.AdminDAO;
 import com.github.jcapitanmoreno.model.entity.Admin;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
-
+import javafx.stage.Stage;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -23,6 +24,8 @@ public class AdmLoginController extends Controller implements Initializable {
     private PasswordField password;
     @FXML
     private Button logIn;
+
+    public static Stage stage;
 
 
     @Override
@@ -40,26 +43,29 @@ public class AdmLoginController extends Controller implements Initializable {
 
     }
 
-    public void logInAdm() throws IOException {
+    public void logInAdm() throws Exception {
         if (password != null && user != null) {
             admin.setUser(user.getText());
             admin.setPassword(password.getText());
             boolean loginSuccessful = adminDAO.logIn(admin);
 
-            // Verificar si el inicio de sesión fue exitoso
             if (loginSuccessful) {
                 changeToAdmGestor();
             } else {
-                System.out.println("no entro gilipollas");
-                // Si no es exitoso, muestra un mensaje de error al usuario
-                // Código para abrir un modal con el mensaje de error aquí
-                // Por ejemplo:
-                // openErrorModal("Usuario o contraseña incorrectos");
+             errorAlert(stage);
             }
         }
     }
 
     public void changeToAdmGestor() throws IOException {
         App.currentController.changeScene(Scenes.ADMGESTOR, null);
+    }
+    public void errorAlert(Stage primaryStage) throws Exception {
+        Alert alert = new Alert(Alert.AlertType.ERROR);
+        alert.setTitle("707 ERROR");
+        alert.setHeaderText("ERROR DE INICIO DE SESSION");
+        alert.setContentText("no tienes acceso. Prueba otra vez o contacta con un administrador autorizado baby");
+
+        alert.showAndWait();
     }
 }
