@@ -43,3 +43,5 @@ f
 6src/main/java/com/github/jcapitanmoreno/view/View.java,2\5\2594ce3caa3811ec9ee2a899bfae7433096caa80
 q
 Asrc/main/java/com/github/jcapitanmoreno/model/entity/Session.java,1\c\1c51bf0d621ceee790608399d3d3f648099f86cd
+u
+Esrc/main/java/com/github/jcapitanmoreno/view/AdmGestorController.java,6\6\66f302d73b9405cf4fd3b199b13a3e6bd2099c66

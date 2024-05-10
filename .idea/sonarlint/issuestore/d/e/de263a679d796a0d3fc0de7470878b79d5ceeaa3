@@ -1,7 +1,16 @@
 
+	java:S112?"FDefine and throw a dedicated exception instead of using a generic one.(óê’ÿÿÿÿÿ8¹Ë·‹ö1J$1215d311-3562-45c3-9a45-61670c4dcc1e
+”
+java:S1104"QMake stage a static final constant or non-public and provide accessors if needed.(œ‰à8½Ë·‹ö1J$13193346-42c2-4d24-8609-86bc66d49704
+n
+java:S1444"+Make this "public static stage" field final(œ‰à8¾Ë·‹ö1J$16c547ea-6f3c-41d2-ad8a-034bde750ad8
 Ä
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(÷’²É8ª‡éõ1J$e40f1a53-190f-472c-ace5-e9f8ec65682f
+java:S1186 "€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(÷’²É8”Ì·‹ö1J$276931f5-1411-4739-8456-3f61ad6d3022
 É
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¯®Òêúÿÿÿÿ8«‡éõ1J$83f17b5e-73f4-48d8-bb50-380ec9531980
+java:S1186%"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¯®Òêúÿÿÿÿ8•Ì·‹ö1J$3cb33267-c7cd-40b0-b8ee-e9df2060b891
 É
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(•‘İŸüÿÿÿÿ8¬‡éõ1J$4e77a1dd-a07f-4226-83b2-68d5bc3a87ef
+java:S1186*"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(•‘İŸüÿÿÿÿ8–Ì·‹ö1J$82d05a98-3b5f-4ac0-b85f-7c61537ea947
+´
+java:S1130?"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(óê’ÿÿÿÿÿ8»Ì·‹ö1J$8d3d60ba-e527-4747-a4ec-8030d064f3b2
+{
+java:S1172?"3Remove this unused method parameter "primaryStage".(óê’ÿÿÿÿÿ8½Ì·‹ö1J$ce333152-616a-4a66-a866-f5a9252ac85b

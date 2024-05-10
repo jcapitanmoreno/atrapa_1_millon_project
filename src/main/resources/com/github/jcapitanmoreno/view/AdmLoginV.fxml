@@ -46,7 +46,7 @@
       </HBox>
       <HBox layoutX="220.0" layoutY="318.0" prefHeight="53.0" prefWidth="162.0">
          <children>
-            <Button fx:id="logIn" mnemonicParsing="false" onAction="#logInAdm" prefHeight="58.0" prefWidth="156.0" style="-fx-background-color: #78a3b2;" text="INICIAR SESIÓN">
+            <Button fx:id="logIn" mnemonicParsing="false" onAction="#logInAdm" onMouseClicked="#logInAdm" prefHeight="58.0" prefWidth="156.0" style="-fx-background-color: #78a3b2;" text="INICIAR SESIÓN">
                <font>
                   <Font name="System Bold" size="17.0" />
                </font>
