@@ -22,11 +22,14 @@ public class PlayerDAO implements DAO<Player, Integer> {
     @Override
     public Player save(Player entity) {
         Player result = entity;
-        if(entity==null || entity.getPlayerID()==-1){
+        System.out.println(entity.getPlayerID());
+        if(entity.getName() == null){
             result = null;
         }else {
-            Player p = findById(entity.getPlayerID());  //si no está devuelve un autor por defecto
-            if(p.getPlayerID()==-1){
+            System.out.println("soy concha entro");
+            Player p = findById(entity.getPlayerID());//si no está devuelve un autor por defecto
+            if(p == null){
+                System.out.println("que entro vale?");
                 //INSERT
                 try(PreparedStatement pst = ConnectionMariaDB.getConnection().prepareStatement(INSERT, Statement.RETURN_GENERATED_KEYS)) {
                     pst.setInt(1,entity.getPlayerID());
