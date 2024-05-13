@@ -5,21 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f0d20c5e-8e38-4af7-a24f-374416dd6d68" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/view/AddQuestionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/view/UserGestorController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/github/jcapitanmoreno/view/AddQuestionV.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/github/jcapitanmoreno/view/IMG/MEUNU GESTION DE PREGUNTAS.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/github/jcapitanmoreno/view/IMG/QUE QUIERES HACER AHORA.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/github/jcapitanmoreno/view/IMG/pensar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/github/jcapitanmoreno/view/UserGestorV.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/model/dao/PlayerDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/model/dao/PlayerDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/model/dao/QuestionsDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/model/dao/QuestionsDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/view/UserMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/view/UserMenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/view/UserGestorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/view/UserGestorController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/view/UsersNameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/view/UsersNameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/github/jcapitanmoreno/view/AdmGestorV.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/github/jcapitanmoreno/view/AdmGestorV.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/github/jcapitanmoreno/view/UserMenuV.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/github/jcapitanmoreno/view/UserMenuV.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/github/jcapitanmoreno/view/UsersNameV.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/github/jcapitanmoreno/view/UsersNameV.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
