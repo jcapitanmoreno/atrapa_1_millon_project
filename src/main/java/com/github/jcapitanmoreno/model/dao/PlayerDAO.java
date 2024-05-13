@@ -13,7 +13,7 @@ import java.util.List;
 
 public class PlayerDAO implements DAO<Player, Integer> {
 
-    private final static String INSERT="INSERT INTO player (playerID, name) VALUES (?,?)";
+    private final static String INSERT="INSERT INTO player (name) VALUES (?)";
     private final static String UPDATE="UPDATE player SET name=?, earnedPoints=? WHERE playerID=?";
     private final static String FINDALL="SELECT * FROM player";
     private final static String FINDBYID="SELECT * FROM player WHERE playerID=?";
@@ -27,18 +27,18 @@ public class PlayerDAO implements DAO<Player, Integer> {
             result = null;
         }else {
             System.out.println("soy concha entro");
-            Player p = findById(entity.getPlayerID());//si no está devuelve un autor por defecto
+            Player p = findById(entity.getPlayerID());//si no está devuelve un player por defecto (yo no lo tengo por defecto)
             if(p == null){
                 System.out.println("que entro vale?");
                 //INSERT
                 try(PreparedStatement pst = ConnectionMariaDB.getConnection().prepareStatement(INSERT, Statement.RETURN_GENERATED_KEYS)) {
-                    pst.setInt(1,entity.getPlayerID());
-                    pst.setString(2,entity.getName());
+                    pst.setString(1,entity.getName());
                     pst.executeUpdate();
                     //si fuera autoincremental yo tendría que leer getGeneratedKeys() -> setDNI
                     ResultSet res = pst.getGeneratedKeys();
-                    if(res.next()){
-                        entity.setPlayerID(res.getInt(1));
+                    if (res.next()) {
+                        int generatedID = res.getInt(1);
+                        entity.setPlayerID(generatedID);
                     }
 
 
