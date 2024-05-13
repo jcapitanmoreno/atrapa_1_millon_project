@@ -121,4 +121,7 @@ public class QuestionsDAO implements DAO<Question, Integer> {
     public void close() throws IOException {
 
     }
+    public static QuestionsDAO build(){
+        return new QuestionsDAO();
+    }
 }

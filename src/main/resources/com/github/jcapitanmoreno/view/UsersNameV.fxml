@@ -56,11 +56,11 @@
             <Font size="23.0" />
          </font>
       </Label>
-      <TextField layoutX="194.0" layoutY="238.0" prefHeight="49.0" prefWidth="212.0" promptText="ESCRIBE AQUI">
+      <TextField fx:id="name" layoutX="194.0" layoutY="238.0" prefHeight="49.0" prefWidth="212.0" promptText="ESCRIBE AQUI">
          <font>
             <Font size="17.0" />
          </font>
       </TextField>
-      <Button layoutX="261.0" layoutY="318.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="78.0" text="JUGAR" />
+      <Button fx:id="entrar" layoutX="261.0" layoutY="318.0" mnemonicParsing="false" onAction="#startSession" prefHeight="34.0" prefWidth="78.0" text="JUGAR" />
    </children>
 </AnchorPane>

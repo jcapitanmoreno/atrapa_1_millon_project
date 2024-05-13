@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.github.jcapitanmoreno.view.AddQuestionController">
+   <children>
+      <Label layoutX="101.0" layoutY="237.0" text="RESPUESTA 2:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="101.0" layoutY="290.0" text="RESPUESTA 3:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="answer1" layoutX="230.0" layoutY="188.0" prefHeight="25.0" prefWidth="330.0" />
+      <Label layoutX="101.0" layoutY="187.0" text="RESPUESTA 1:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="115.0" layoutY="37.0" prefHeight="43.0" prefWidth="371.0" text="AÑADE AQUI TUS PREGUNTAS Y RESPUESTAS">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Separator layoutX="87.0" layoutY="79.0" prefHeight="3.0" prefWidth="415.0" />
+      <HBox layoutX="28.0" layoutY="90.0" prefHeight="100.0" prefWidth="544.0">
+         <children>
+            <Label text="PREGUNTA:" translateX="75.0" translateY="30.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="question" prefHeight="41.0" prefWidth="330.0" translateX="100.0" translateY="25.0" />
+         </children>
+      </HBox>
+      <TextField fx:id="answer2" layoutX="230.0" layoutY="238.0" prefHeight="25.0" prefWidth="330.0" />
+      <TextField fx:id="answer4" layoutX="230.0" layoutY="291.0" prefHeight="25.0" prefWidth="330.0" />
+      <Button fx:id="add" layoutX="253.0" layoutY="339.0" mnemonicParsing="false" onAction="#addQuestion" style="-fx-background-color: #78a3b2;" text="AÑADIR">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,6 +1,9 @@
 package com.github.jcapitanmoreno.view;
 
 import com.github.jcapitanmoreno.App;
+import com.github.jcapitanmoreno.model.dao.PlayerDAO;
+import com.github.jcapitanmoreno.model.entity.Player;
+import com.github.jcapitanmoreno.model.entity.Session;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -12,6 +15,12 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 public class UsersNameController extends Controller implements Initializable {
+
+    Session session = new Session();
+    Player player = new Player();
+    PlayerDAO playerDAO = new PlayerDAO();
+
+
     @FXML
     private TextField name;
     @FXML
@@ -21,7 +30,7 @@ public class UsersNameController extends Controller implements Initializable {
 
     @FXML
     public void changeToADM() throws IOException {
-        App.currentController.changeScene(Scenes.ADMLOGIN,null);
+        App.currentController.changeScene(Scenes.ADMLOGIN, null);
     }
 
     @Override
@@ -38,4 +47,14 @@ public class UsersNameController extends Controller implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
     }
+
+    public void startSession() throws IOException {
+        player.setName(name.getText());
+        if (player.getName() !=null){
+            playerDAO.save(player);
+            session.login(player);
+            App.currentController.changeScene(Scenes.USERMENU, null);
+        }
+    }
+
 }

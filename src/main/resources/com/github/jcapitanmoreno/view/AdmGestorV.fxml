@@ -8,7 +8,6 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.github.jcapitanmoreno.view.AdmGestorController">
    <children>
       <ImageView fitHeight="386.0" fitWidth="547.0" layoutX="87.0" layoutY="-272.0" pickOnBounds="true" preserveRatio="true">
@@ -24,12 +23,12 @@
       <Separator layoutX="34.0" layoutY="116.0" prefHeight="6.0" prefWidth="567.0" />
       <HBox layoutX="54.0" layoutY="133.0" prefHeight="247.0" prefWidth="527.0" style="-fx-background-color: #F9FF98;">
          <children>
-            <Button mnemonicParsing="false" prefHeight="59.0" prefWidth="209.0" style="-fx-background-color: #78a3b2;" text="PRUEBA DE JUEGO" translateX="165.0" translateY="35.0">
+            <Button fx:id="play" mnemonicParsing="false" prefHeight="59.0" prefWidth="209.0" style="-fx-background-color: #78a3b2;" text="PRUEBA DE JUEGO" translateX="165.0" translateY="35.0">
                <font>
                   <Font size="18.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="59.0" prefWidth="209.0" style="-fx-background-color: #78a3b2;" text="MENU GESTIÓN" translateX="-43.0" translateY="160.0">
+            <Button fx:id="gestor" mnemonicParsing="false" prefHeight="59.0" prefWidth="209.0" style="-fx-background-color: #78a3b2;" text="MENU GESTIÓN" translateX="-43.0" translateY="160.0">
                <font>
                   <Font size="18.0" />
                </font>
