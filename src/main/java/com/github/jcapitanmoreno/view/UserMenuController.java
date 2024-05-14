@@ -1,5 +1,6 @@
 package com.github.jcapitanmoreno.view;
 
+import com.github.jcapitanmoreno.App;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -28,7 +29,8 @@ public class UserMenuController extends Controller implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
     }
-    public void changeEsceneToGestorUser(){
+    public void changeEsceneToGestorUser() throws IOException {
+        App.currentController.changeScene(Scenes.USERGESTOR, null);
 
     }
     public void changeEsceneToPlayUser(){

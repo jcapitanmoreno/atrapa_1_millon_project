@@ -49,6 +49,7 @@ public class QuestionsDAO implements DAO<Question, Integer> {
                 //UPDATE
                 try (PreparedStatement pst = ConnectionMariaDB.getConnection().prepareStatement(UPDATE)) {
                     pst.setString(1, entity.getQuestionText());
+                    pst.setInt(2,entity.getQuestionID());
                     pst.executeUpdate();
                 } catch (SQLException e) {
                     e.printStackTrace();
