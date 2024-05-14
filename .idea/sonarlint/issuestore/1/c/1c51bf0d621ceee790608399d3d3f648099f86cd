@@ -1,6 +1,10 @@
 
 —
 java:S3008"TRename this field "_instance" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÊÚŒ•8°ÁÀ¾õ1J$2b97039e-ac53-4bf8-83bf-e8f195348320
-W
-java:S1118":Add a private constructor to hide the implicit public one.(äì£Ä8øÂÓ¾õ1
-•	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(õ÷ØÖùÿÿÿÿ8»ÁÀ¾õ1J$d05e1dda-f084-456b-8541-f94b9f452865
+¶
+java:S6548"˜A Singleton implementation was detected. Make sure the use of the Singleton pattern is required and the implementation is the right one for the context.(äì£Ä8ë¬¼±÷1
+•	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(õ÷ØÖùÿÿÿÿ8»ÁÀ¾õ1J$d05e1dda-f084-456b-8541-f94b9f452865
+X
+java:S2696"6Make the enclosing method "static" or remove this set.(’ä•Éþÿÿÿÿ8ü¬¼±÷1
+X
+java:S2696"6Make the enclosing method "static" or remove this set.(ýõ³ƒýÿÿÿÿ8€­¼±÷1

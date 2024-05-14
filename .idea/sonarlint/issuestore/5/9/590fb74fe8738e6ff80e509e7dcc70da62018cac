@@ -6,6 +6,8 @@ java:S1172"2Remove this unused method parameter "earnedPoint".(‚±“ûûÿÿÿÿ8ÄÐ¥å
 K
 java:S1656"/Remove or correct this useless self-assignment.(ÑÈ°s8×Ð¥åõ1
 M
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8ê‹¦°÷1
+M
 java:S1068"+Remove this unused "answers" private field.(»¶­“ùÿÿÿÿ8ÝÐ¥åõ1
 W
 java:S1068"5Remove this unused "questionsInserted" private field.(ðä¾Žûÿÿÿÿ8ÞÐ¥åõ1

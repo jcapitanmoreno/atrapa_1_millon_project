@@ -6,7 +6,9 @@ public enum Scenes {
     USERSNAME("view/UsersNameV.fxml"),
     USERMENU("view/UserMenuV.fxml"),
     ROOT("view/layout.fxml"),
-    ADMGESTOR("view/AdmGestorV.fxml");
+    ADMGESTOR("view/AdmGestorV.fxml"),
+    ADDQUESTION("view/AddQuestionV.fxml"),
+    USERGESTOR("view/UserGestorV.fxml");
 
 
     private String url;

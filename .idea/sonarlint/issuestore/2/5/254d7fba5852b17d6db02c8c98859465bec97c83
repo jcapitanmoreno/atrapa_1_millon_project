@@ -1,13 +1,13 @@
 
-“	java:S117,"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(øî²ı8šÊ³êõ1J$3c2064db-ffc1-46c0-829d-ce7ed64b6090
+“	java:S117,"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(øî²ı8šÊ³êõ1J$744694d6-93e8-43a4-a543-a463b808fbe4
 É
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¯®Òêúÿÿÿÿ8æé¨êõ1J$c730249b-f19b-49ff-a7cd-5795785be127
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¯®Òêúÿÿÿÿ8æé¨êõ1J$38a665fc-bf6a-4f9d-95ed-04e0f0fea4d1
 É
-java:S1186#"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(•‘İŸüÿÿÿÿ8çé¨êõ1J$998ffc7a-0c40-4fd4-8019-e8ea8ac0aed4
+java:S1186#"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(•‘İŸüÿÿÿÿ8çé¨êõ1J$eb9b8859-ea98-4cdd-85a5-b9af088f57b3
 ¡
-java:S1450"_Remove the "centerController" field and declare it as a local variable in the relevant methods.(™•À%8íé¨êõ1J$13e2c598-1d77-4d09-9471-25d34f6bfcfd
+java:S1450"_Remove the "centerController" field and declare it as a local variable in the relevant methods.(™•À%8íé¨êõ1J$5d87e1dd-f8ee-4bf0-afd7-c021b924e7c5
 n
-java:S1172&"+Remove this unused method parameter "data".(»°À8ÌË³êõ1J$1e46fb79-9840-48b2-af44-107c9d561565
-r	java:S1066"+Replace this use of System.out by a logger.(ŞÆ­Ûşÿÿÿÿ8×î¨êõ1J$42dd0d40-3b5b-4e15-97c7-e60ae95cfa9d
+java:S1172&"+Remove this unused method parameter "data".(»°À8ÌË³êõ1J$4f5b62b9-996e-4f04-be74-b0e49b3423dc
+r	java:S1066"+Replace this use of System.out by a logger.(ŞÆ­Ûşÿÿÿÿ8×î¨êõ1J$16bf4ad3-de21-4a3f-b83e-19aa7758cd6b
 ~
-java:S1128	";Remove this unused import 'javafx.scene.layout.AnchorPane'.(Ø µ8û’Æêõ1J$729f6ed7-8d39-4b90-a40c-3d6189369163
+java:S1128	";Remove this unused import 'javafx.scene.layout.AnchorPane'.(Ø µ8û’Æêõ1J$30614eb8-b044-4f24-9885-1a5d1d4f87cb
