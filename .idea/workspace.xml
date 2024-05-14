@@ -5,26 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f0d20c5e-8e38-4af7-a24f-374416dd6d68" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/github/jcapitanmoreno/view/IMG/informacion.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/c/1c51bf0d621ceee790608399d3d3f648099f86cd" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/c/1c51bf0d621ceee790608399d3d3f648099f86cd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/5/254d7fba5852b17d6db02c8c98859465bec97c83" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/5/254d7fba5852b17d6db02c8c98859465bec97c83" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/0/402134451876255843b2b342bb29220dce4fd912" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/0/402134451876255843b2b342bb29220dce4fd912" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/9/590fb74fe8738e6ff80e509e7dcc70da62018cac" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/9/590fb74fe8738e6ff80e509e7dcc70da62018cac" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/2/92b3564518794ce297aea90405859bbd05b5c3ae" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/2/92b3564518794ce297aea90405859bbd05b5c3ae" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/e/9ee8a6b09cd6aba1c2de0b7c0ee9f0ca9457a0db" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/e/9ee8a6b09cd6aba1c2de0b7c0ee9f0ca9457a0db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/a/daaacc3113700a805cc72afbebf79e1c330aaf7e" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/a/daaacc3113700a805cc72afbebf79e1c330aaf7e" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/e/de263a679d796a0d3fc0de7470878b79d5ceeaa3" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/e/de263a679d796a0d3fc0de7470878b79d5ceeaa3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/model/dao/QuestionsDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/model/dao/QuestionsDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/view/AddQuestionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/view/AddQuestionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/view/Scenes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/view/Scenes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/view/UserGestorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/view/UserGestorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/view/UserMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/view/UserMenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/github/jcapitanmoreno/view/AddQuestionV.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/github/jcapitanmoreno/view/AddQuestionV.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/github/jcapitanmoreno/view/UserGestorV.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/github/jcapitanmoreno/view/UserGestorV.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/github/jcapitanmoreno/view/UserMenuV.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/github/jcapitanmoreno/view/UserMenuV.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
