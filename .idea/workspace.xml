@@ -5,7 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f0d20c5e-8e38-4af7-a24f-374416dd6d68" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/5/05fa98045490cba6c02e9955ed0bd9cb4727ecfc" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/5/05fa98045490cba6c02e9955ed0bd9cb4727ecfc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/5/254d7fba5852b17d6db02c8c98859465bec97c83" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/5/254d7fba5852b17d6db02c8c98859465bec97c83" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/7/9777564b64bb20f4b1507d746d60dd286ad28110" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/7/9777564b64bb20f4b1507d746d60dd286ad28110" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/6/c668d3b10280c0a9a9887319c0f2e604138afd89" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/6/c668d3b10280c0a9a9887319c0f2e604138afd89" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/model/dao/AnswerDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/model/dao/AnswerDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/view/AddQuestionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/view/AddQuestionController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,6 +107,7 @@
     <attachedChunks>
       <set>
         <option value="jdk-21.0.1-openjdk-21.0.1-3183f394aec4-7d648f2c" />
+        <option value="jdk-21.0.1-openjdk-21.0.1-f644763e9732-f98dd351" />
       </set>
     </attachedChunks>
   </component>
@@ -121,6 +130,8 @@
       <workItem from="1715251497740" duration="5975000" />
       <workItem from="1715273866265" duration="3890000" />
       <workItem from="1715281446916" duration="6233000" />
+      <workItem from="1715686835383" duration="330000" />
+      <workItem from="1715755428299" duration="11251000" />
     </task>
     <servers />
   </component>

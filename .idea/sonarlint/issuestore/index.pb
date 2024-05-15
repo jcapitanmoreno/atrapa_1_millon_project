@@ -49,3 +49,5 @@ v
 Fsrc/main/java/com/github/jcapitanmoreno/view/UserGestorController.java,c\6\c668d3b10280c0a9a9887319c0f2e604138afd89
 w
 Gsrc/main/java/com/github/jcapitanmoreno/view/AddQuestionController.java,9\7\9777564b64bb20f4b1507d746d60dd286ad28110
+o
+?src/main/java/com/github/jcapitanmoreno/model/dao/AdminDAO.java,d\c\dc7e9129b1c58885b34e862d1574790300db50d3

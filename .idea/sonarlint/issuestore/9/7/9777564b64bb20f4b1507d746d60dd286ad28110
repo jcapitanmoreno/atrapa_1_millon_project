@@ -1,20 +1,15 @@
 
 Δ
-java:S1186/"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(χ’²Ι8ΟΡµχ1J$860c0f35-663e-4b72-b023-d0ffeaa90add
+java:S1186+"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(χ’²Ι8ρϋμήχ1J$ee2f93cd-1bb1-4b60-a9fa-216599669118
 Ι
-java:S11864"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(―®Òκϊÿÿÿÿ8ΟΡµχ1J$4a27af09-7145-441f-9863-63fd27310c65
+java:S11860"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(―®Òκϊÿÿÿÿ8ςϋμήχ1J$e0837b73-1557-4872-a9d7-1aaeba9dad28
 Ι
-java:S11869"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(•‘έόÿÿÿÿ8ΟΡµχ1J$da405507-2d97-40a9-91b1-cedbd44acacc
-m	java:S106>"+Replace this use of System.out by a logger.(ΉΤχ8 ΟΡµχ1J$fd2f44d2-835c-4277-be22-8138bcb8b25a
-}
-java:S1128":Remove this unused import 'com.github.jcapitanmoreno.App'.(ήί8©ΟΡµχ1J$2231f30c-c859-47ad-8822-f2115cc4e421
+java:S11865"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(•‘έόÿÿÿÿ8τϋμήχ1J$aef4bd06-7265-4e21-b8e9-f83374c14151
 
-java:S1128"9Remove this unused import 'javafx.scene.control.Tooltip'.(τ½Ζϋÿÿÿÿ8©ΟΡµχ1J$b62cfd02-1290-4aa3-93e4-b2c5c1c52f93
-x
-java:S1128"5Remove this unused import 'javafx.scene.image.Image'.(‰Ώ½Η8ªΟΡµχ1J$ba1fdc5e-4b26-45ca-a6f8-6b26cb37de1b
-u
-java:S1128"-Remove this unused import 'org.w3c.dom.Node'.(ωÿΛύÿÿÿÿ8ªΟΡµχ1J$4c1ae321-d395-4315-af7e-abad4f7764aa
-ƒ
-java:S1128";Remove this unused import 'org.w3c.dom.events.EventTarget'.(®Φϋÿÿÿÿ8ªΟΡµχ1J$0054aeea-7105-4a19-b95a-97818dc94725
-‚
-java:S1128":Remove this unused import 'org.w3c.dom.events.MouseEvent'.(φΗ±ϊÿÿÿÿ8«ΟΡµχ1J$25352034-07b3-4ecb-ab50-2b74c3913a25
+java:S1854A">Remove this useless assignment to local variable "questionID".(¬ªΟί8²όμήχ1J$c96cc2ac-6dae-437f-bc02-89f976866b0a
+r
+java:S1481A"/Remove this unused "questionID" local variable.(¬ªΟί8»όμήχ1J$3184cc2b-55eb-42b7-b967-27ac286fa9f9
+|
+java:S1117]":Rename "answer" which hides the field declared at line 25.(ϋΦ“{8Ζόμήχ1J$b6bf6ba3-49f2-4981-a488-44d0500fb6af
+}
+java:S1128":Remove this unused import 'com.github.jcapitanmoreno.App'.(ήί8ώΖοήχ1J$3ca1b5e7-c7a7-4aec-9a56-c9978289795f

@@ -11,12 +11,8 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
-import javafx.scene.control.Tooltip;
-import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import org.w3c.dom.Node;
-import org.w3c.dom.events.EventTarget;
-import org.w3c.dom.events.MouseEvent;
+import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.net.URL;
@@ -59,23 +55,47 @@ public class AddQuestionController extends Controller implements Initializable {
     }
 
     public void addQuestion() {
-        System.out.println("pepepepepepepep");
+        String questionText = questionField.getText();
+        if (questionText != null && !questionText.trim().isEmpty()) {
+            question.setQuestionText(questionText);
+            question.setPlayerInsertQuestion(session.getPlayerLoged());
 
-        question.setQuestionText(questionField.getText());
-        if (question.getQuestionText() != null) {
             questionsDAO.save(question);
-            session.getPlayerLoged();
+
+            int questionID = question.getQuestionID();
+
+            saveAnswer(answer1.getText(), question, true);
+            saveAnswer(answer2.getText(), question, false);
+            saveAnswer(answer4.getText(), question, false);
+
+
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setTitle("Pregunta Añadida");
+            alert.setHeaderText("Éxito");
+            alert.setContentText("La pregunta y sus respuestas han sido añadidas correctamente. Disfruta jugando :)");
+            alert.show();
         } else {
             Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setTitle("027 ERROR");
-            alert.setHeaderText("PREGUNTA EL BLANCO");
-            alert.setContentText("la pregunta no puede estar en blanco");
+            alert.setTitle("Error");
+            alert.setHeaderText("Pregunta en blanco");
+            alert.setContentText("La pregunta no puede estar en blanco. :(");
             alert.show();
         }
-
+        closeWindow();
         //paso1= recoger la pregunta y añadirla a la base de datos a traves de su DAO
         //paso2= recoger el resultado y obtener el ID asignado a la pregunta en la base de datos
         //paso3= recoger las respuestas y pasarle el ID de la pregunta para añadirlo a la base de datos y vincularlo a la pregunta
+
+
+    }
+    private void saveAnswer(String answerText, Question question, boolean isCorrect) {
+        if (answerText != null && !answerText.trim().isEmpty()) {
+            Answer answer = new Answer();
+            answer.setAnswerText(answerText);
+            answer.setQuestion(question);
+            answer.setValidateAnswer(isCorrect);
+            answerDAO.save(answer);
+        }
     }
 
     public void infoAlert(){
@@ -85,6 +105,10 @@ public class AddQuestionController extends Controller implements Initializable {
         alert.setContentText("la respuesta Nº1 siempre sera la correcta, asegurate de que lo introducido sea la respuesta correcta. " +
                 "Cuando juegues las respuestas de ordenaran de manera aleatoria.");
         alert.show();
+    }
+    public void closeWindow(){
+        Stage stage = (Stage) add.getScene().getWindow();
+        stage.close();
     }
 
 }
