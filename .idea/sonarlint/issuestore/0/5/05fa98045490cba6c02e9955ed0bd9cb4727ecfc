@@ -1,23 +1,23 @@
 
 
-java:S11929"KDefine a constant instead of duplicating this literal "answerText" 3 times.(Ğ·½ƒ8¿¤âİ÷1J$a86090ed-4452-4d6c-8c0e-2716b5d47de7
+java:S1192;"KDefine a constant instead of duplicating this literal "answerText" 3 times.(Ğ·½ƒ8ú÷Ë„ø1J$687f24d9-3294-4903-ae49-07f6dc2618b1
 É
-java:S1186r"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(æÔ«÷şÿÿÿÿ8—¥âİ÷1J$97f0e06a-7e23-485c-86f3-f548eb206f7e
-
-java:S1124"EReorder the modifiers to comply with the Java Language Specification.(×•úıÿÿÿÿ8¤¥âİ÷1J$bad1f7ae-5446-4fb3-b830-326ab732474a
+java:S1186t"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(æÔ«÷şÿÿÿÿ8±øË„ø1J$54d40ef4-b535-4970-995d-81fffd003c30
+‡
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(¯À½;8¹øË„ø1J$c0c93ff1-69c9-4993-908e-48a417fc4664
 ˆ
-java:S1124"EReorder the modifiers to comply with the Java Language Specification.(¨÷ğ8¥¥âİ÷1J$02de49a9-718f-401e-ab85-c21aab87ea46
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(¨÷ğ8¹øË„ø1J$eb672936-438f-47d4-bd64-bf5f4fb67d8d
 ˆ
-java:S1124"EReorder the modifiers to comply with the Java Language Specification.(¥‘ó¬8¥¥âİ÷1J$59d0f4e0-620b-4594-83ed-bd32bede421b
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(¥‘ó¬8ºøË„ø1J$be4d0332-3ba9-4d83-9d9f-4f93a50b8d09
 ˆ
-java:S1124"EReorder the modifiers to comply with the Java Language Specification.(¡¶Ô†8¦¥âİ÷1J$968996d2-1950-4d4f-a3b2-96ad59e48b7a
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(¡¶Ô†8»øË„ø1J$e4b674d6-8051-4144-9a79-37ce5dbe34a8
 b
-java:S6905"Don't use the query "SELECT *".(¨÷ğ8½¥âİ÷1J$d82a6581-1818-44cb-ad6e-dcec4b9136db
+java:S6905"Don't use the query "SELECT *".(¨÷ğ8ÈøË„ø1J$4be36213-37e0-421a-9c20-4ee009ddedcc
 b
-java:S6905"Don't use the query "SELECT *".(¥‘ó¬8Æ¥âİ÷1J$22f11708-8084-4585-a989-d475298827f8
+java:S6905"Don't use the query "SELECT *".(¥‘ó¬8ÎøË„ø1J$d3a9b9d0-3706-40b5-8b66-1c98cfff5660
 n
-java:S1168n"+Return an empty collection instead of null.(¥¹ï8ã¥âİ÷1J$d3235c17-58b7-4dac-85cf-a876bdbc39f3
+java:S1168p"+Return an empty collection instead of null.(¥¹ï8ÙøË„ø1J$eecdd644-5c7f-4f62-bf1a-e2b306186426
 ’
-java:S1128"JRemove this unused import 'com.github.jcapitanmoreno.model.entity.Player'.(‡¨âÎÿÿÿÿÿ8ê¥âİ÷1J$433945f2-202f-4c3f-b842-8c61294d16fe
+java:S1128"JRemove this unused import 'com.github.jcapitanmoreno.model.entity.Player'.(‡¨âÎÿÿÿÿÿ8 ¡Ì„ø1J$b337c604-c517-4d13-abc6-dc1dcfed32c6
 ”
-java:S1128"LRemove this unused import 'com.github.jcapitanmoreno.model.entity.Question'.(éîåÜıÿÿÿÿ8ê¥âİ÷1J$2c883d3e-9db4-454f-8cbb-f4dfda0c8054
+java:S1128"LRemove this unused import 'com.github.jcapitanmoreno.model.entity.Question'.(éîåÜıÿÿÿÿ8 ¡Ì„ø1J$3cb06c1b-5498-4f18-8460-fba29695f886

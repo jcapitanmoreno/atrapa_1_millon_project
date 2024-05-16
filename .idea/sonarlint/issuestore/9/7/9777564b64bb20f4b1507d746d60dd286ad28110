@@ -1,15 +1,15 @@
 
+b
+java:S2095:"EUse try-with-resources or close this "GameDAO" in a "finally" clause.(φ®νª8ι½‹ψ1
 Δ
-java:S1186+"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(χ’²Ι8ρϋμήχ1J$ee2f93cd-1bb1-4b60-a9fa-216599669118
+java:S1186+"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(χ’²Ι8‚¶­‹ψ1J$695eec6b-6422-4a51-b83c-c18f9527d9d6
 Ι
-java:S11860"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(―®Òκϊÿÿÿÿ8ςϋμήχ1J$e0837b73-1557-4872-a9d7-1aaeba9dad28
+java:S11860"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(―®Òκϊÿÿÿÿ8‚¶­‹ψ1J$97ab3c76-bfc7-4676-8502-b751a863afa6
 Ι
-java:S11865"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(•‘έόÿÿÿÿ8τϋμήχ1J$aef4bd06-7265-4e21-b8e9-f83374c14151
-
-java:S1854A">Remove this useless assignment to local variable "questionID".(¬ªΟί8²όμήχ1J$c96cc2ac-6dae-437f-bc02-89f976866b0a
-r
-java:S1481A"/Remove this unused "questionID" local variable.(¬ªΟί8»όμήχ1J$3184cc2b-55eb-42b7-b967-27ac286fa9f9
+java:S11865"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(•‘έόÿÿÿÿ8‚¶­‹ψ1J$e4318898-0d83-45b5-8cdf-1aaab9d89596
+L	java:S106<"+Replace this use of System.out by a logger.(Ά°”«ϋÿÿÿÿ8›½‹ψ1
+L	java:S106K"+Replace this use of System.out by a logger.(—±―³ϋÿÿÿÿ8Ά›½‹ψ1
 |
-java:S1117]":Rename "answer" which hides the field declared at line 25.(ϋΦ“{8Ζόμήχ1J$b6bf6ba3-49f2-4981-a488-44d0500fb6af
+java:S1117i":Rename "answer" which hides the field declared at line 24.(ϋΦ“{8ήΉ‹ψ1J$fe255536-408c-4fa8-8cf0-b13cf5bbd196
 }
-java:S1128":Remove this unused import 'com.github.jcapitanmoreno.App'.(ήί8ώΖοήχ1J$3ca1b5e7-c7a7-4aec-9a56-c9978289795f
+java:S1128":Remove this unused import 'com.github.jcapitanmoreno.App'.(ήί8ά½µ‹ψ1J$bf9ec1a3-6b50-4286-b2d1-84f78ea17051

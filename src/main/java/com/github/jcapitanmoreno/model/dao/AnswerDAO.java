@@ -14,7 +14,7 @@ import java.util.List;
 
 public  class AnswerDAO implements DAO<Answer, String>{
 
-    private final static String INSERT = "INSERT INTO answer (answerText, validate) VALUES (?,?)";
+    private final static String INSERT = "INSERT INTO answer (answerText, validate, questionsID, playerID) VALUES (?,?,?,?)";
     private final static String FINDANSWERBYQUESTIONID = "SELECT * FROM `answer` WHERE questionsID=?";
     private final static String FINDANSWERBYPLAYERID = "SELECT * FROM `answer` WHERE playerID=?";
     private final static String FINDANSWERBYQUESTION = "SELECT a.* FROM answer a, questions q WHERE a.questionsID=q.questionsID AND questionsID=?";
@@ -28,6 +28,8 @@ public  class AnswerDAO implements DAO<Answer, String>{
                 try (PreparedStatement pst = ConnectionMariaDB.getConnection().prepareStatement(INSERT, Statement.RETURN_GENERATED_KEYS)) {
                     pst.setString(1, entity.getAnswerText());
                     pst.setBoolean(2, entity.isValidateAnswer());
+                    pst.setInt(3, entity.getQuestionsID().getQuestionID());
+                    pst.setInt(4, entity.getPlayerID().getPlayerID());
                     pst.executeUpdate();
 
                 } catch (SQLException e) {

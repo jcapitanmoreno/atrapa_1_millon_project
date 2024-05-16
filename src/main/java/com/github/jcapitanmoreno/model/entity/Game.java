@@ -10,8 +10,7 @@ public class Game {
 
     private List<Question> questions;
 
-    public Game(){
-
+    public Game() {
     }
 
     public Game(int gameID, LocalDate gameDate) {

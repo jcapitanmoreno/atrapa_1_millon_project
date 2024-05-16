@@ -2,10 +2,9 @@ package com.github.jcapitanmoreno.view;
 
 import com.github.jcapitanmoreno.App;
 import com.github.jcapitanmoreno.model.dao.AnswerDAO;
+import com.github.jcapitanmoreno.model.dao.GameDAO;
 import com.github.jcapitanmoreno.model.dao.QuestionsDAO;
-import com.github.jcapitanmoreno.model.entity.Answer;
-import com.github.jcapitanmoreno.model.entity.Question;
-import com.github.jcapitanmoreno.model.entity.Session;
+import com.github.jcapitanmoreno.model.entity.*;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Alert;
@@ -24,6 +23,7 @@ public class AddQuestionController extends Controller implements Initializable {
     Question question = new Question();
     Answer answer = new Answer();
     Session session = new Session();
+
 
 
     @FXML
@@ -55,18 +55,30 @@ public class AddQuestionController extends Controller implements Initializable {
     }
 
     public void addQuestion() {
+        GameDAO gameDAO = new GameDAO();
+        Game game = gameDAO.findById(1);
+        System.out.println(game.getGameID());
         String questionText = questionField.getText();
         if (questionText != null && !questionText.trim().isEmpty()) {
+            Player currentPlayer = session.getPlayerLoged();
+            if (currentPlayer == null){
+                Alert alert = new Alert(Alert.AlertType.ERROR);
+                alert.setTitle("Error");
+                alert.setHeaderText("Jugador no encontrado");
+                alert.setContentText("No se puede encontrar el jugador en la sesión.");
+                alert.show();
+                return;
+            }
             question.setQuestionText(questionText);
             question.setPlayerInsertQuestion(session.getPlayerLoged());
-
+            question.setGame(game);
+            System.out.println(question.getQuestionID());
             questionsDAO.save(question);
-
             int questionID = question.getQuestionID();
 
-            saveAnswer(answer1.getText(), question, true);
-            saveAnswer(answer2.getText(), question, false);
-            saveAnswer(answer4.getText(), question, false);
+            saveAnswer(answer1.getText(), true, questionID, currentPlayer);
+            saveAnswer(answer2.getText(), false, questionID, currentPlayer);
+            saveAnswer(answer4.getText(), false, questionID, currentPlayer);
 
 
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
@@ -88,12 +100,14 @@ public class AddQuestionController extends Controller implements Initializable {
 
 
     }
-    private void saveAnswer(String answerText, Question question, boolean isCorrect) {
+    private void saveAnswer(String answerText, boolean isCorrect,int questionID, Player player) {
         if (answerText != null && !answerText.trim().isEmpty()) {
             Answer answer = new Answer();
+            answer.setQuestion(new Question());
+            answer.getQuestion().setQuestionID(questionID);
             answer.setAnswerText(answerText);
-            answer.setQuestion(question);
             answer.setValidateAnswer(isCorrect);
+            answer.setPlayer(player);
             answerDAO.save(answer);
         }
     }
