@@ -13,7 +13,7 @@ import java.util.List;
 
 public class QuestionsDAO implements DAO<Question, Integer> {
 
-    private final static String INSERT = "INSERT INTO questions (questionID, gameID, questionText,) VALUES (?,?,?,)";
+    private final static String INSERT = "INSERT INTO questions (gameID, questionText,) VALUES (?,?)";
     private final static String UPDATE = "UPDATE questions SET questionText=? WHERE questionID=?";
     private final static String FINDALL = "SELECT * FROM questions";
     private final static String FINDBYID = "SELECT * FROM questions WHERE questionID=?";
@@ -26,21 +26,19 @@ public class QuestionsDAO implements DAO<Question, Integer> {
         if (entity == null || entity.getQuestionID() == -1){
             result = null;
         } else {
-            Question q = findById(entity.getQuestionID());  //si no está devuelve un autor por defecto
-            if (q.getQuestionID() == -1) {
+            Question q = findById(entity.getQuestionID());
+            if (q.getQuestionID() != -1) {
                 //INSERT
                 try (PreparedStatement pst = ConnectionMariaDB.getConnection().prepareStatement(INSERT, Statement.RETURN_GENERATED_KEYS)) {
-                    pst.setInt(1, entity.getQuestionID());
-                    pst.setInt(2, entity.getGame().getGameID());
-                    pst.setString(3, entity.getQuestionText());
-
-
+                    pst.setInt(1, entity.getGame().getGameID());
+                    pst.setString(2, entity.getQuestionText());
                     pst.executeUpdate();
-                    //si fuera autoincremental yo tendría que leer getGeneratedKeys() -> setDNI
                     ResultSet res = pst.getGeneratedKeys();
-                    if(res.next()){
-                        entity.setQuestionID(res.getInt(1));
+                    if (res.next()) {
+                        int generatedID = res.getInt(1);
+                        entity.setQuestionID(generatedID);
                     }
+
 
                 } catch (SQLException e) {
                     e.printStackTrace();

@@ -1,22 +1,19 @@
 
 Â
-java:S1186}"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(æÔ«÷şÿÿÿÿJ$219a1fe6-3a43-4f10-92b8-b88cd32d40a2
+java:S1186{"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(æÔ«÷şÿÿÿÿJ$56926803-bab2-4fac-b9c7-58ce95f37220
 †
-java:S1124"EReorder the modifiers to comply with the Java Language Specification.(˜æÊ®şÿÿÿÿJ$7272aa24-a6c5-4952-8d1e-41aa3fddbbd4
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(˜æÊ®şÿÿÿÿJ$2eac9706-4b28-432b-a336-758c7311a89c
 
-java:S1124"EReorder the modifiers to comply with the Java Language Specification.(ŸĞ¿°J$742c5526-f7c2-4901-af59-6ef249e0e061
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(ŸĞ¿°J$ef78d94b-a584-459d-a985-813c8d101850
 
-java:S1124"EReorder the modifiers to comply with the Java Language Specification.(›üÕJ$eabce732-3ea4-40a4-9b9b-b66290417ae9
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(›üÕJ$7a2ff5d4-605a-49ba-979e-1a718f8b3ec5
 †
-java:S1124"EReorder the modifiers to comply with the Java Language Specification.(¬Ş¨‰ıÿÿÿÿJ$e56cf7d1-a120-423e-b9fb-f86da7f8f0de
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(¬Ş¨‰ıÿÿÿÿJ$10fc961c-2ba1-4c94-b592-0c5e771f5f80
 †
-java:S1124"EReorder the modifiers to comply with the Java Language Specification.(£€¢úÿÿÿÿJ$61fc74c4-2f88-4a05-bdc6-96d2a19ed013
-G	java:S106"+Replace this use of System.out by a logger.(ëò·¸8—Î‚°÷1
-L	java:S106"+Replace this use of System.out by a logger.(ƒÌ«ùÿÿÿÿ8¡Î‚°÷1
-G	java:S106 "+Replace this use of System.out by a logger.(ççáî8§Î‚°÷1
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(£€¢úÿÿÿÿJ$531ebbf8-589e-4c5c-97b1-f4ba08b1675f
 `
-java:S6905"Don't use the query "SELECT *".(¬Ş¨‰ıÿÿÿÿJ$3295f2e4-1a5f-424e-8328-0b093bed30f8
-ƒ	java:S125Z"<This block of commented-out lines of code should be removed.(„âõØûÿÿÿÿ8¤ëõ1J$e25d7e0b-0cc2-4a15-b765-6786f0b75d45
+java:S6905"Don't use the query "SELECT *".(¬Ş¨‰ıÿÿÿÿJ$c5788a8a-a17d-41e4-b406-06be51918a93
+ƒ	java:S125X"<This block of commented-out lines of code should be removed.(„âõØûÿÿÿÿ8¤ëõ1J$36fdaa82-8c12-4e6b-99b9-b797c5bf963c
 [
-java:S6905"Don't use the query "SELECT *".(›üÕJ$a2b3bcde-5991-48cb-b885-1a43072f9673
-w	java:S125r"<This block of commented-out lines of code should be removed.(âµïÁJ$98b0c993-3eb6-48ab-95c6-245203638d3f
+java:S6905"Don't use the query "SELECT *".(›üÕJ$f4d63e28-076d-49b2-8d86-8c9b82ee3142
+w	java:S125p"<This block of commented-out lines of code should be removed.(âµïÁJ$574d65a0-5957-4c09-a8c4-de095f2afae5

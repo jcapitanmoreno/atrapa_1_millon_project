@@ -1,13 +1,12 @@
 
-“	java:S117,"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ψξ²ύ8Κ³κυ1J$744694d6-93e8-43a4-a543-a463b808fbe4
+“	java:S117,"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ψξ²ύ8Κ³κυ1J$b357a537-30cf-4348-8e1b-ecd6dbc91c44
 Ι
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(―®Òκϊÿÿÿÿ8ζι¨κυ1J$38a665fc-bf6a-4f9d-95ed-04e0f0fea4d1
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(―®Òκϊÿÿÿÿ8ζι¨κυ1J$cbe22774-eb5b-4eed-bd31-6e5f3a08b571
 Ι
-java:S1186#"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(•‘έόÿÿÿÿ8ηι¨κυ1J$eb9b8859-ea98-4cdd-85a5-b9af088f57b3
+java:S1186#"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(•‘έόÿÿÿÿ8ηι¨κυ1J$d19cbe46-cc04-45c6-81ec-eee7007b027f
 ΅
-java:S1450"_Remove the "centerController" field and declare it as a local variable in the relevant methods.(™•ΐ%8νι¨κυ1J$5d87e1dd-f8ee-4bf0-afd7-c021b924e7c5
+java:S1450"_Remove the "centerController" field and declare it as a local variable in the relevant methods.(™•ΐ%8νι¨κυ1J$98c130dd-41f3-4ba1-95db-b0757eb6b1b6
 n
-java:S1172&"+Remove this unused method parameter "data".(»°ΐ8ΜΛ³κυ1J$4f5b62b9-996e-4f04-be74-b0e49b3423dc
-r	java:S1066"+Replace this use of System.out by a logger.(ήΖ­Ϋώÿÿÿÿ8Χξ¨κυ1J$16bf4ad3-de21-4a3f-b83e-19aa7758cd6b
+java:S1172&"+Remove this unused method parameter "data".(»°ΐ8ΜΛ³κυ1J$826af515-b18c-474d-8439-27a75a5a3177
 ~
-java:S1128	";Remove this unused import 'javafx.scene.layout.AnchorPane'.(Ψ µ8ϋ’Ζκυ1J$30614eb8-b044-4f24-9885-1a5d1d4f87cb
+java:S1128	";Remove this unused import 'javafx.scene.layout.AnchorPane'.(Ψ µ8ϋ’Ζκυ1J$9e4d1b72-c286-460e-985d-6d56066d2faf

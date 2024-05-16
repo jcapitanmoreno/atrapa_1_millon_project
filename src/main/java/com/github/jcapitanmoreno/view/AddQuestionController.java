@@ -2,21 +2,16 @@ package com.github.jcapitanmoreno.view;
 
 import com.github.jcapitanmoreno.App;
 import com.github.jcapitanmoreno.model.dao.AnswerDAO;
+import com.github.jcapitanmoreno.model.dao.GameDAO;
 import com.github.jcapitanmoreno.model.dao.QuestionsDAO;
-import com.github.jcapitanmoreno.model.entity.Answer;
-import com.github.jcapitanmoreno.model.entity.Question;
-import com.github.jcapitanmoreno.model.entity.Session;
+import com.github.jcapitanmoreno.model.entity.*;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
-import javafx.scene.control.Tooltip;
-import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import org.w3c.dom.Node;
-import org.w3c.dom.events.EventTarget;
-import org.w3c.dom.events.MouseEvent;
+import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.net.URL;
@@ -28,6 +23,7 @@ public class AddQuestionController extends Controller implements Initializable {
     Question question = new Question();
     Answer answer = new Answer();
     Session session = new Session();
+
 
 
     @FXML
@@ -59,23 +55,61 @@ public class AddQuestionController extends Controller implements Initializable {
     }
 
     public void addQuestion() {
-        System.out.println("pepepepepepepep");
-
-        question.setQuestionText(questionField.getText());
-        if (question.getQuestionText() != null) {
+        GameDAO gameDAO = new GameDAO();
+        Game game = gameDAO.findById(1);
+        System.out.println(game.getGameID());
+        String questionText = questionField.getText();
+        if (questionText != null && !questionText.trim().isEmpty()) {
+            Player currentPlayer = session.getPlayerLoged();
+            if (currentPlayer == null){
+                Alert alert = new Alert(Alert.AlertType.ERROR);
+                alert.setTitle("Error");
+                alert.setHeaderText("Jugador no encontrado");
+                alert.setContentText("No se puede encontrar el jugador en la sesión.");
+                alert.show();
+                return;
+            }
+            question.setQuestionText(questionText);
+            question.setPlayerInsertQuestion(session.getPlayerLoged());
+            question.setGame(game);
+            System.out.println(question.getQuestionID());
             questionsDAO.save(question);
-            session.getPlayerLoged();
+            int questionID = question.getQuestionID();
+
+            saveAnswer(answer1.getText(), true, questionID, currentPlayer);
+            saveAnswer(answer2.getText(), false, questionID, currentPlayer);
+            saveAnswer(answer4.getText(), false, questionID, currentPlayer);
+
+
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setTitle("Pregunta Añadida");
+            alert.setHeaderText("Éxito");
+            alert.setContentText("La pregunta y sus respuestas han sido añadidas correctamente. Disfruta jugando :)");
+            alert.show();
         } else {
             Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setTitle("027 ERROR");
-            alert.setHeaderText("PREGUNTA EL BLANCO");
-            alert.setContentText("la pregunta no puede estar en blanco");
+            alert.setTitle("Error");
+            alert.setHeaderText("Pregunta en blanco");
+            alert.setContentText("La pregunta no puede estar en blanco. :(");
             alert.show();
         }
-
+        closeWindow();
         //paso1= recoger la pregunta y añadirla a la base de datos a traves de su DAO
         //paso2= recoger el resultado y obtener el ID asignado a la pregunta en la base de datos
         //paso3= recoger las respuestas y pasarle el ID de la pregunta para añadirlo a la base de datos y vincularlo a la pregunta
+
+
+    }
+    private void saveAnswer(String answerText, boolean isCorrect,int questionID, Player player) {
+        if (answerText != null && !answerText.trim().isEmpty()) {
+            Answer answer = new Answer();
+            answer.setQuestion(new Question());
+            answer.getQuestion().setQuestionID(questionID);
+            answer.setAnswerText(answerText);
+            answer.setValidateAnswer(isCorrect);
+            answer.setPlayer(player);
+            answerDAO.save(answer);
+        }
     }
 
     public void infoAlert(){
@@ -85,6 +119,10 @@ public class AddQuestionController extends Controller implements Initializable {
         alert.setContentText("la respuesta Nº1 siempre sera la correcta, asegurate de que lo introducido sea la respuesta correcta. " +
                 "Cuando juegues las respuestas de ordenaran de manera aleatoria.");
         alert.show();
+    }
+    public void closeWindow(){
+        Stage stage = (Stage) add.getScene().getWindow();
+        stage.close();
     }
 
 }

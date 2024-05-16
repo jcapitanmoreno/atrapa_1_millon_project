@@ -1,20 +1,23 @@
 
+Ž
+java:S1192;"KDefine a constant instead of duplicating this literal "answerText" 3 times.(Ð·½ƒ8ú÷Ë„ø1J$687f24d9-3294-4903-ae49-07f6dc2618b1
 É
-java:S1186O"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(æÔ«÷þÿÿÿÿ8á²Ù¸õ1J$02aad7d2-aca4-4840-8e03-cc8492b1e271
-
-java:S1124"EReorder the modifiers to comply with the Java Language Specification.(ÁÔ—ªøÿÿÿÿ8î²Ù¸õ1J$f596adbc-da22-4254-8ad9-d66343a3a0a8
+java:S1186t"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(æÔ«÷þÿÿÿÿ8±øË„ø1J$54d40ef4-b535-4970-995d-81fffd003c30
+‡
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(¯À½;8¹øË„ø1J$c0c93ff1-69c9-4993-908e-48a417fc4664
 ˆ
-java:S1124"EReorder the modifiers to comply with the Java Language Specification.(¨÷žð8ï²Ù¸õ1J$4c6e8492-c7cf-4ddd-ab55-a307f5e8ca28
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(¨÷žð8¹øË„ø1J$eb672936-438f-47d4-bd64-bf5f4fb67d8d
 ˆ
-java:S1124"EReorder the modifiers to comply with the Java Language Specification.(¥‘ó¬8ð²Ù¸õ1J$01eb582d-0971-4304-b897-34e02d2583a7
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(¥‘ó¬8ºøË„ø1J$be4d0332-3ba9-4d83-9d9f-4f93a50b8d09
+ˆ
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(¡¶Ô†8»øË„ø1J$e4b674d6-8051-4144-9a79-37ce5dbe34a8
 b
-java:S6905"Don't use the query "SELECT *".(¨÷žð8¢³Ù¸õ1J$80ee8bad-bcc0-408e-856c-1c76332f48e5
-ƒ	java:S125>"<This block of commented-out lines of code should be removed.(„âõØûÿÿÿÿ8¨³Ù¸õ1J$741c3069-770c-47e0-b7d2-a8c3059c85db
+java:S6905"Don't use the query "SELECT *".(¨÷žð8ÈøË„ø1J$4be36213-37e0-421a-9c20-4ee009ddedcc
+b
+java:S6905"Don't use the query "SELECT *".(¥‘ó¬8ÎøË„ø1J$d3a9b9d0-3706-40b5-8b66-1c98cfff5660
 n
-java:S1168K"+Return an empty collection instead of null.(¥¹ï8ºØ„äõ1J$f4cc8975-dd3a-4f82-b665-5a4bde7d1d9f
+java:S1168p"+Return an empty collection instead of null.(¥¹ï8ÙøË„ø1J$eecdd644-5c7f-4f62-bf1a-e2b306186426
 ’
-java:S1128"JRemove this unused import 'com.github.jcapitanmoreno.model.entity.Player'.(‡¨âÎÿÿÿÿÿ8ÆØ„äõ1J$e725c18a-c392-4257-bb9b-8dd19498e1e3
+java:S1128"JRemove this unused import 'com.github.jcapitanmoreno.model.entity.Player'.(‡¨âÎÿÿÿÿÿ8 ¡Ì„ø1J$b337c604-c517-4d13-abc6-dc1dcfed32c6
 ”
-java:S1128"LRemove this unused import 'com.github.jcapitanmoreno.model.entity.Question'.(éîåÜýÿÿÿÿ8ÇØ„äõ1J$3ae6f8ad-2e16-4f01-a0d0-a18c9cd6f1ca
-{
-java:S1068"8Remove this unused "FINDANSWERBYPLAYERID" private field.(¥‘ó¬8­³Ù¸õ1J$26f675ea-f25f-46a4-8374-d970fccdd72a
+java:S1128"LRemove this unused import 'com.github.jcapitanmoreno.model.entity.Question'.(éîåÜýÿÿÿÿ8 ¡Ì„ø1J$3cb06c1b-5498-4f18-8460-fba29695f886

@@ -14,9 +14,10 @@ import java.util.List;
 
 public  class AnswerDAO implements DAO<Answer, String>{
 
-    private final static String INSERT = "INSERT INTO answer (questionID, playerID, time, answerText, validate) VALUES (?,?,?,?,?)";
+    private final static String INSERT = "INSERT INTO answer (answerText, validate, questionsID, playerID) VALUES (?,?,?,?)";
     private final static String FINDANSWERBYQUESTIONID = "SELECT * FROM `answer` WHERE questionsID=?";
     private final static String FINDANSWERBYPLAYERID = "SELECT * FROM `answer` WHERE playerID=?";
+    private final static String FINDANSWERBYQUESTION = "SELECT a.* FROM answer a, questions q WHERE a.questionsID=q.questionsID AND questionsID=?";
     @Override
     public Answer save(Answer entity) {
         Answer result = entity;
@@ -25,11 +26,10 @@ public  class AnswerDAO implements DAO<Answer, String>{
         } else {
                 //INSERT
                 try (PreparedStatement pst = ConnectionMariaDB.getConnection().prepareStatement(INSERT, Statement.RETURN_GENERATED_KEYS)) {
-                    pst.setInt(1, entity.getQuestion().getQuestionID());
-                    pst.setInt(2, entity.getPlayer().getPlayerID());
-                    pst.setTime(3, java.sql.Time.valueOf(entity.getTime()));
-                    pst.setString(4, entity.getAnswerText());
-                    pst.setBoolean(5, entity.isValidateAnswer());
+                    pst.setString(1, entity.getAnswerText());
+                    pst.setBoolean(2, entity.isValidateAnswer());
+                    pst.setInt(3, entity.getQuestionsID().getQuestionID());
+                    pst.setInt(4, entity.getPlayerID().getPlayerID());
                     pst.executeUpdate();
 
                 } catch (SQLException e) {
@@ -58,9 +58,7 @@ public  class AnswerDAO implements DAO<Answer, String>{
                 if (res.next()) {
                     result.setAnswerText(res.getString("answerText"));
                     result.setValidateAnswer(res.getBoolean("validate"));
-                    //Lazy
-                    //BookDAO bDAO = new BookDAO();
-                    //result.setBooks(bDAO.findByAuthor(result));
+
                 }
                 res.close();
             } catch (SQLException e) {
@@ -80,9 +78,7 @@ public  class AnswerDAO implements DAO<Answer, String>{
                 if (res.next()) {
                     result.setAnswerText(res.getString("answerText"));
                     result.setValidateAnswer(res.getBoolean("validate"));
-                    //Lazy
-                    //BookDAO bDAO = new BookDAO();
-                    //result.setBooks(bDAO.findByAuthor(result));
+
                 }
                 res.close();
             } catch (SQLException e) {
@@ -91,6 +87,25 @@ public  class AnswerDAO implements DAO<Answer, String>{
         }
         return result;
     }
+    public Answer findAnswerByQuestion(String key) {
+        Answer result = new Answer();
+        if ( key== null) {
+            result = null;
+        } else {
+            try (PreparedStatement pst = ConnectionMariaDB.getConnection().prepareStatement(FINDANSWERBYQUESTION)) {
+                pst.setString(1, key);
+                ResultSet res = pst.executeQuery();
+                if (res.next()) {
+                    result.setAnswerText(res.getString("answerText"));
+                }
+                res.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+        return result;
+    }
+
 
     @Override
     public List findAll() {

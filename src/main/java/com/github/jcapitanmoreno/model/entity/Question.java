@@ -12,16 +12,14 @@ public class Question {
 
     private Player playerInsertQuestion;
 
-    public Question(){
-        this.questionID = -1;
-    }
-
-    public Question(int questionID, Game game, String questionText, List<Answer> possibleAnswers, Player playerInsertQuestion) {
-        this.questionID = questionID;
+    public Question( Game game, String questionText, List<Answer> possibleAnswers, Player playerInsertQuestion) {
         this.game = game;
         this.questionText = questionText;
         this.possibleAnswers = possibleAnswers;
         this.playerInsertQuestion = playerInsertQuestion;
+    }
+    public Question(){
+
     }
 
     public Player getPlayerInsertQuestion() {

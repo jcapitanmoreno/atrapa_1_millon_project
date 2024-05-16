@@ -1,2 +1,8 @@
 
-g	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(áÙ†›øÿÿÿÿ
+	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(áÙ†›øÿÿÿÿJ$86a3b342-3e78-400c-91f9-8c36760c2a95
+l
+java:S2095"JUse try-with-resources or close this "QuestionsDAO" in a "finally" clause.(¡êÆùÿÿÿÿ8¹Üï‡ø1
+y
+java:S1128"\Remove this unused import 'com.github.jcapitanmoreno.model.connection.ConnectionProperties'.(Ÿ²ÉÈ8ÈÜï‡ø1
+d
+java:S1128	"GRemove this unused import 'com.github.jcapitanmoreno.utils.XMLManager'.(øèÓö8ÈÜï‡ø1

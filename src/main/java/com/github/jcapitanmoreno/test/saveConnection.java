@@ -18,7 +18,7 @@ public class saveConnection {
         List<Answer> answers = new ArrayList<>();
         Player player = new Player();
 
-        Question question = new Question(7, game, "cuando se descubrio america", answers, player);
+        Question question = new Question(game, "cuando se descubrio america", answers, player);
 
         questionsDAO.save(question);
     }
