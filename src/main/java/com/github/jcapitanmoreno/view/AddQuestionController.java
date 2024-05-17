@@ -57,7 +57,6 @@ public class AddQuestionController extends Controller implements Initializable {
     public void addQuestion() {
         GameDAO gameDAO = new GameDAO();
         Game game = gameDAO.findById(1);
-        System.out.println(game.getGameID());
         String questionText = questionField.getText();
         if (questionText != null && !questionText.trim().isEmpty()) {
             Player currentPlayer = session.getPlayerLoged();
@@ -67,15 +66,14 @@ public class AddQuestionController extends Controller implements Initializable {
                 alert.setHeaderText("Jugador no encontrado");
                 alert.setContentText("No se puede encontrar el jugador en la sesión.");
                 alert.show();
-                return;
             }
+
             question.setQuestionText(questionText);
             question.setPlayerInsertQuestion(session.getPlayerLoged());
             question.setGame(game);
-            System.out.println(question.getQuestionID());
             questionsDAO.save(question);
-            int questionID = question.getQuestionID();
 
+            int questionID = question.getQuestionID();
             saveAnswer(answer1.getText(), true, questionID, currentPlayer);
             saveAnswer(answer2.getText(), false, questionID, currentPlayer);
             saveAnswer(answer4.getText(), false, questionID, currentPlayer);
@@ -88,7 +86,7 @@ public class AddQuestionController extends Controller implements Initializable {
             alert.show();
         } else {
             Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setTitle("Error");
+            alert.setTitle("ERROR 888");
             alert.setHeaderText("Pregunta en blanco");
             alert.setContentText("La pregunta no puede estar en blanco. :(");
             alert.show();
