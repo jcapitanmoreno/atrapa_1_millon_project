@@ -53,3 +53,9 @@ o
 ?src/main/java/com/github/jcapitanmoreno/model/dao/AdminDAO.java,d\c\dc7e9129b1c58885b34e862d1574790300db50d3
 n
 >src/main/java/com/github/jcapitanmoreno/model/dao/GameDAO.java,1\7\1752e7998e16ffbbe760cec119c1a71e791048ad
+{
+Ksrc/main/java/com/github/jcapitanmoreno/view/GameInformationController.java,9\1\91a2c1d34d67f729e4f07419f9d33552f6302e48
+
+Osrc/main/java/com/github/jcapitanmoreno/model/connection/ConnectionMariaDB.java,6\9\69dace8ab0a5ae371c645d72613cb5f861ae36a0
+‚
+Rsrc/main/java/com/github/jcapitanmoreno/model/connection/ConnectionProperties.java,3\f\3f1d1ff77177f131dd3fff7f40d2ef484c8d5c65

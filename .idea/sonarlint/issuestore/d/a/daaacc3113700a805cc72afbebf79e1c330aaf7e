@@ -1,9 +1,13 @@
 
+
+java:S2095+"JUse try-with-resources or close this "QuestionsDAO" in a "finally" clause.(Λ€τ8΄γ«ψ1J$a364e5af-4af8-46c8-b207-999b3edfbde6
 Δ
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(χ’²Ι8Ρ¬·°χ1J$b82191bb-3ca0-4e3d-b37a-08d1d0f989df
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(χ’²Ι8Έγ«ψ1J$02cd7230-903f-4e26-bbd0-d42618450948
 Ι
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(―®Òκϊÿÿÿÿ8Σ¬·°χ1J$5420c192-03dc-49d7-a241-9cfc4f33f57c
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(―®Òκϊÿÿÿÿ8Ήγ«ψ1J$938f036f-da90-4e84-a15d-3780928ac753
 Ι
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(•‘έόÿÿÿÿ8Σ¬·°χ1J$afdefb8f-3609-497b-a722-b95c77000488
+java:S1186 "€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(•‘έόÿÿÿÿ8Ήγ«ψ1J$7ccad5a9-4f07-421c-b4b7-496d5bd5adaa
 Δ
-java:S1186$"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(£Ϊω8Τ¬·°χ1J$a0b30e6f-203a-41da-8c6c-895517e322bd
+java:S1186'"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(£Ϊω8Ίγ«ψ1J$d9afc633-6041-4fdf-8b9d-7cb16ea90c26
+”
+java:S1128"LRemove this unused import 'com.github.jcapitanmoreno.model.entity.Question'.(ιξεάύÿÿÿÿ8Χγ«ψ1J$aff1ce2b-f069-412c-aaa8-4cb0a01fafa3

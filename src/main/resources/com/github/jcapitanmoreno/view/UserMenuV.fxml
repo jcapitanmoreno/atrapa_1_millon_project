@@ -23,7 +23,7 @@
       <Separator layoutX="22.0" layoutY="105.0" prefHeight="11.0" prefWidth="557.0" />
       <HBox layoutX="33.0" layoutY="123.0" prefHeight="254.0" prefWidth="537.0" style="-fx-background-color: #F9FF98;">
          <children>
-            <Button fx:id="play" mnemonicParsing="false" prefHeight="59.0" prefWidth="209.0" style="-fx-background-color: #78a3b2;" text="JUGAR" translateX="165.0" translateY="35.0">
+            <Button fx:id="play" mnemonicParsing="false" onAction="#changeEsceneToGameInformation" prefHeight="59.0" prefWidth="209.0" style="-fx-background-color: #78a3b2;" text="JUGAR" translateX="165.0" translateY="35.0">
                <font>
                   <Font size="18.0" />
                </font>

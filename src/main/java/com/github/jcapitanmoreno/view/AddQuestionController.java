@@ -42,6 +42,7 @@ public class AddQuestionController extends Controller implements Initializable {
     @Override
     public void onOpen(Object input) throws IOException {
 
+
     }
 
     @Override
@@ -88,15 +89,10 @@ public class AddQuestionController extends Controller implements Initializable {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("ERROR 888");
             alert.setHeaderText("Pregunta en blanco");
-            alert.setContentText("La pregunta no puede estar en blanco. :(");
+            alert.setContentText("La pregunta no puede estar en blanco.");
             alert.show();
         }
         closeWindow();
-        //paso1= recoger la pregunta y añadirla a la base de datos a traves de su DAO
-        //paso2= recoger el resultado y obtener el ID asignado a la pregunta en la base de datos
-        //paso3= recoger las respuestas y pasarle el ID de la pregunta para añadirlo a la base de datos y vincularlo a la pregunta
-
-
     }
     private void saveAnswer(String answerText, boolean isCorrect,int questionID, Player player) {
         if (answerText != null && !answerText.trim().isEmpty()) {
@@ -122,5 +118,4 @@ public class AddQuestionController extends Controller implements Initializable {
         Stage stage = (Stage) add.getScene().getWindow();
         stage.close();
     }
-
 }

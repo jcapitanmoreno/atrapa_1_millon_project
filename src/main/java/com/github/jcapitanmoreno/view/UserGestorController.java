@@ -28,9 +28,9 @@ public class UserGestorController extends Controller implements Initializable {
     private TableView<Question> tableView;
 
     @FXML
-    private TableColumn<Question,Integer> columnID;
+    private TableColumn<Question, Integer> columnID;
     @FXML
-    private TableColumn<Question,String> columnQuestion;
+    private TableColumn<Question, String> columnQuestion;
     private ObservableList<Question> questions;
     @FXML
     private Button add;
@@ -40,6 +40,7 @@ public class UserGestorController extends Controller implements Initializable {
 
     @Override
     public void onOpen(Object input) throws IOException {
+        augmentedDisplay();
         List<Question> questionList = QuestionsDAO.build().findAll();
         this.questions = FXCollections.observableArrayList(questionList);
         tableView.setItems(this.questions);
@@ -55,18 +56,18 @@ public class UserGestorController extends Controller implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
         tableView.setEditable(true);
-        columnID.setCellValueFactory(question-> new SimpleIntegerProperty(question.getValue().getQuestionID()).asObject());
-        columnQuestion.setCellValueFactory(question-> new SimpleStringProperty(question.getValue().getQuestionText()));
+        columnID.setCellValueFactory(question -> new SimpleIntegerProperty(question.getValue().getQuestionID()).asObject());
+        columnQuestion.setCellValueFactory(question -> new SimpleStringProperty(question.getValue().getQuestionText()));
         columnQuestion.setCellFactory(TextFieldTableCell.forTableColumn());
         columnQuestion.setOnEditCommit(event -> {
-            if(event.getNewValue()== event.getOldValue()){
+            if (event.getNewValue() == event.getOldValue()) {
                 return;
             }
-            if(event.getNewValue().length()<=230){
+            if (event.getNewValue().length() <= 230) {
                 Question question = event.getRowValue();
                 question.setQuestionText(event.getNewValue());
                 QuestionsDAO.build().save(question);
-            }else{
+            } else {
                 Alert alert = new Alert(Alert.AlertType.ERROR);
                 alert.setTitle("101 ERROR");
                 alert.setHeaderText("ERROR AL AÑADIR UNA PREGUNTA");
@@ -75,13 +76,20 @@ public class UserGestorController extends Controller implements Initializable {
             }
         });
     }
+
     @FXML
     private void addQuestion() throws IOException {
-        App.currentController.openModal(Scenes.ADDQUESTION,"Añada aqui su pregunta y respuestas.",this,null);
+        App.currentController.openModal(Scenes.ADDQUESTION, "Añada aqui su pregunta y respuestas.", this, null);
     }
 
     public void backToUserMenu() throws IOException {
         App.currentController.changeScene(Scenes.USERMENU, null);
+    }
+
+    public void augmentedDisplay() {
+        Stage stage = (Stage) tableView.getScene().getWindow();
+        stage.setWidth(800);
+        stage.setHeight(600);
     }
 
 
