@@ -8,6 +8,7 @@ public enum Scenes {
     ROOT("view/layout.fxml"),
     ADMGESTOR("view/AdmGestorV.fxml"),
     ADDQUESTION("view/AddQuestionV.fxml"),
+    GAMEINFORMATION("view/GameInformationV.fxml"),
     USERGESTOR("view/UserGestorV.fxml");
 
 

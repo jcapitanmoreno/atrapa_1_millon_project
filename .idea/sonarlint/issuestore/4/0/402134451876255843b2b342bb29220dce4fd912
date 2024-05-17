@@ -1,19 +1,21 @@
 
-É
-java:S1186x"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(æÔ«÷şÿÿÿÿ8ÏÃçæõ1J$5cae7ef3-99ec-4122-8b9e-8da240f51de5
+Ê
+java:S1186ƒ"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(æÔ«÷şÿÿÿÿ8ÏÃçæõ1J$db8773f5-476c-465f-819e-61b697fc9eff
+ˆ
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(åñ¯‰8İÃçæõ1J$03100be3-cbec-47bd-a30e-dfc0c85725f4
+‡
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(½Æıs8ŞÃçæõ1J$993c96ec-0cd9-491c-815c-146193f609e3
+‡
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(äúĞU8ßÃçæõ1J$dd639adb-086b-4124-b96e-ee83ca1183b1
 
-java:S1124"EReorder the modifiers to comply with the Java Language Specification.(¼Ûç€şÿÿÿÿ8ÜÃçæõ1J$d44cbe91-9f51-4240-8ba0-151591bac7a0
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(¡–íòşÿÿÿÿ8ßÃçæõ1J$c53a664e-cecd-4eb2-a698-f79b7e8bd9a0
 ‡
-java:S1124"EReorder the modifiers to comply with the Java Language Specification.(½Æıs8İÃçæõ1J$f5ecdc2f-d8fe-400b-84a2-db2f97ee5e42
-‡
-java:S1124"EReorder the modifiers to comply with the Java Language Specification.(äúĞU8ŞÃçæõ1J$0ad34ba5-8d77-4f96-b56a-078c6d9d2099
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(Ïãûv8ÙÚ´ªø1J$892f2a2d-f754-46a0-b80c-63167d4312c5
 
-java:S1124"EReorder the modifiers to comply with the Java Language Specification.(¡–íòşÿÿÿÿ8ßÃçæõ1J$0318d447-b821-425b-8249-45cd218b0f29
-‡
-java:S1124"EReorder the modifiers to comply with the Java Language Specification.(Ïãûv8ßÃçæõ1J$a3f6bd52-b7d5-41d7-92dc-e034d79b7745
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(İÜêÿıÿÿÿÿ8Ã½©«ø1J$afa807f0-f208-44e9-bcb1-a01dfd15b111
 g
-java:S6905"Don't use the query "SELECT *".(¡–íòşÿÿÿÿ8şÃçæõ1J$9f3d468a-9380-4b4c-a0e3-93102f295fe4
-ƒ	java:S125V"<This block of commented-out lines of code should be removed.(„âõØûÿÿÿÿ8ƒÄçæõ1J$45b412ce-5aca-4991-b6d9-810bab2eb887
+java:S6905"Don't use the query "SELECT *".(¡–íòşÿÿÿÿ8şÃçæõ1J$0e6c21fe-e6bc-4e0d-b4bd-7cc50a722e0c
 a
-java:S6905"Don't use the query "SELECT *".(äúĞU8ˆÄçæõ1J$4283707e-1230-4b7d-b97f-2ca43c40e453
-~	java:S125m"<This block of commented-out lines of code should be removed.(âµïÁ8‹Äçæõ1J$a326b960-39e9-4b62-84e7-5a0d52ee39b4
+java:S6905"Don't use the query "SELECT *".(äúĞU8ˆÄçæõ1J$0a94bb6a-da23-4ed0-9b97-0ea0e772bc8a
+‹
+java:S1128"HRemove this unused import 'com.github.jcapitanmoreno.model.entity.Game'.(¸ÌÏş8„â´ªø1J$8b55a6c6-50fa-46b0-a816-726c808da37f

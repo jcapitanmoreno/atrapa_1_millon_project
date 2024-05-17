@@ -1,10 +1,12 @@
 
 —
-java:S3008"TRename this field "_instance" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÊÚŒ•8¸®ö‡ø1J$d1b41084-3bb5-4814-b917-b3702ec9d35c
+java:S3008"TRename this field "_instance" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÊÚŒ•8¸®ö‡ø1J$9209c205-d0ba-4e43-8b4d-6dbce134d0e9
 Ü
-java:S6548"˜A Singleton implementation was detected. Make sure the use of the Singleton pattern is required and the implementation is the right one for the context.(äì£Ä8½®ö‡ø1J$bb3d198e-b50b-49c2-af0b-004c5fe6f3ba
-•	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(õ÷ØÖùÿÿÿÿ8À®ö‡ø1J$303c83b2-d6c3-4935-8598-4ab4bed8c6fc
+java:S6548"˜A Singleton implementation was detected. Make sure the use of the Singleton pattern is required and the implementation is the right one for the context.(äì£Ä8½®ö‡ø1J$1f2e52ff-42eb-4796-a5c1-dfd5178f2c28
+•	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(õ÷ØÖùÿÿÿÿ8À®ö‡ø1J$7cd70c35-fb74-44e9-bf24-650c3f2103da
 ~
-java:S2696"6Make the enclosing method "static" or remove this set.(’ä•Éþÿÿÿÿ8Ä®ö‡ø1J$4252bccb-b382-4a3a-9930-1a52c5e2c8b1
+java:S2696"6Make the enclosing method "static" or remove this set.(’ä•Éþÿÿÿÿ8Ä®ö‡ø1J$ab61d08a-befe-447a-9c19-31abaf4ae95b
 ~
-java:S2696"6Make the enclosing method "static" or remove this set.(ýõ³ƒýÿÿÿÿ8Å®ö‡ø1J$d7ec8b38-5af2-42c7-8dc0-ef34ebb20bd0
+java:S2696"6Make the enclosing method "static" or remove this set.(ýõ³ƒýÿÿÿÿ8Å®ö‡ø1J$4326452a-acf3-4460-99f5-ecd4c73fb8f5
+w
+java:S1068"/Remove this unused "currentGame" private field.(ðóŽôÿÿÿÿÿ8Ïº ­ø1J$52868a84-29e8-41d3-b65e-31a08ca98388

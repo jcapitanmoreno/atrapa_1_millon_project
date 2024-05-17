@@ -19,6 +19,7 @@ public class QuestionsDAO implements DAO<Question, Integer> {
     private final static String FINDALL = "SELECT * FROM questions";
     private final static String FINDBYID = "SELECT * FROM questions WHERE questionID=?";
     private final static String DELETE = "DELETE FROM questions WHERE questionID=?";
+    private final static String COUNT_QUESTIONS = "SELECT COUNT(*) AS total FROM questions";
 
 
     @Override
@@ -83,9 +84,6 @@ public class QuestionsDAO implements DAO<Question, Integer> {
                 if (res.next()) {
                     result.setQuestionID(res.getInt("questionID"));
                     result.setQuestionText(res.getString("questionText"));
-                    //Lazy
-                    //BookDAO bDAO = new BookDAO();
-                    //result.setBooks(bDAO.findByAuthor(result));
                 }
                 res.close();
             } catch (SQLException e) {
@@ -106,8 +104,7 @@ public class QuestionsDAO implements DAO<Question, Integer> {
                 Question q = new Question();
                 q.setQuestionID(res.getInt("questionID"));
                 q.setQuestionText(res.getString("questionText"));
-                //Lazy
-                // a.setBooks(BookDAO.build().findByAuthor(a));
+
                 result.add(q);
             }
             res.close();
@@ -115,6 +112,19 @@ public class QuestionsDAO implements DAO<Question, Integer> {
             e.printStackTrace();
         }
         return result;
+    }
+    public int countQuestions() {
+        int count = 0;
+        try (PreparedStatement pst = ConnectionMariaDB.getConnection().prepareStatement(COUNT_QUESTIONS)) {
+            ResultSet res = pst.executeQuery();
+            if (res.next()) {
+                count = res.getInt("total");
+            }
+            res.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return count;
     }
 
     @Override

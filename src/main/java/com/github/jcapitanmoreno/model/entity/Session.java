@@ -24,7 +24,4 @@ public class Session {
         playerLoged = null;
     }
 
-    public Game getCurrentGame() {
-        return currentGame;
-    }
 }

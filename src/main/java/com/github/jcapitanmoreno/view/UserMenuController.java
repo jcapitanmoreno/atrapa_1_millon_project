@@ -1,8 +1,11 @@
 package com.github.jcapitanmoreno.view;
 
 import com.github.jcapitanmoreno.App;
+import com.github.jcapitanmoreno.model.dao.QuestionsDAO;
+import com.github.jcapitanmoreno.model.entity.Question;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 
 import java.io.IOException;
@@ -36,4 +39,19 @@ public class UserMenuController extends Controller implements Initializable {
     public void changeEsceneToPlayUser(){
 
     }
+    public void changeEsceneToGameInformation() throws IOException {
+        QuestionsDAO questionDAO = new QuestionsDAO();
+        int questionCount = questionDAO.countQuestions();
+
+        if (questionCount >= 10) {
+            App.currentController.changeScene(Scenes.GAMEINFORMATION, null);
+        } else {
+            Alert alert = new Alert(Alert.AlertType.WARNING);
+            alert.setTitle("Advertencia");
+            alert.setHeaderText("No hay suficientes preguntas");
+            alert.setContentText("Debe haber al menos 10 preguntas añadidas para poder jugar.");
+            alert.showAndWait();
+        }
+    }
+
 }
