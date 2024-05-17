@@ -1,6 +1,7 @@
 package com.github.jcapitanmoreno.model.dao;
 
 import com.github.jcapitanmoreno.model.connection.ConnectionMariaDB;
+import com.github.jcapitanmoreno.model.entity.Game;
 import com.github.jcapitanmoreno.model.entity.Question;
 
 import java.io.IOException;
@@ -13,7 +14,7 @@ import java.util.List;
 
 public class QuestionsDAO implements DAO<Question, Integer> {
 
-    private final static String INSERT = "INSERT INTO questions (gameID, questionText,) VALUES (?,?)";
+    private final static String INSERT = "INSERT INTO questions (gameID, questionText) VALUES (?,?)";
     private final static String UPDATE = "UPDATE questions SET questionText=? WHERE questionID=?";
     private final static String FINDALL = "SELECT * FROM questions";
     private final static String FINDBYID = "SELECT * FROM questions WHERE questionID=?";
