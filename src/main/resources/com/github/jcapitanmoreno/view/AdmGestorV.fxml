@@ -23,12 +23,12 @@
       <Separator layoutX="34.0" layoutY="116.0" prefHeight="6.0" prefWidth="567.0" />
       <HBox layoutX="54.0" layoutY="133.0" prefHeight="247.0" prefWidth="527.0" style="-fx-background-color: #F9FF98;">
          <children>
-            <Button fx:id="play" mnemonicParsing="false" prefHeight="59.0" prefWidth="209.0" style="-fx-background-color: #78a3b2;" text="PRUEBA DE JUEGO" translateX="165.0" translateY="35.0">
+            <Button fx:id="play" mnemonicParsing="false" onAction="#changeToGameInformation" prefHeight="59.0" prefWidth="209.0" style="-fx-background-color: #78a3b2;" text="PRUEBA DE JUEGO" translateX="165.0" translateY="35.0">
                <font>
                   <Font size="18.0" />
                </font>
             </Button>
-            <Button fx:id="gestor" mnemonicParsing="false" prefHeight="59.0" prefWidth="209.0" style="-fx-background-color: #78a3b2;" text="MENU GESTIÓN" translateX="-43.0" translateY="160.0">
+            <Button fx:id="gestor" mnemonicParsing="false" onAction="#changeToQuestionGestor" prefHeight="59.0" prefWidth="209.0" style="-fx-background-color: #78a3b2;" text="MENU GESTIÓN" translateX="-43.0" translateY="160.0">
                <font>
                   <Font size="18.0" />
                </font>

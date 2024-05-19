@@ -1,6 +1,7 @@
 package com.github.jcapitanmoreno.model.dao;
 
 import com.github.jcapitanmoreno.model.connection.ConnectionMariaDB;
+import com.github.jcapitanmoreno.model.entity.Answer;
 import com.github.jcapitanmoreno.model.entity.Game;
 import com.github.jcapitanmoreno.model.entity.Question;
 
@@ -20,12 +21,13 @@ public class QuestionsDAO implements DAO<Question, Integer> {
     private final static String FINDBYID = "SELECT * FROM questions WHERE questionID=?";
     private final static String DELETE = "DELETE FROM questions WHERE questionID=?";
     private final static String COUNT_QUESTIONS = "SELECT COUNT(*) AS total FROM questions";
+    private final static String FINDANSWERSBYQUESTIONID = "SELECT * FROM answer WHERE questionsID=?";
 
 
     @Override
     public Question save(Question entity) {
         Question result = entity;
-        if (entity == null || entity.getQuestionID() == -1){
+        if (entity == null || entity.getQuestionID() == -1) {
             result = null;
         } else {
             Question q = findById(entity.getQuestionID());
@@ -45,15 +47,23 @@ public class QuestionsDAO implements DAO<Question, Integer> {
                 } catch (SQLException e) {
                     e.printStackTrace();
                 }
-            } else {
-                //UPDATE
-                try (PreparedStatement pst = ConnectionMariaDB.getConnection().prepareStatement(UPDATE)) {
-                    pst.setString(1, entity.getQuestionText());
-                    pst.setInt(2,entity.getQuestionID());
-                    pst.executeUpdate();
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                }
+            }
+        }
+        return result;
+    }
+
+    public Question update(Question entity) {
+        Question result = entity;
+        if (entity == null || entity.getQuestionID() == -1) {
+            result = null;
+        } else {
+            //UPDATE
+            try (PreparedStatement pst = ConnectionMariaDB.getConnection().prepareStatement(UPDATE)) {
+                pst.setString(1, entity.getQuestionText());
+                pst.setInt(2, entity.getQuestionID());
+                pst.executeUpdate();
+            } catch (SQLException e) {
+                e.printStackTrace();
             }
         }
         return result;
@@ -61,9 +71,9 @@ public class QuestionsDAO implements DAO<Question, Integer> {
 
     @Override
     public Question delete(Question entity) throws SQLException {
-        if (entity == null || entity.getQuestionID() == -1){
+        if (entity == null || entity.getQuestionID() == -1) {
             entity = null;
-        }else {
+        } else {
             try (PreparedStatement pst = ConnectionMariaDB.getConnection().prepareStatement(DELETE)) {
                 pst.setInt(1, entity.getQuestionID());
                 pst.executeUpdate();
@@ -75,7 +85,7 @@ public class QuestionsDAO implements DAO<Question, Integer> {
     @Override
     public Question findById(Integer key) {
         Question result = new Question();
-        if (key == -1){
+        if (key == -1) {
             result = null;
         } else {
             try (PreparedStatement pst = ConnectionMariaDB.getConnection().prepareStatement(FINDBYID)) {
@@ -91,6 +101,24 @@ public class QuestionsDAO implements DAO<Question, Integer> {
             }
         }
         return result;
+    }
+
+    public List<Answer> findAnswersByQuestionID(int questionID) {
+        List<Answer> answers = new ArrayList<>();
+        try (PreparedStatement pst = ConnectionMariaDB.getConnection().prepareStatement(FINDANSWERSBYQUESTIONID)) {
+            pst.setInt(1, questionID);
+            ResultSet res = pst.executeQuery();
+            while (res.next()) {
+                Answer answer = new Answer();
+                answer.setAnswerText(res.getString("answerText"));
+                answer.setValidateAnswer(res.getBoolean("validateAnswer"));
+                answers.add(answer);
+            }
+            res.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return answers;
     }
 
     @Override
@@ -113,6 +141,7 @@ public class QuestionsDAO implements DAO<Question, Integer> {
         }
         return result;
     }
+
     public int countQuestions() {
         int count = 0;
         try (PreparedStatement pst = ConnectionMariaDB.getConnection().prepareStatement(COUNT_QUESTIONS)) {
@@ -131,7 +160,8 @@ public class QuestionsDAO implements DAO<Question, Integer> {
     public void close() throws IOException {
 
     }
-    public static QuestionsDAO build(){
+
+    public static QuestionsDAO build() {
         return new QuestionsDAO();
     }
 }

@@ -2,7 +2,6 @@ package com.github.jcapitanmoreno.view;
 
 import com.github.jcapitanmoreno.App;
 import com.github.jcapitanmoreno.model.dao.QuestionsDAO;
-import com.github.jcapitanmoreno.model.entity.Player;
 import com.github.jcapitanmoreno.model.entity.Question;
 import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
@@ -19,10 +18,11 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.net.URL;
+import java.sql.SQLException;
 import java.util.List;
 import java.util.ResourceBundle;
 
-public class UserGestorController extends Controller implements Initializable {
+public class AdmQuestionsController  extends Controller implements Initializable {
 
     @FXML
     private TableView<Question> tableView;
@@ -36,6 +36,8 @@ public class UserGestorController extends Controller implements Initializable {
     private Button add;
     @FXML
     private Button back;
+    @FXML
+    private Button delete;
 
 
     @Override
@@ -55,7 +57,7 @@ public class UserGestorController extends Controller implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
-        tableView.setEditable(false);
+        tableView.setEditable(true);
         columnID.setCellValueFactory(question -> new SimpleIntegerProperty(question.getValue().getQuestionID()).asObject());
         columnQuestion.setCellValueFactory(question -> new SimpleStringProperty(question.getValue().getQuestionText()));
         columnQuestion.setCellFactory(TextFieldTableCell.forTableColumn());
@@ -66,7 +68,7 @@ public class UserGestorController extends Controller implements Initializable {
             if (event.getNewValue().length() <= 230) {
                 Question question = event.getRowValue();
                 question.setQuestionText(event.getNewValue());
-                QuestionsDAO.build().save(question);
+                QuestionsDAO.build().update(question);
             } else {
                 Alert alert = new Alert(Alert.AlertType.ERROR);
                 alert.setTitle("101 ERROR");
@@ -89,7 +91,7 @@ public class UserGestorController extends Controller implements Initializable {
     }
 
     public void backToUserMenu() throws IOException {
-        App.currentController.changeScene(Scenes.USERMENU, null);
+        App.currentController.changeScene(Scenes.ADMGESTOR, null);
     }
 
     public void augmentedDisplay() {
@@ -97,6 +99,13 @@ public class UserGestorController extends Controller implements Initializable {
         stage.setWidth(800);
         stage.setHeight(600);
     }
+    @FXML
+    private void deleteRow() throws SQLException {
+        QuestionsDAO questionsDAO = new QuestionsDAO();
+        Question questtodelete = tableView.getSelectionModel().getSelectedItem();
+        tableView.getItems().removeAll(tableView.getSelectionModel().getSelectedItem());
+        questionsDAO.delete(questtodelete);
 
+    }
 
 }

@@ -3,7 +3,6 @@ package com.github.jcapitanmoreno.model.entity;
 public class Session {
     private static Session _instance;
     private static Player playerLoged;
-    private static Game currentGame;
 
     public static Session get_Instance() {
         if (_instance == null) {

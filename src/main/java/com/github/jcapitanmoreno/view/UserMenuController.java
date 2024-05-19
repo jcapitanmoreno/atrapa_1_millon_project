@@ -1,8 +1,11 @@
 package com.github.jcapitanmoreno.view;
 
 import com.github.jcapitanmoreno.App;
+import com.github.jcapitanmoreno.model.dao.PlayerDAO;
 import com.github.jcapitanmoreno.model.dao.QuestionsDAO;
+import com.github.jcapitanmoreno.model.entity.Player;
 import com.github.jcapitanmoreno.model.entity.Question;
+import com.github.jcapitanmoreno.model.entity.Session;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Alert;
@@ -36,14 +39,17 @@ public class UserMenuController extends Controller implements Initializable {
         App.currentController.changeScene(Scenes.USERGESTOR, null);
 
     }
-    public void changeEsceneToPlayUser(){
-
-    }
     public void changeEsceneToGameInformation() throws IOException {
         QuestionsDAO questionDAO = new QuestionsDAO();
         int questionCount = questionDAO.countQuestions();
 
         if (questionCount >= 10) {
+            Player currentPlayer = Session.get_Instance().getPlayerLoged();
+            currentPlayer.setEarnedPoints(0);
+
+            PlayerDAO playerDAO = new PlayerDAO();
+            playerDAO.save(currentPlayer);
+
             App.currentController.changeScene(Scenes.GAMEINFORMATION, null);
         } else {
             Alert alert = new Alert(Alert.AlertType.WARNING);
