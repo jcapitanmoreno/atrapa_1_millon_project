@@ -85,9 +85,6 @@ public class PlayerDAO implements DAO<Player, Integer> {
                     result.setPlayerID(res.getInt("playerID"));
                     result.setName(res.getString("name"));
                     result.setEarnedPoints(res.getInt("earnedPoints"));
-                    //Lazy
-                    //BookDAO bDAO = new BookDAO();
-                    //result.setBooks(bDAO.findByAuthor(result));
                 }
                 res.close();
             } catch (SQLException e) {
@@ -109,8 +106,6 @@ public class PlayerDAO implements DAO<Player, Integer> {
                 p.setPlayerID(res.getInt("playerID"));
                 p.setName(res.getString("name"));
                 p.setEarnedPoints(res.getInt("earnedPoints"));
-                //Lazy
-                // a.setBooks(BookDAO.build().findByAuthor(a));
                 result.add(p);
             }
             res.close();

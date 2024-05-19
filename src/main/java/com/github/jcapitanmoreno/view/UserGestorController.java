@@ -37,7 +37,14 @@ public class UserGestorController extends Controller implements Initializable {
     @FXML
     private Button back;
 
-
+    /**
+     * Se llama cuando se abre la vista.
+     * Realiza la visualización aumentada.
+     * Carga la lista de preguntas desde la base de datos y la muestra en la tabla.
+     *
+     * @param input El objeto de entrada, no se utiliza en esta implementación.
+     * @throws IOException Si hay un error al realizar alguna acción relacionada con la visualización.
+     */
     @Override
     public void onOpen(Object input) throws IOException {
         augmentedDisplay();
@@ -52,6 +59,38 @@ public class UserGestorController extends Controller implements Initializable {
 
     }
 
+    @Override
+    public void informationAlert(String text1, String text2, String text3) {
+
+    }
+    /**
+     * Muestra una alerta de error con los textos especificados.
+     *
+     * @param text1 El título de la alerta de error.
+     * @param text2 El encabezado de la alerta de error.
+     * @param text3 El contenido de la alerta de error.
+     */
+    @Override
+    public void errorAlert(String text1, String text2, String text3) {
+        Alert alert = new Alert(Alert.AlertType.ERROR);
+        alert.setTitle(text1);
+        alert.setHeaderText(text2);
+        alert.setContentText(text3);
+        alert.show();
+    }
+
+    @Override
+    public void warningAlert(String text1, String text2, String text3) {
+
+    }
+    /**
+     * Inicializa la vista cuando se carga.
+     * Configura la tabla para mostrar las preguntas y permite la edición del texto de las preguntas.
+     * También maneja los eventos de edición de las celdas de pregunta.
+     *
+     * @param url La ubicación relativa del archivo FXML.
+     * @param resourceBundle Los recursos localizados.
+     */
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
@@ -68,30 +107,43 @@ public class UserGestorController extends Controller implements Initializable {
                 question.setQuestionText(event.getNewValue());
                 QuestionsDAO.build().save(question);
             } else {
-                Alert alert = new Alert(Alert.AlertType.ERROR);
-                alert.setTitle("101 ERROR");
-                alert.setHeaderText("ERROR AL AÑADIR UNA PREGUNTA");
-                alert.setContentText("Pregunta demasiado grande, tiene que tener menos caracteres.");
-                alert.show();
+                errorAlert("101 ERROR","ERROR AL AÑADIR UNA PREGUNTA","Pregunta demasiado grande, tiene que tener menos caracteres.");
             }
         });
     }
-
+    /**
+     * Abre una ventana modal para agregar una nueva pregunta y respuestas.
+     * Después de agregar la pregunta, recarga la lista de preguntas en la vista.
+     *
+     * @throws IOException Si hay un error al abrir la ventana modal o al recargar las preguntas.
+     */
     @FXML
     private void addQuestion() throws IOException {
         App.currentController.openModal(Scenes.ADDQUESTION, "Añada aqui su pregunta y respuestas.", this, null);
         reloadQuestions();
     }
+    /**
+     * Recarga la lista de preguntas en la tabla de la vista.
+     * Esto implica recuperar todas las preguntas de la base de datos, actualizar la lista observable de preguntas
+     * y refrescar la vista de la tabla para mostrar los cambios.
+     */
     private void reloadQuestions() {
         List<Question> questionList = QuestionsDAO.build().findAll();
         this.questions.setAll(questionList);
         tableView.refresh();
     }
-
+    /**
+     * Cambia la escena actual a la escena del menú de usuario.
+     *
+     * @throws IOException Si hay un error al cambiar a la escena del menú de usuario.
+     */
     public void backToUserMenu() throws IOException {
         App.currentController.changeScene(Scenes.USERMENU, null);
     }
-
+    /**
+     * Realiza una visualización aumentada ajustando el tamaño de la ventana principal.
+     * Este método cambia el ancho y la altura de la ventana principal.
+     */
     public void augmentedDisplay() {
         Stage stage = (Stage) tableView.getScene().getWindow();
         stage.setWidth(800);

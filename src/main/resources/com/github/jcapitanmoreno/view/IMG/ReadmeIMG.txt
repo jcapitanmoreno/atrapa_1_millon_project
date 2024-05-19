@@ -1,0 +1,1 @@
+Esta carpeta o directorio almacena todas las imagenes que se necesitan en nuestro programa.

@@ -41,10 +41,42 @@ public class AdmLoginController extends Controller implements Initializable {
     }
 
     @Override
-    public void initialize(URL url, ResourceBundle resourceBundle) {
+    public void informationAlert(String text1, String text2, String text3) {
+
+    }
+    /**
+     * Muestra una alerta de error al usuario con un título, un encabezado y un contenido de texto especificados.
+     * Este método bloquea la ejecución hasta que el usuario cierra la alerta.
+     *
+     * @param text1 El título de la alerta.
+     * @param text2 El texto del encabezado de la alerta.
+     * @param text3 El contenido del texto de la alerta.
+     */
+    @Override
+    public void errorAlert(String text1, String text2, String text3) {
+        Alert alert = new Alert(Alert.AlertType.ERROR);
+        alert.setTitle(text1);
+        alert.setHeaderText(text2);
+        alert.setContentText(text3);
+        alert.showAndWait();
+    }
+
+    @Override
+    public void warningAlert(String text1, String text2, String text3) {
 
     }
 
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+
+    }
+    /**
+     * Realiza el inicio de sesión para un administrador.
+     * Si el nombre de usuario y la contraseña no son nulos, intenta iniciar sesión.
+     * Si el inicio de sesión es exitoso, cambia a la pantalla de gestor de administrador.
+     * Si el inicio de sesión falla, muestra una alerta de error.
+     * @throws Exception Si hay un error durante el inicio de sesión.
+     */
     public void logInAdm() throws Exception {
         if (password != null && user != null) {
             admin.setUser(user.getText());
@@ -61,16 +93,21 @@ public class AdmLoginController extends Controller implements Initializable {
             }
         }
     }
-
+    /**
+     * Cambia la escena actual a la del gestor de administrador.
+     * Llama al método 'changeScene' del controlador actual para cambiar la escena a la del gestor de administrador.
+     * @throws IOException Si hay un error al cargar la escena del gestor de administrador.
+     */
     public void changeToAdmGestor() throws IOException {
         App.currentController.changeScene(Scenes.ADMGESTOR, null);
     }
+    /**
+     * Muestra una alerta de error al usuario con un título predeterminado y un mensaje de error específico.
+     * Este método sobrecargado asume que el escenario principal (primaryStage) ya está disponible y se utiliza para mostrar la alerta.
+     * @param primaryStage El escenario principal de la aplicación donde se mostrará la alerta de error.
+     * @throws Exception Si hay un error al mostrar la alerta de error.
+     */
     public void errorAlert(Stage primaryStage) throws Exception {
-        Alert alert = new Alert(Alert.AlertType.ERROR);
-        alert.setTitle("707 ERROR");
-        alert.setHeaderText("ERROR DE INICIO DE SESSION");
-        alert.setContentText("no tienes acceso. Prueba otra vez o contacta con un administrador autorizado baby");
-
-        alert.showAndWait();
+        errorAlert("707 ERROR","ERROR DE INICIO DE SESSION","no tienes acceso. Prueba otra vez o contacta con un administrador autorizado baby");
     }
 }
