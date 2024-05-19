@@ -2,8 +2,7 @@ package com.github.jcapitanmoreno.view;
 
 import java.io.IOException;
 
-public abstract class Controller implements ControllerInterface {
-
+public interface ControllerInterface {
     public abstract void onOpen(Object input) throws IOException;
 
     public abstract void onClose(Object output);

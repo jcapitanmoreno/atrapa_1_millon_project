@@ -73,46 +73,6 @@ public  class AnswerDAO implements DAO<Answer, String>{
         }
         return results;
     }
-    public Answer findByPlayerId(String key) {
-        Answer result = new Answer();
-        if (key == null){
-            result = null;
-        } else {
-            try (PreparedStatement pst = ConnectionMariaDB.getConnection().prepareStatement(FINDANSWERBYPLAYERID)) {
-                pst.setString(1, key);
-                ResultSet res = pst.executeQuery();
-                if (res.next()) {
-                    result.setAnswerText(res.getString("answerText"));
-                    result.setValidateAnswer(res.getBoolean("validate"));
-
-                }
-                res.close();
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-        }
-        return result;
-    }
-    public Answer findAnswerByQuestion(String key) {
-        Answer result = new Answer();
-        if ( key== null) {
-            result = null;
-        } else {
-            try (PreparedStatement pst = ConnectionMariaDB.getConnection().prepareStatement(FINDANSWERBYQUESTION)) {
-                pst.setString(1, key);
-                ResultSet res = pst.executeQuery();
-                if (res.next()) {
-                    result.setAnswerText(res.getString("answerText"));
-                }
-                res.close();
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-        }
-        return result;
-    }
-
-
     @Override
     public List findAll() {
         return null;

@@ -76,7 +76,12 @@ public class ConnectionProperties implements Serializable {
                 ", password='" + password + '\'' +
                 '}';
     }
-
+    /**
+     * Devuelve la URL de conexión a la base de datos MariaDB.
+     * La URL se construye utilizando el servidor, el puerto y el nombre de la base de datos.
+     *
+     * @return La URL de conexión a la base de datos MariaDB.
+     */
     public String getURL(){
         return "jdbc:mariadb://"+server+":"+port+"/"+database;
     }

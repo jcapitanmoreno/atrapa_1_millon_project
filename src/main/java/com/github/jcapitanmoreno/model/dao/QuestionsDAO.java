@@ -21,7 +21,6 @@ public class QuestionsDAO implements DAO<Question, Integer> {
     private final static String FINDBYID = "SELECT * FROM questions WHERE questionID=?";
     private final static String DELETE = "DELETE FROM questions WHERE questionID=?";
     private final static String COUNT_QUESTIONS = "SELECT COUNT(*) AS total FROM questions";
-    private final static String FINDANSWERSBYQUESTIONID = "SELECT * FROM answer WHERE questionsID=?";
 
 
     @Override
@@ -101,24 +100,6 @@ public class QuestionsDAO implements DAO<Question, Integer> {
             }
         }
         return result;
-    }
-
-    public List<Answer> findAnswersByQuestionID(int questionID) {
-        List<Answer> answers = new ArrayList<>();
-        try (PreparedStatement pst = ConnectionMariaDB.getConnection().prepareStatement(FINDANSWERSBYQUESTIONID)) {
-            pst.setInt(1, questionID);
-            ResultSet res = pst.executeQuery();
-            while (res.next()) {
-                Answer answer = new Answer();
-                answer.setAnswerText(res.getString("answerText"));
-                answer.setValidateAnswer(res.getBoolean("validateAnswer"));
-                answers.add(answer);
-            }
-            res.close();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        return answers;
     }
 
     @Override

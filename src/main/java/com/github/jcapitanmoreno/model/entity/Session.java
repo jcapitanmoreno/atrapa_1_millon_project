@@ -19,8 +19,4 @@ public class Session {
         return playerLoged;
     }
 
-    public void logOut() {
-        playerLoged = null;
-    }
-
 }

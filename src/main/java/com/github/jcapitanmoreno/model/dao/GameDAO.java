@@ -40,9 +40,6 @@ public class GameDAO implements DAO<Game, Integer>{
                 if(res.next()){
                     result.setGameID(res.getInt("gameID"));
                     result.setGameDate(LocalDate.parse(res.getString("gameDate")));
-                    //Lazy
-                    //BookDAO bDAO = new BookDAO();
-                    //result.setBooks(bDAO.findByAuthor(result));
                 }
                 res.close();
             } catch (SQLException e) {
