@@ -41,7 +41,7 @@ public class GameInformationController extends Controller implements Initializab
         alert.show();
     }
 
-    public void changeSceneToGame() {
-        //App.currentController.changeScene(Scenes.USERGESTOR, null);
+    public void changeSceneToGame() throws IOException {
+        App.currentController.changeScene(Scenes.GAMEGAME, null);
     }
 }

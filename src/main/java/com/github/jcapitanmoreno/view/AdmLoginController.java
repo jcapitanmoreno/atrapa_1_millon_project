@@ -3,6 +3,8 @@ package com.github.jcapitanmoreno.view;
 import com.github.jcapitanmoreno.App;
 import com.github.jcapitanmoreno.model.dao.AdminDAO;
 import com.github.jcapitanmoreno.model.entity.Admin;
+import com.github.jcapitanmoreno.model.entity.Player;
+import com.github.jcapitanmoreno.model.entity.Session;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Alert;
@@ -50,6 +52,9 @@ public class AdmLoginController extends Controller implements Initializable {
             boolean loginSuccessful = adminDAO.logIn(admin);
 
             if (loginSuccessful) {
+                Player player = new Player(1,"adm",0);
+                Session session = new Session();
+                session.login(player);
                 changeToAdmGestor();
             } else {
              errorAlert(stage);

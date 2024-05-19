@@ -10,6 +10,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.ArrayList;
 import java.util.List;
 
 public  class AnswerDAO implements DAO<Answer, String>{
@@ -48,24 +49,29 @@ public  class AnswerDAO implements DAO<Answer, String>{
 
     @Override
     public Answer findById(String key) {
-        Answer result = new Answer();
-        if (key == null){
-            result = null;
+        return null;
+    }
+
+    public List<Answer> findByQuestionID(int key) {
+        List<Answer> results = new ArrayList<>();
+        if (key == -1) {
+            results=null;
         } else {
             try (PreparedStatement pst = ConnectionMariaDB.getConnection().prepareStatement(FINDANSWERBYQUESTIONID)) {
-                pst.setString(1, key);
+                pst.setInt(1, key);
                 ResultSet res = pst.executeQuery();
-                if (res.next()) {
-                    result.setAnswerText(res.getString("answerText"));
-                    result.setValidateAnswer(res.getBoolean("validate"));
-
+                while (res.next()) {
+                    Answer answer = new Answer();
+                    answer.setAnswerText(res.getString("answerText"));
+                    answer.setValidateAnswer(res.getBoolean("validate"));
+                    results.add(answer);
                 }
                 res.close();
             } catch (SQLException e) {
                 e.printStackTrace();
             }
         }
-        return result;
+        return results;
     }
     public Answer findByPlayerId(String key) {
         Answer result = new Answer();

@@ -13,7 +13,7 @@ import java.util.List;
 
 public class PlayerDAO implements DAO<Player, Integer> {
 
-    private final static String INSERT="INSERT INTO player (name) VALUES (?)";
+    private final static String INSERT="INSERT INTO player (name,earnedPoints) VALUES (?,?)";
     private final static String UPDATE="UPDATE player SET name=?, earnedPoints=? WHERE playerID=?";
     private final static String FINDALL="SELECT * FROM player";
     private final static String FINDBYID="SELECT * FROM player WHERE playerID=?";
@@ -31,6 +31,7 @@ public class PlayerDAO implements DAO<Player, Integer> {
                 //INSERT
                 try(PreparedStatement pst = ConnectionMariaDB.getConnection().prepareStatement(INSERT, Statement.RETURN_GENERATED_KEYS)) {
                     pst.setString(1,entity.getName());
+                    pst.setInt(2,entity.getEarnedPoints());
                     pst.executeUpdate();
                     //si fuera autoincremental yo tendría que leer getGeneratedKeys() -> setDNI
                     ResultSet res = pst.getGeneratedKeys();
@@ -83,7 +84,7 @@ public class PlayerDAO implements DAO<Player, Integer> {
                 if(res.next()){
                     result.setPlayerID(res.getInt("playerID"));
                     result.setName(res.getString("name"));
-                    result.setEarnedPoints(res.getInt("earnerPoints"));
+                    result.setEarnedPoints(res.getInt("earnedPoints"));
                     //Lazy
                     //BookDAO bDAO = new BookDAO();
                     //result.setBooks(bDAO.findByAuthor(result));
@@ -107,7 +108,7 @@ public class PlayerDAO implements DAO<Player, Integer> {
                 Player p = new Player();
                 p.setPlayerID(res.getInt("playerID"));
                 p.setName(res.getString("name"));
-                p.setEarnedPoints(res.getInt("earnerPoints"));
+                p.setEarnedPoints(res.getInt("earnedPoints"));
                 //Lazy
                 // a.setBooks(BookDAO.build().findByAuthor(a));
                 result.add(p);
@@ -122,5 +123,8 @@ public class PlayerDAO implements DAO<Player, Integer> {
     @Override
     public void close() throws IOException {
 
+    }
+    public static PlayerDAO build(){
+        return new PlayerDAO();
     }
 }

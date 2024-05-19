@@ -1,5 +1,6 @@
 package com.github.jcapitanmoreno.view;
 
+import com.github.jcapitanmoreno.App;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -27,6 +28,12 @@ public class AdmGestorController extends Controller implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
+    }
+    public void changeToQuestionGestor() throws IOException {
+        App.currentController.changeScene(Scenes.ADMQUESTIONGESTOR, null);
+    }
+    public void changeToGameInformation() throws IOException {
+        App.currentController.changeScene(Scenes.GAMEINFORMATION, null);
     }
 
 }
