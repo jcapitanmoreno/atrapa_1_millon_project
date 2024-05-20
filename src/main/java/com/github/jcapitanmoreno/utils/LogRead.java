@@ -13,7 +13,7 @@ public class LogRead {
      * @param <T> The type of the object.
      */
     public static <T> void logWritter(T obj) {
-        String rutaArchivo = "C:\\Users\\Juan\\Desktop\\log\\Log.txt";
+        String rutaArchivo = "C:\\Users\\chaju\\Desktop\\log\\Log.txt";
         try {
 
             FileWriter fileWriter = new FileWriter(rutaArchivo, true);

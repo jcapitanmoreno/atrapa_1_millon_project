@@ -2,6 +2,7 @@ package com.github.jcapitanmoreno.model.dao;
 
 import com.github.jcapitanmoreno.model.connection.ConnectionXamp;
 import com.github.jcapitanmoreno.model.entity.Game;
+import com.github.jcapitanmoreno.utils.LogRead;
 
 import java.io.IOException;
 import java.sql.PreparedStatement;
@@ -47,6 +48,7 @@ public class GameDAO implements DAO<Game, Integer>{
                 res.close();
             } catch (SQLException e) {
                 e.printStackTrace();
+                LogRead.logWritter(result);
             }
         }
         return result;
@@ -73,6 +75,7 @@ public class GameDAO implements DAO<Game, Integer>{
             res.close();
         } catch (SQLException e) {
             e.printStackTrace();
+            LogRead.logWritter(result);
         }
         return result;
     }

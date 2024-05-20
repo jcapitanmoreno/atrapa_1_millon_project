@@ -7,9 +7,9 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.github.jcapitanmoreno.view.GameController">
    <children>
-      <Label fx:id="questionLabel" layoutX="61.0" layoutY="33.0" prefHeight="17.0" prefWidth="478.0" text="aqui va la pregunta" textFill="#78a3b2">
+      <Label fx:id="questionLabel" layoutX="20.0" layoutY="21.0" prefHeight="57.0" prefWidth="570.0" text="aqui va la pregunta" textAlignment="CENTER" textFill="#78a3b2">
          <font>
-            <Font name="System Bold" size="18.0" />
+            <Font name="System Bold" size="16.0" />
          </font>
       </Label>
       <Button fx:id="answerButton1" layoutX="200.0" layoutY="98.0" mnemonicParsing="false" onAction="#checkAnswer1" prefHeight="35.0" prefWidth="209.0" style="-fx-background-color: #78a3b2;" text="Button" />
