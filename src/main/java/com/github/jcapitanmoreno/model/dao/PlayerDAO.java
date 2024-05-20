@@ -1,7 +1,7 @@
 package com.github.jcapitanmoreno.model.dao;
 
 import com.github.jcapitanmoreno.model.entity.Player;
-import com.github.jcapitanmoreno.model.connection.ConnectionMariaDB;
+import com.github.jcapitanmoreno.model.connection.ConnectionXamp;
 
 import java.io.IOException;
 import java.sql.PreparedStatement;
@@ -36,7 +36,7 @@ public class PlayerDAO implements DAO<Player, Integer> {
             Player p = findById(entity.getPlayerID());//si no está devuelve un player por defecto (yo no lo tengo por defecto)
             if(p == null){
                 //INSERT
-                try(PreparedStatement pst = ConnectionMariaDB.getConnection().prepareStatement(INSERT, Statement.RETURN_GENERATED_KEYS)) {
+                try(PreparedStatement pst = ConnectionXamp.getConnection().prepareStatement(INSERT, Statement.RETURN_GENERATED_KEYS)) {
                     pst.setString(1,entity.getName());
                     pst.setInt(2,entity.getEarnedPoints());
                     pst.executeUpdate();
@@ -53,7 +53,7 @@ public class PlayerDAO implements DAO<Player, Integer> {
                 }
             }else{
                 //UPDATE
-                try(PreparedStatement pst = ConnectionMariaDB.getConnection().prepareStatement(UPDATE)) {
+                try(PreparedStatement pst = ConnectionXamp.getConnection().prepareStatement(UPDATE)) {
                     pst.setString(1,entity.getName());
                     pst.setInt(2,entity.getEarnedPoints());
                     pst.setInt(3,entity.getPlayerID());
@@ -78,7 +78,7 @@ public class PlayerDAO implements DAO<Player, Integer> {
         if(entity==null || entity.getPlayerID()==-1){
             entity = null;
         }else {
-            try(PreparedStatement pst = ConnectionMariaDB.getConnection().prepareStatement(DELETE)) {
+            try(PreparedStatement pst = ConnectionXamp.getConnection().prepareStatement(DELETE)) {
                 pst.setInt(1,entity.getPlayerID());
                 pst.executeUpdate();
             }
@@ -97,7 +97,7 @@ public class PlayerDAO implements DAO<Player, Integer> {
         if(key==-1) {
             result = null;
         } else {
-            try(PreparedStatement pst = ConnectionMariaDB.getConnection().prepareStatement(FINDBYID)) {
+            try(PreparedStatement pst = ConnectionXamp.getConnection().prepareStatement(FINDBYID)) {
                 pst.setInt(1,key);
                 ResultSet res = pst.executeQuery();
                 if(res.next()){
@@ -122,7 +122,7 @@ public class PlayerDAO implements DAO<Player, Integer> {
     public List findAll() {
         List<Player> result = new ArrayList<>();
 
-        try(PreparedStatement pst = ConnectionMariaDB.getConnection().prepareStatement(FINDALL)) {
+        try(PreparedStatement pst = ConnectionXamp.getConnection().prepareStatement(FINDALL)) {
 
             ResultSet res = pst.executeQuery();
             while(res.next()){

@@ -1,13 +1,3 @@
 
- 
-java:S4165"dRemove this useless assignment; "result" already holds the assigned value along all execution paths.(ˆáŒƒJ$5179a7e7-f6fc-4eda-a8dc-7eeb0eb2671d
 †
-java:S1124"EReorder the modifiers to comply with the Java Language Specification.(Ì­»ÞýÿÿÿÿJ$82020ffa-f36d-4356-b1fa-fd1371d945dd
-`
-java:S6905"Don't use the query "SELECT *".(Ì­»ÞýÿÿÿÿJ$54db1fcd-d5db-49b2-8efc-b2f0f79d06a7
-‹
-java:S1128"JRemove this unused import 'com.github.jcapitanmoreno.model.entity.Answer'.(Õ¸¤»ÿÿÿÿÿJ$4dfcda6a-c422-4822-9a25-f24a0f5011ec
-q
-java:S1128"0Remove this unused import 'java.io.IOException'.(ªº»ÚýÿÿÿÿJ$3a46b525-c143-44ff-82e8-a65ae760dc29
-l
-java:S1128"+Remove this unused import 'java.util.List'.(Õë±ÄøÿÿÿÿJ$0550dd73-8c45-42b1-b79a-51457d70acd0
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(Ì­»ÞýÿÿÿÿJ$928c7504-1616-4904-bcc1-9c195f0ed007

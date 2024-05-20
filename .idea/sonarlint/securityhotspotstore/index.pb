@@ -71,3 +71,5 @@ j
 :src/main/java/com/github/jcapitanmoreno/utils/LogRead.java,7\a\7af72ab503dd8182bda78538b7360028246e3e55
 g
 7src/main/java/com/github/jcapitanmoreno/Executable.java,7\5\757bed87b23dec6bc7162fb2f2f3563aa2163b66
+|
+Lsrc/main/java/com/github/jcapitanmoreno/model/connection/ConnectionXamp.java,7\e\7e109ce91dc6aed95535392f65bac9687ef163b0

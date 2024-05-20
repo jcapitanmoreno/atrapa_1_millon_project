@@ -6,14 +6,14 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-public class ConnectionMariaDB {
+public class ConnectionXamp {
     private final static String FILE="connection.xml";
-    private static ConnectionMariaDB _instance;
+    private static ConnectionXamp _instance;
     private static Connection conn;
     /**
      * Constructor for creating a MariaDB connection using connection properties from an XML file.
      */
-    private ConnectionMariaDB(){
+    private ConnectionXamp(){
         ConnectionProperties properties = (ConnectionProperties) XMLManager.readXML(new ConnectionProperties(),FILE);
 
         try {
@@ -30,7 +30,7 @@ public class ConnectionMariaDB {
      */
     public static Connection getConnection(){
         if(_instance==null){
-            _instance = new ConnectionMariaDB();
+            _instance = new ConnectionXamp();
         }
         return conn;
     }

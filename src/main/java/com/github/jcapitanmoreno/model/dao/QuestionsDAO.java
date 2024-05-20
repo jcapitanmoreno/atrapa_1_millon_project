@@ -1,8 +1,6 @@
 package com.github.jcapitanmoreno.model.dao;
 
-import com.github.jcapitanmoreno.model.connection.ConnectionMariaDB;
-import com.github.jcapitanmoreno.model.entity.Answer;
-import com.github.jcapitanmoreno.model.entity.Game;
+import com.github.jcapitanmoreno.model.connection.ConnectionXamp;
 import com.github.jcapitanmoreno.model.entity.Question;
 
 import java.io.IOException;
@@ -38,7 +36,7 @@ public class QuestionsDAO implements DAO<Question, Integer> {
             Question q = findById(entity.getQuestionID());
             if (q.getQuestionID() != -1) {
                 //INSERT
-                try (PreparedStatement pst = ConnectionMariaDB.getConnection().prepareStatement(INSERT, Statement.RETURN_GENERATED_KEYS)) {
+                try (PreparedStatement pst = ConnectionXamp.getConnection().prepareStatement(INSERT, Statement.RETURN_GENERATED_KEYS)) {
                     pst.setInt(1, entity.getGame().getGameID());
                     pst.setString(2, entity.getQuestionText());
                     pst.executeUpdate();
@@ -68,7 +66,7 @@ public class QuestionsDAO implements DAO<Question, Integer> {
             result = null;
         } else {
             //UPDATE
-            try (PreparedStatement pst = ConnectionMariaDB.getConnection().prepareStatement(UPDATE)) {
+            try (PreparedStatement pst = ConnectionXamp.getConnection().prepareStatement(UPDATE)) {
                 pst.setString(1, entity.getQuestionText());
                 pst.setInt(2, entity.getQuestionID());
                 pst.executeUpdate();
@@ -91,7 +89,7 @@ public class QuestionsDAO implements DAO<Question, Integer> {
         if (entity == null || entity.getQuestionID() == -1) {
             entity = null;
         } else {
-            try (PreparedStatement pst = ConnectionMariaDB.getConnection().prepareStatement(DELETE)) {
+            try (PreparedStatement pst = ConnectionXamp.getConnection().prepareStatement(DELETE)) {
                 pst.setInt(1, entity.getQuestionID());
                 pst.executeUpdate();
             }
@@ -111,7 +109,7 @@ public class QuestionsDAO implements DAO<Question, Integer> {
         if (key == -1) {
             result = null;
         } else {
-            try (PreparedStatement pst = ConnectionMariaDB.getConnection().prepareStatement(FINDBYID)) {
+            try (PreparedStatement pst = ConnectionXamp.getConnection().prepareStatement(FINDBYID)) {
                 pst.setInt(1, key);
                 ResultSet res = pst.executeQuery();
                 if (res.next()) {
@@ -135,7 +133,7 @@ public class QuestionsDAO implements DAO<Question, Integer> {
     public List<Question> findAll() {
         List<Question> result = new ArrayList<>();
 
-        try (PreparedStatement pst = ConnectionMariaDB.getConnection().prepareStatement(FINDALL)) {
+        try (PreparedStatement pst = ConnectionXamp.getConnection().prepareStatement(FINDALL)) {
 
             ResultSet res = pst.executeQuery();
             while (res.next()) {
@@ -159,7 +157,7 @@ public class QuestionsDAO implements DAO<Question, Integer> {
      */
     public int countQuestions() {
         int count = 0;
-        try (PreparedStatement pst = ConnectionMariaDB.getConnection().prepareStatement(COUNT_QUESTIONS)) {
+        try (PreparedStatement pst = ConnectionXamp.getConnection().prepareStatement(COUNT_QUESTIONS)) {
             ResultSet res = pst.executeQuery();
             if (res.next()) {
                 count = res.getInt("total");

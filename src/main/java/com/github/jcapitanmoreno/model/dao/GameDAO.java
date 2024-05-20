@@ -1,10 +1,7 @@
 package com.github.jcapitanmoreno.model.dao;
 
-import com.github.jcapitanmoreno.model.connection.ConnectionMariaDB;
-import com.github.jcapitanmoreno.model.entity.Answer;
+import com.github.jcapitanmoreno.model.connection.ConnectionXamp;
 import com.github.jcapitanmoreno.model.entity.Game;
-import com.github.jcapitanmoreno.model.entity.Player;
-import com.github.jcapitanmoreno.model.entity.Question;
 
 import java.io.IOException;
 import java.sql.PreparedStatement;
@@ -40,7 +37,7 @@ public class GameDAO implements DAO<Game, Integer>{
         if(key==-1) {
             result = null;
         } else {
-            try(PreparedStatement pst = ConnectionMariaDB.getConnection().prepareStatement(FINDBYID)) {
+            try(PreparedStatement pst = ConnectionXamp.getConnection().prepareStatement(FINDBYID)) {
                 pst.setInt(1,key);
                 ResultSet res = pst.executeQuery();
                 if(res.next()){
@@ -64,7 +61,7 @@ public class GameDAO implements DAO<Game, Integer>{
     public List<Game> findAll() {
         List<Game> result = new ArrayList<>();
 
-        try (PreparedStatement pst = ConnectionMariaDB.getConnection().prepareStatement(FINDALL)) {
+        try (PreparedStatement pst = ConnectionXamp.getConnection().prepareStatement(FINDALL)) {
 
             ResultSet res = pst.executeQuery();
             while (res.next()) {
