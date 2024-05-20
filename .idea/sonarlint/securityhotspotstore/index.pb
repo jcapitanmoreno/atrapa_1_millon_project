@@ -59,3 +59,15 @@ Ksrc/main/java/com/github/jcapitanmoreno/view/GameInformationController.java,9\
 Osrc/main/java/com/github/jcapitanmoreno/model/connection/ConnectionMariaDB.java,6\9\69dace8ab0a5ae371c645d72613cb5f861ae36a0
 ‚
 Rsrc/main/java/com/github/jcapitanmoreno/model/connection/ConnectionProperties.java,3\f\3f1d1ff77177f131dd3fff7f40d2ef484c8d5c65
+x
+Hsrc/main/java/com/github/jcapitanmoreno/view/AdmQuestionsController.java,0\8\0898e3c9ad7c64fde08bca7d46b6ed774238e5d0
+p
+@src/main/java/com/github/jcapitanmoreno/view/GameController.java,c\a\cad7ef1db781230d9a8447c567b1388d7cc1d569
+x
+Hsrc/main/java/com/github/jcapitanmoreno/view/PlayerPointsController.java,c\0\c0ba07b4865a686feeffd6e8c29e149e0618dadc
+u
+Esrc/main/java/com/github/jcapitanmoreno/model/entity/ReadmeEntity.txt,3\a\3a3886bf0b40816b4e1754fba86d4962c6b173bd
+j
+:src/main/java/com/github/jcapitanmoreno/utils/LogRead.java,7\a\7af72ab503dd8182bda78538b7360028246e3e55
+g
+7src/main/java/com/github/jcapitanmoreno/Executable.java,7\5\757bed87b23dec6bc7162fb2f2f3563aa2163b66

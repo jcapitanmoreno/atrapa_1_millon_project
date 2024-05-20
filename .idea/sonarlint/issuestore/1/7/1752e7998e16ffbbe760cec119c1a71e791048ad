@@ -1,18 +1,17 @@
 
 É
-java:S1186L"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(æÔ«÷şÿÿÿÿ8š®¼‰ø1J$895d8e6e-4fc9-44dc-90f6-0dd1a2cdbbc7
+java:S1186T"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(æÔ«÷şÿÿÿÿ8š®¼‰ø1J$96906236-0765-4240-96c1-dae4e01e1386
 ˆ
-java:S1124"EReorder the modifiers to comply with the Java Language Specification.(ŞÎ¨à8¢®¼‰ø1J$18c54ce5-91bf-401d-8823-b359e861113f
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(ŞÎ¨à8¢®¼‰ø1J$3c5af159-bbc2-4c0e-92ea-375507cbdf2f
 
-java:S1124"EReorder the modifiers to comply with the Java Language Specification.(¬ü Íşÿÿÿÿ8Ü¿„Šø1J$3069ee9f-bf6a-4053-8727-099675da9f4d
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(¬ü Íşÿÿÿÿ8Ü¿„Šø1J$b4152d5e-bb10-4013-9db3-ffee4c1d9a63
 g
-java:S6905"Don't use the query "SELECT *".(¬ü Íşÿÿÿÿ8ßÒ†Šø1J$e57e71a9-210d-41a9-bf9b-de80e3de0389
-ƒ	java:S125,"<This block of commented-out lines of code should be removed.(„âõØûÿÿÿÿ8æÒ†Šø1J$a8b6206e-36b6-43cb-a3d9-e7b82c2b8888
+java:S6905"Don't use the query "SELECT *".(¬ü Íşÿÿÿÿ8ßÒ†Šø1J$0253dbf3-4f27-4201-be8f-14839d56e4ed
 b
-java:S6905"Don't use the query "SELECT *".(ŞÎ¨à8«®¼‰ø1J$d8ee190e-484f-4e90-8fe7-10b380b66094
-l
-java:S1128"JRemove this unused import 'com.github.jcapitanmoreno.model.entity.Answer'.(Õ¸¤»ÿÿÿÿÿ8ñØŒŠø1
-l
-java:S1128"JRemove this unused import 'com.github.jcapitanmoreno.model.entity.Player'.(‡¨âÎÿÿÿÿÿ8òØŒŠø1
-n
-java:S1128"LRemove this unused import 'com.github.jcapitanmoreno.model.entity.Question'.(éîåÜıÿÿÿÿ8óØŒŠø1
+java:S6905"Don't use the query "SELECT *".(ŞÎ¨à8«®¼‰ø1J$701058e1-f2ac-4e65-a40f-b932dcd4f2d9
+’
+java:S1128"JRemove this unused import 'com.github.jcapitanmoreno.model.entity.Answer'.(Õ¸¤»ÿÿÿÿÿ8ñØŒŠø1J$3863ebee-70da-4f89-96b2-dc7679842c6e
+’
+java:S1128"JRemove this unused import 'com.github.jcapitanmoreno.model.entity.Player'.(‡¨âÎÿÿÿÿÿ8òØŒŠø1J$83175887-b582-48be-aba6-86604ad66766
+”
+java:S1128"LRemove this unused import 'com.github.jcapitanmoreno.model.entity.Question'.(éîåÜıÿÿÿÿ8óØŒŠø1J$ba088e10-2623-4b77-bc76-dff8f7cf78a3

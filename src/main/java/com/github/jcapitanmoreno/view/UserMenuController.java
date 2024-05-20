@@ -41,11 +41,11 @@ public class UserMenuController extends Controller implements Initializable {
 
     }
     /**
-     * Muestra una alerta de advertencia con los textos especificados.
+     * Displays a warning alert with the given title, header text, and content text.
      *
-     * @param text1 El título de la alerta de advertencia.
-     * @param text2 El encabezado de la alerta de advertencia.
-     * @param text3 El contenido de la alerta de advertencia.
+     * @param text1 The title of the alert.
+     * @param text2 The header text of the alert.
+     * @param text3 The content text of the alert.
      */
     @Override
     public void warningAlert(String text1, String text2, String text3) {
@@ -61,9 +61,9 @@ public class UserMenuController extends Controller implements Initializable {
 
     }
     /**
-     * Cambia la escena actual a la escena del gestor de usuarios.
+     * Changes the scene to the user gestor scene.
      *
-     * @throws IOException Si hay un error al cambiar a la escena del gestor de usuarios.
+     * @throws IOException If an I/O error occurs.
      */
     public void changeEsceneToGestorUser() throws IOException {
         App.currentController.changeScene(Scenes.USERGESTOR, null);
@@ -92,5 +92,11 @@ public class UserMenuController extends Controller implements Initializable {
             warningAlert("Advertencia","No hay suficientes preguntas","Debe haber al menos 10 preguntas añadidas para poder jugar.");
         }
     }
+    /**
+     * Changes the scene to the game information scene if there are at least 10 questions added.
+     * Otherwise, displays a warning alert indicating the requirement.
+     *
+     * @throws IOException If an I/O error occurs.
+     */
 
 }

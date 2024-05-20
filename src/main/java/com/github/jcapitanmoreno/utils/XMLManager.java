@@ -8,12 +8,12 @@ import java.io.File;
 
 public class XMLManager {
     /**
-     * Escribe un objeto en un archivo XML.
+     * Writes an object to an XML file.
      *
-     * @param c        El objeto que se va a escribir en el archivo XML.
-     * @param filename El nombre del archivo XML donde se escribirá el objeto.
-     * @param <T>      El tipo genérico del objeto.
-     * @return true si la escritura fue exitosa, false de lo contrario.
+     * @param c        The object to be written to the XML file.
+     * @param filename The name of the XML file where the object will be written.
+     * @param <T>      The generic type of the object.
+     * @return True if the writing was successful, false otherwise.
      */
     public static <T> boolean writeXML(T c,String filename){
         boolean result=false;
@@ -31,12 +31,12 @@ public class XMLManager {
         return result;
     }
     /**
-     * Lee un objeto desde un archivo XML.
+     * Reads an object from an XML file.
      *
-     * @param c        El objeto de tipo genérico que se va a leer desde el archivo XML.
-     * @param filename El nombre del archivo XML del cual se leerá el objeto.
-     * @param <T>      El tipo genérico del objeto.
-     * @return El objeto leído desde el archivo XML.
+     * @param c        The object of generic type to be read from the XML file.
+     * @param filename The name of the XML file from which the object will be read.
+     * @param <T>      The generic type of the object.
+     * @return The object read from the XML file.
      */
     public static<T> T readXML(T c,String filename){
         T result = c;

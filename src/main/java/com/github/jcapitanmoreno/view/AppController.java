@@ -22,10 +22,10 @@ public class AppController extends Controller implements Initializable {
     private Controller centerController;
 
     /**
-     * Método invocado al abrir la ventana.
-     * Cambia la escena actual a la pantalla de nombres de usuario.
-     * @param input El objeto de entrada, si es necesario para el método (puede ser null en este caso).
-     * @throws IOException Si hay un error al cargar la escena de nombres de usuario.
+     * This method is called when the scene is opened.
+     * It changes the scene to the USERSNAME scene.
+     * @param input An object representing any input data required for the scene (not used in this case).
+     * @throws IOException if there is an error while changing the scene.
      */
     @Override
     public void onOpen(Object input) throws IOException {
@@ -57,13 +57,13 @@ public class AppController extends Controller implements Initializable {
 
     }
     /**
-     * Abre un modal con la escena especificada.
+     * Opens a modal dialog window with the specified scene.
      *
-     * @param scene La escena que se cargará en el modal.
-     * @param title El título del modal.
-     * @param parent El controlador padre que invoca el modal.
-     * @param data Los datos opcionales que se pueden pasar al modal.
-     * @throws IOException Si hay un error al cargar la escena del modal.
+     * @param scene  The scene to be displayed in the modal window.
+     * @param title  The title of the modal window.
+     * @param parent The controller of the parent scene.
+     * @param data   Any data that needs to be passed to the modal scene.
+     * @throws IOException if there is an error while loading the scene.
      */
     public void openModal(Scenes scene, String title,Controller parent, Object data) throws IOException {
         View view = loadFXML(scene);
@@ -77,11 +77,11 @@ public class AppController extends Controller implements Initializable {
         stage.showAndWait();
     }
     /**
-     * Carga el archivo FXML correspondiente a la escena especificada.
+     * Loads the FXML file corresponding to the specified scene and initializes its controller.
      *
-     * @param scenes Enumeración que representa la escena a cargar.
-     * @return Una instancia de la clase View que contiene la escena y su controlador.
-     * @throws IOException Si hay un error al cargar el archivo FXML.
+     * @param scenes The scene enum representing the FXML file to load.
+     * @return A View object containing the loaded scene and its associated controller.
+     * @throws IOException if an error occurs while loading the FXML file.
      */
         public static View loadFXML (Scenes scenes) throws IOException {
             String url = scenes.getURL();
@@ -94,12 +94,11 @@ public class AppController extends Controller implements Initializable {
             return view;
         }
     /**
-     * Cambia la escena actual en el BorderPane al archivo FXML correspondiente a la escena especificada.
-     * Llama al método 'onOpen' del controlador asociado a la nueva escena, pasando los datos proporcionados.
+     * Changes the scene displayed in the center of the border pane to the specified scene.
      *
-     * @param scene La escena a la que se cambiará.
-     * @param data Los datos opcionales que se pueden pasar al controlador de la nueva escena.
-     * @throws IOException Si hay un error al cargar el archivo FXML.
+     * @param scene The scene enum representing the FXML file to load.
+     * @param data  Any additional data to be passed to the controller of the new scene.
+     * @throws IOException if an error occurs while loading the FXML file.
      */
         public void changeScene (Scenes scene, Object data) throws IOException {
             View view = loadFXML(scene);

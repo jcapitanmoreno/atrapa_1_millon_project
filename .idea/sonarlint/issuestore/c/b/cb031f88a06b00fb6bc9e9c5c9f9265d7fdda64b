@@ -1,0 +1,11 @@
+
+¡
+java:S3038"^"onOpen" is defined in the "ControllerInterface" interface and can be removed from this class.(ã½şü8¥§•¦ù1J$b90f730b-994a-4e3c-bef7-6334403d2a4a
+¡
+java:S3038	"_"onClose" is defined in the "ControllerInterface" interface and can be removed from this class.(¸Óù/8¨§•¦ù1J$d4497627-45c2-4778-b04a-afe0d87d9d4d
+«
+java:S3038"h"informationAlert" is defined in the "ControllerInterface" interface and can be removed from this class.(³Ì•–8±§•¦ù1J$db7c68da-6425-4db8-800e-2e7a4824bbd9
+¥
+java:S3038"b"errorAlert" is defined in the "ControllerInterface" interface and can be removed from this class.(Àã•«8½§•¦ù1J$74c9ea84-f924-4827-8199-5967e8f222c0
+§
+java:S3038"d"warningAlert" is defined in the "ControllerInterface" interface and can be removed from this class.(¹Œ¥8Ä§•¦ù1J$bdb925f5-4018-4fcd-95e2-efedcf450018

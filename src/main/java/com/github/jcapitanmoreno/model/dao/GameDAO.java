@@ -28,6 +28,12 @@ public class GameDAO implements DAO<Game, Integer>{
         return null;
     }
 
+    /**
+     * Finds a game by its ID.
+     *
+     * @param key The ID of the game to find.
+     * @return The Game object if found, otherwise null.
+     */
     @Override
     public Game findById(Integer key) {
         Game result = new Game();
@@ -49,6 +55,11 @@ public class GameDAO implements DAO<Game, Integer>{
         return result;
     }
 
+    /**
+     * Retrieves all games from the database.
+     *
+     * @return A list of all Game objects found in the database.
+     */
     @Override
     public List<Game> findAll() {
         List<Game> result = new ArrayList<>();

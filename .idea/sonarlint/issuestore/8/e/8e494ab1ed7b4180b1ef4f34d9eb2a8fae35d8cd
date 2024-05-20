@@ -10,9 +10,9 @@ java:S1444"+Make this "public static stage" field final(œ‰à8€ íéõ1J$d6cce005
 œ
 java:S1450"TRemove the "scene" field and declare it as a local variable in the relevant methods.(™ëøıÿÿÿÿ8Ÿ íéõ1J$9797b95d-22da-4171-aa28-5f3a91e60517
 y
-java:S2696"6Make the enclosing method "static" or remove this set.(ÕãÏ³8© íéõ1J$4e3b338f-86d9-4d3b-9140-b254260da347
-~
-java:S2696"6Make the enclosing method "static" or remove this set.(ßÆÎ­şÿÿÿÿ8¼ íéõ1J$e20fbfee-f32f-4cfe-8a08-0fde66137ee3
+java:S2696"6Make the enclosing method "static" or remove this set.(ÕãÏ³8¼ íéõ1J$e20fbfee-f32f-4cfe-8a08-0fde66137ee3
+X
+java:S2696"6Make the enclosing method "static" or remove this set.(ßÆÎ­şÿÿÿÿ8­Õñ¨ù1
 {
 java:S1128"3Remove this unused import 'javafx.fxml.FXMLLoader'.(À‡ô³úÿÿÿÿ8³†¬‹ö1J$279ea16c-087a-4501-bb18-296e01602346
 s

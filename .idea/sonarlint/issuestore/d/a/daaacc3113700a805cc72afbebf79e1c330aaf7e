@@ -1,13 +1,17 @@
 
 
-java:S2095+"JUse try-with-resources or close this "QuestionsDAO" in a "finally" clause.(Ë€ô8´šã«ø1J$a364e5af-4af8-46c8-b207-999b3edfbde6
+java:S2095P"JUse try-with-resources or close this "QuestionsDAO" in a "finally" clause.(Ë€ô8´šã«ø1J$6fe32493-881e-4b48-a27d-4b468943eef4
+
+java:S2095W"GUse try-with-resources or close this "PlayerDAO" in a "finally" clause.(ôÒ¥®ÿÿÿÿÿ8Ä×È¨ù1J$649b5290-b1f6-4bcd-9884-bee7220ce44b
 Ä
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(÷’²É8¸šã«ø1J$02cd7230-903f-4e26-bbd0-d42618450948
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(÷’²É8¸šã«ø1J$ab6af6a8-1c91-4e81-aec2-256d464a7dd8
 É
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¯®Òêúÿÿÿÿ8¹šã«ø1J$938f036f-da90-4e84-a15d-3780928ac753
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¯®Òêúÿÿÿÿ8¹šã«ø1J$7d8d4d12-c80a-4926-8862-0707243e9134
 É
-java:S1186 "€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(•‘İŸüÿÿÿÿ8¹šã«ø1J$7ccad5a9-4f07-421c-b4b7-496d5bd5adaa
-Ä
-java:S1186'"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(£Úù8ºšã«ø1J$d9afc633-6041-4fdf-8b9d-7cb16ea90c26
+java:S1186#"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ª¤æûÿÿÿÿ8Î×È¨ù1J$99cd10f6-bd5c-4be5-bc5e-7f0edffeffe2
+Ã
+java:S1186("€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(öò¯8Ï×È¨ù1J$c7be272c-c6fd-4af2-bcab-e25995e8d312
+É
+java:S1186<"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(•‘İŸüÿÿÿÿ8¹šã«ø1J$3b2948ea-13df-43e1-8770-71857457bcb3
 ”
-java:S1128"LRemove this unused import 'com.github.jcapitanmoreno.model.entity.Question'.(éîåÜıÿÿÿÿ8×šã«ø1J$aff1ce2b-f069-412c-aaa8-4cb0a01fafa3
+java:S1128"LRemove this unused import 'com.github.jcapitanmoreno.model.entity.Question'.(éîåÜıÿÿÿÿ8×šã«ø1J$e851ef0e-cdcd-40f5-9a71-4ca2a116cac8

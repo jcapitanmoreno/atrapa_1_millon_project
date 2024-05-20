@@ -19,6 +19,13 @@ public class PlayerDAO implements DAO<Player, Integer> {
     private final static String FINDBYID="SELECT * FROM player WHERE playerID=?";
     private final static String DELETE="DELETE FROM player WHERE playerID=?";
 
+    /**
+     * Saves a Player entity to the database. If the player does not already exist, it will be inserted.
+     * If the player exists, its information will be updated.
+     *
+     * @param entity The Player entity to be saved.
+     * @return The saved Player entity, or null if the name is not provided.
+     */
     @Override
     public Player save(Player entity) {
         Player result = entity;
@@ -59,6 +66,13 @@ public class PlayerDAO implements DAO<Player, Integer> {
         return result;
     }
 
+    /**
+     * Deletes a Player entity from the database.
+     *
+     * @param entity The Player entity to be deleted.
+     * @return The deleted Player entity, or null if the entity is null or has an invalid ID.
+     * @throws SQLException If a database access error occurs.
+     */
     @Override
     public Player delete(Player entity) throws SQLException {
         if(entity==null || entity.getPlayerID()==-1){
@@ -71,7 +85,12 @@ public class PlayerDAO implements DAO<Player, Integer> {
         }
         return entity;
     }
-
+    /**
+     * Finds a Player entity by its ID.
+     *
+     * @param key The ID of the Player to be found.
+     * @return The Player entity if found, or null if the ID is invalid or the Player is not found.
+     */
     @Override
     public Player findById(Integer key) {
         Player result = new Player();
@@ -94,6 +113,11 @@ public class PlayerDAO implements DAO<Player, Integer> {
         return result;
     }
 
+    /**
+     * Retrieves all Player entities from the database.
+     *
+     * @return A list of all Player entities.
+     */
     @Override
     public List findAll() {
         List<Player> result = new ArrayList<>();

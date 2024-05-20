@@ -1,12 +1,8 @@
 
 —
-java:S3008"TRename this field "_instance" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÊÚŒ•8¸®ö‡ø1J$9209c205-d0ba-4e43-8b4d-6dbce134d0e9
+java:S3008"TRename this field "_instance" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÊÚŒ•8¸®ö‡ø1J$e983c9f6-a6db-463b-9844-c47d49bd5fda
 Ü
-java:S6548"˜A Singleton implementation was detected. Make sure the use of the Singleton pattern is required and the implementation is the right one for the context.(äì£Ä8½®ö‡ø1J$1f2e52ff-42eb-4796-a5c1-dfd5178f2c28
-•	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(õ÷ØÖùÿÿÿÿ8À®ö‡ø1J$7cd70c35-fb74-44e9-bf24-650c3f2103da
-~
-java:S2696"6Make the enclosing method "static" or remove this set.(’ä•Éşÿÿÿÿ8Ä®ö‡ø1J$ab61d08a-befe-447a-9c19-31abaf4ae95b
-~
-java:S2696"6Make the enclosing method "static" or remove this set.(ıõ³ƒıÿÿÿÿ8Å®ö‡ø1J$4326452a-acf3-4460-99f5-ecd4c73fb8f5
-w
-java:S1068"/Remove this unused "currentGame" private field.(ğóôÿÿÿÿÿ8Ïº ­ø1J$52868a84-29e8-41d3-b65e-31a08ca98388
+java:S6548"˜A Singleton implementation was detected. Make sure the use of the Singleton pattern is required and the implementation is the right one for the context.(äì£Ä8½®ö‡ø1J$e94b7855-4990-4225-9778-1e774ea6dadf
+o	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(õ÷ØÖùÿÿÿÿ8ø†¦ù1
+X
+java:S2696"6Make the enclosing method "static" or remove this set.(’ä•Éşÿÿÿÿ8†¦ù1

@@ -1,12 +1,16 @@
 
-“	java:S117,"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ψξ²ύ8Κ³κυ1J$b357a537-30cf-4348-8e1b-ecd6dbc91c44
+“	java:S117J"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ψξ²ύ8Κ³κυ1J$552e5224-170c-4a11-b3a1-0dd82c3b453c
 Ι
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(―®Òκϊÿÿÿÿ8ζι¨κυ1J$cbe22774-eb5b-4eed-bd31-6e5f3a08b571
+java:S1186$"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(―®Òκϊÿÿÿÿ8ζι¨κυ1J$53a5ec87-d687-4cf1-bf62-3e53a600ca93
 Ι
-java:S1186#"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(•‘έόÿÿÿÿ8ηι¨κυ1J$d19cbe46-cc04-45c6-81ec-eee7007b027f
+java:S1186)"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ª¤ζϋÿÿÿÿ8¬„¨ω1J$928b9cfc-6c61-47bc-a4c2-40dc2f4cccbe
+Γ
+java:S1186."€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(φς―8¬„¨ω1J$a141f09d-8c73-4a41-8009-80ceb93b8c31
+Ι
+java:S11863"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(°ω¶τόÿÿÿÿ8‹¬„¨ω1J$bf7b11f1-0880-4b05-a138-f017a5ccc8e4
+Ι
+java:S11868"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(•‘έόÿÿÿÿ8ηι¨κυ1J$b516b2c5-bc89-4bd8-b4d4-fa73fadee65d
 ΅
-java:S1450"_Remove the "centerController" field and declare it as a local variable in the relevant methods.(™•ΐ%8νι¨κυ1J$98c130dd-41f3-4ba1-95db-b0757eb6b1b6
-n
-java:S1172&"+Remove this unused method parameter "data".(»°ΐ8ΜΛ³κυ1J$826af515-b18c-474d-8439-27a75a5a3177
+java:S1450"_Remove the "centerController" field and declare it as a local variable in the relevant methods.(™•ΐ%8νι¨κυ1J$dcddb72d-f728-4451-ab7e-eb0516809847
 ~
-java:S1128	";Remove this unused import 'javafx.scene.layout.AnchorPane'.(Ψ µ8ϋ’Ζκυ1J$9e4d1b72-c286-460e-985d-6d56066d2faf
+java:S1128	";Remove this unused import 'javafx.scene.layout.AnchorPane'.(Ψ µ8ϋ’Ζκυ1J$4fded0ee-89ba-4839-a902-4b960f747406

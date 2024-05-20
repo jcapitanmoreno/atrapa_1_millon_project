@@ -23,6 +23,12 @@ public class QuestionsDAO implements DAO<Question, Integer> {
     private final static String COUNT_QUESTIONS = "SELECT COUNT(*) AS total FROM questions";
 
 
+    /**
+     * Saves a Question entity to the database.
+     *
+     * @param entity The Question entity to be saved.
+     * @return The saved Question entity if successful, or null if the entity is invalid or not saved.
+     */
     @Override
     public Question save(Question entity) {
         Question result = entity;
@@ -50,7 +56,12 @@ public class QuestionsDAO implements DAO<Question, Integer> {
         }
         return result;
     }
-
+    /**
+     * Updates a Question entity in the database.
+     *
+     * @param entity The Question entity to be updated.
+     * @return The updated Question entity if successful, or null if the entity is invalid or not updated.
+     */
     public Question update(Question entity) {
         Question result = entity;
         if (entity == null || entity.getQuestionID() == -1) {
@@ -68,6 +79,13 @@ public class QuestionsDAO implements DAO<Question, Integer> {
         return result;
     }
 
+    /**
+     * Deletes a Question entity from the database.
+     *
+     * @param entity The Question entity to be deleted.
+     * @return The deleted Question entity if successful, or null if the entity is invalid or not deleted.
+     * @throws SQLException If an SQL exception occurs during the deletion process.
+     */
     @Override
     public Question delete(Question entity) throws SQLException {
         if (entity == null || entity.getQuestionID() == -1) {
@@ -81,6 +99,12 @@ public class QuestionsDAO implements DAO<Question, Integer> {
         return entity;
     }
 
+    /**
+     * Finds a Question entity by its ID in the database.
+     *
+     * @param key The ID of the Question entity to find.
+     * @return The Question entity found with the given ID, or null if not found or key is invalid.
+     */
     @Override
     public Question findById(Integer key) {
         Question result = new Question();
@@ -102,6 +126,11 @@ public class QuestionsDAO implements DAO<Question, Integer> {
         return result;
     }
 
+    /**
+     * Retrieves all Question entities from the database.
+     *
+     * @return A list containing all Question entities retrieved from the database.
+     */
     @Override
     public List<Question> findAll() {
         List<Question> result = new ArrayList<>();
@@ -123,6 +152,11 @@ public class QuestionsDAO implements DAO<Question, Integer> {
         return result;
     }
 
+    /**
+     * Counts the total number of questions in the database.
+     *
+     * @return The total number of questions in the database.
+     */
     public int countQuestions() {
         int count = 0;
         try (PreparedStatement pst = ConnectionMariaDB.getConnection().prepareStatement(COUNT_QUESTIONS)) {

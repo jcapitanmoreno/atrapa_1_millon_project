@@ -47,12 +47,11 @@ public class GameController extends Controller implements Initializable {
 
     }
     /**
-     * Muestra una alerta de información al usuario con un título, un encabezado y un contenido de texto especificados.
-     * Este método bloquea la ejecución hasta que el usuario cierra la alerta.
+     * Displays an information alert dialog with the specified title, header, and content text.
      *
-     * @param text1 El título de la alerta.
-     * @param text2 El texto del encabezado de la alerta.
-     * @param text3 El contenido del texto de la alerta.
+     * @param text1 The title of the alert dialog.
+     * @param text2 The header text of the alert dialog.
+     * @param text3 The content text of the alert dialog.
      */
     @Override
     public void informationAlert(String text1, String text2, String text3) {
@@ -63,12 +62,11 @@ public class GameController extends Controller implements Initializable {
         alert.showAndWait();
     }
     /**
-     * Muestra una alerta de error al usuario con un título, un encabezado y un contenido de texto especificados.
-     * Este método bloquea la ejecución hasta que el usuario cierra la alerta.
+     * Displays an error alert dialog with the specified title, header, and content text.
      *
-     * @param text1 El título de la alerta.
-     * @param text2 El texto del encabezado de la alerta.
-     * @param text3 El contenido del texto de la alerta.
+     * @param text1 The title of the error alert dialog.
+     * @param text2 The header text of the error alert dialog.
+     * @param text3 The content text of the error alert dialog.
      */
     @Override
     public void errorAlert(String text1, String text2, String text3) {
@@ -84,12 +82,10 @@ public class GameController extends Controller implements Initializable {
 
     }
     /**
-     * Inicializa el controlador cuando se carga la ventana.
-     * Carga las preguntas, muestra la primera pregunta si existe, o muestra una alerta si no hay preguntas disponibles.
-     * Actualiza los puntos del usuario.
+     * Initializes the controller after its root element has been completely processed.
      *
-     * @param url La ubicación del archivo FXML; no se utiliza en esta implementación.
-     * @param resourceBundle Los recursos localizados; no se utiliza en esta implementación.
+     * @param url            The location used to resolve relative paths for the root object.
+     * @param resourceBundle The resources used to localize the root object, or null if none.
      */
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -106,9 +102,9 @@ public class GameController extends Controller implements Initializable {
         updatePoints();
     }
     /**
-     * Carga las preguntas desde la base de datos.
-     * Se asegura de que las preguntas se mezclen y, si hay más de 10 preguntas disponibles,
-     * selecciona aleatoriamente 10 preguntas de la lista.
+     * Loads questions from the database.
+     * Ensures that the questions are shuffled, and if there are more than 10 questions available,
+     * randomly selects 10 questions from the list.
      */
     public void loadQuestions() {
         QuestionsDAO questionDAO = new QuestionsDAO();
