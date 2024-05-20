@@ -5,48 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f0d20c5e-8e38-4af7-a24f-374416dd6d68" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/model/entity/ReadmeEntity.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/utils/LogRead.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/5/05fa98045490cba6c02e9955ed0bd9cb4727ecfc" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/5/05fa98045490cba6c02e9955ed0bd9cb4727ecfc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/7/1752e7998e16ffbbe760cec119c1a71e791048ad" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/7/1752e7998e16ffbbe760cec119c1a71e791048ad" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/c/1c51bf0d621ceee790608399d3d3f648099f86cd" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/c/1c51bf0d621ceee790608399d3d3f648099f86cd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/5/254d7fba5852b17d6db02c8c98859465bec97c83" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/5/254d7fba5852b17d6db02c8c98859465bec97c83" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/0/402134451876255843b2b342bb29220dce4fd912" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/0/402134451876255843b2b342bb29220dce4fd912" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/6/66f302d73b9405cf4fd3b199b13a3e6bd2099c66" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/6/66f302d73b9405cf4fd3b199b13a3e6bd2099c66" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/9/69dace8ab0a5ae371c645d72613cb5f861ae36a0" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/9/69dace8ab0a5ae371c645d72613cb5f861ae36a0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/e/8e494ab1ed7b4180b1ef4f34d9eb2a8fae35d8cd" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/e/8e494ab1ed7b4180b1ef4f34d9eb2a8fae35d8cd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/1/91a2c1d34d67f729e4f07419f9d33552f6302e48" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/1/91a2c1d34d67f729e4f07419f9d33552f6302e48" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/2/92b3564518794ce297aea90405859bbd05b5c3ae" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/2/92b3564518794ce297aea90405859bbd05b5c3ae" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/7/9777564b64bb20f4b1507d746d60dd286ad28110" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/7/9777564b64bb20f4b1507d746d60dd286ad28110" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/e/9ee8a6b09cd6aba1c2de0b7c0ee9f0ca9457a0db" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/e/9ee8a6b09cd6aba1c2de0b7c0ee9f0ca9457a0db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/a/aa101a0311ebf3e151b4ae682df08f679a463e4b" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/a/aa101a0311ebf3e151b4ae682df08f679a463e4b" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/6/c668d3b10280c0a9a9887319c0f2e604138afd89" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/6/c668d3b10280c0a9a9887319c0f2e604138afd89" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/b/cb031f88a06b00fb6bc9e9c5c9f9265d7fdda64b" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/b/cb031f88a06b00fb6bc9e9c5c9f9265d7fdda64b" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/a/daaacc3113700a805cc72afbebf79e1c330aaf7e" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/a/daaacc3113700a805cc72afbebf79e1c330aaf7e" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/c/dc7e9129b1c58885b34e862d1574790300db50d3" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/c/dc7e9129b1c58885b34e862d1574790300db50d3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/e/de263a679d796a0d3fc0de7470878b79d5ceeaa3" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/e/de263a679d796a0d3fc0de7470878b79d5ceeaa3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/model/connection/ConnectionMariaDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/model/connection/ConnectionMariaDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/model/connection/ConnectionProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/model/connection/ConnectionProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/model/connection/ConnectionMariaDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/model/connection/ConnectionXamp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/model/dao/AdminDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/model/dao/AdminDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/model/dao/AnswerDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/model/dao/AnswerDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/model/dao/GameDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/model/dao/GameDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/model/dao/PlayerDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/model/dao/PlayerDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/model/dao/QuestionsDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/model/dao/QuestionsDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/utils/XMLManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/utils/XMLManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/view/AddQuestionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/view/AddQuestionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/view/AdmGestorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/view/AdmGestorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/view/AdmLoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/view/AdmLoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/view/AdmQuestionsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/view/AdmQuestionsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/view/AppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/view/AppController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/view/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/view/GameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/view/GameInformationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/view/GameInformationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/view/PlayerPointsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/view/PlayerPointsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/view/UserGestorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/view/UserGestorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/view/UserMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/view/UserMenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/view/UsersNameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jcapitanmoreno/view/UsersNameController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +48,9 @@
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;Application.App.executor&quot;: &quot;Run&quot;,
     &quot;Application.saveConnection.executor&quot;: &quot;Run&quot;,
+    &quot;JAR Application.JavaDesktopScaffolding-1.0-SNAPSHOT-jar-with-dependencies.jar.executor&quot;: &quot;Run&quot;,
     &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.JavaDesktopScaffolding [org.apache.maven.plugins:maven-assembly-plugin:2.2-beta-5:assembly].executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;jcapitan&quot;,
@@ -117,7 +85,7 @@
       <recent name="com.github.jcapitanmoreno.test" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.github.jcapitanmoreno.App" />
       <module name="Atrapa_1_Millon_Game" />
@@ -131,9 +99,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="JavaDesktopScaffolding-1.0-SNAPSHOT-jar-with-dependencies.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/target/JavaDesktopScaffolding-1.0-SNAPSHOT-jar-with-dependencies.jar" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.App" />
+        <item itemvalue="JAR Application.JavaDesktopScaffolding-1.0-SNAPSHOT-jar-with-dependencies.jar" />
       </list>
     </recent_temporary>
   </component>
@@ -141,6 +114,7 @@
     <attachedChunks>
       <set>
         <option value="jdk-21.0.1-openjdk-21.0.1-3183f394aec4-7d648f2c" />
+        <option value="jdk-21.0.1-openjdk-21.0.1-f644763e9732-f98dd351" />
       </set>
     </attachedChunks>
   </component>
@@ -169,6 +143,7 @@
       <workItem from="1715848481232" duration="12827000" />
       <workItem from="1715931804200" duration="3297000" />
       <workItem from="1716114446911" duration="28716000" />
+      <workItem from="1716208700064" duration="592000" />
     </task>
     <servers />
   </component>

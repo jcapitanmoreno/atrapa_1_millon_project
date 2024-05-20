@@ -1,9 +1,7 @@
 package com.github.jcapitanmoreno.model.dao;
 
-import com.github.jcapitanmoreno.model.connection.ConnectionMariaDB;
+import com.github.jcapitanmoreno.model.connection.ConnectionXamp;
 import com.github.jcapitanmoreno.model.entity.Answer;
-import com.github.jcapitanmoreno.model.entity.Player;
-import com.github.jcapitanmoreno.model.entity.Question;
 
 import java.io.IOException;
 import java.sql.PreparedStatement;
@@ -31,7 +29,7 @@ public  class AnswerDAO implements DAO<Answer, String>{
             result = null;
         } else {
                 //INSERT
-                try (PreparedStatement pst = ConnectionMariaDB.getConnection().prepareStatement(INSERT, Statement.RETURN_GENERATED_KEYS)) {
+                try (PreparedStatement pst = ConnectionXamp.getConnection().prepareStatement(INSERT, Statement.RETURN_GENERATED_KEYS)) {
                     pst.setString(1, entity.getAnswerText());
                     pst.setBoolean(2, entity.isValidateAnswer());
                     pst.setInt(3, entity.getQuestionsID().getQuestionID());
@@ -68,7 +66,7 @@ public  class AnswerDAO implements DAO<Answer, String>{
         if (key == -1) {
             results=null;
         } else {
-            try (PreparedStatement pst = ConnectionMariaDB.getConnection().prepareStatement(FINDANSWERBYQUESTIONID)) {
+            try (PreparedStatement pst = ConnectionXamp.getConnection().prepareStatement(FINDANSWERBYQUESTIONID)) {
                 pst.setInt(1, key);
                 ResultSet res = pst.executeQuery();
                 while (res.next()) {
