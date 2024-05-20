@@ -37,12 +37,10 @@ public class PlayerPointsController  extends Controller implements Initializable
     private Button back;
 
     /**
-     * Se llama cuando se abre la vista.
-     * Realiza la visualización aumentada.
-     * Carga la lista de jugadores desde la base de datos y la muestra en la tabla.
+     * Opens the scene and loads the list of players from the database.
      *
-     * @param input El objeto de entrada, no se utiliza en esta implementación.
-     * @throws IOException Si hay un error al realizar alguna acción relacionada con la visualización.
+     * @param input The input object.
+     * @throws IOException If an I/O exception occurs.
      */
     @Override
     public void onOpen(Object input) throws IOException {
@@ -72,11 +70,10 @@ public class PlayerPointsController  extends Controller implements Initializable
 
     }
     /**
-     * Inicializa la vista cuando se carga.
-     * Configura las celdas de la tabla para mostrar la información de los jugadores.
+     * Initializes the TableView columns with their respective cell value factories.
      *
-     * @param url La ubicación relativa del archivo FXML.
-     * @param resourceBundle Los recursos localizados.
+     * @param url            The location used to resolve relative paths for the root object.
+     * @param resourceBundle The resources used to localize the root object, or null if none.
      */
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -86,8 +83,8 @@ public class PlayerPointsController  extends Controller implements Initializable
 
     }
     /**
-     * Realiza una visualización aumentada ajustando el tamaño de la ventana principal.
-     * Este método cambia el ancho y la altura de la ventana principal.
+     * Adjusts the size of the stage to 700x480 pixels.
+     * Assumes the TableView is placed within a Scene, and the stage is obtained from the TableView's scene.
      */
     public void augmentedDisplay() {
         Stage stage = (Stage) tableView.getScene().getWindow();
@@ -95,9 +92,9 @@ public class PlayerPointsController  extends Controller implements Initializable
         stage.setHeight(480);
     }
     /**
-     * Cambia la escena actual a la escena de nombre de usuario.
-     *
-     * @throws IOException Si hay un error al cambiar a la escena de nombre de usuario.
+     * Changes the scene to the user name input scene.
+     * Assumes the scene transition is managed by the current controller instance.
+     * Throws an IOException if the scene change fails.
      */
     public void changeSceneToUserName() throws IOException {
         App.currentController.changeScene(Scenes.USERSNAME, null);

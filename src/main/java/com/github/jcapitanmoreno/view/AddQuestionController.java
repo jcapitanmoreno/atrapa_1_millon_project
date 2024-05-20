@@ -45,11 +45,11 @@ public class AddQuestionController extends Controller implements Initializable {
     public void onClose(Object output) {
     }
     /**
-     * Muestra una alerta de información al usuario con un título, un encabezado y un contenido de texto especificados.
+     * Displays an information alert dialog.
      *
-     * @param text1 El título de la alerta.
-     * @param text2 El texto del encabezado de la alerta.
-     * @param text3 El contenido del texto de la alerta.
+     * @param text1 The title of the alert.
+     * @param text2 The header text of the alert.
+     * @param text3 The content text of the alert.
      */
     @Override
     public void informationAlert(String text1, String text2, String text3) {
@@ -60,11 +60,11 @@ public class AddQuestionController extends Controller implements Initializable {
         alert.show();
     }
     /**
-     * Muestra una alerta de error al usuario con un título, un encabezado y un contenido de texto especificados.
+     * Displays an error alert dialog.
      *
-     * @param text1 El título de la alerta.
-     * @param text2 El texto del encabezado de la alerta.
-     * @param text3 El contenido del texto de la alerta.
+     * @param text1 The title of the error alert.
+     * @param text2 The header text of the error alert.
+     * @param text3 The content text of the error alert.
      */
     @Override
     public void errorAlert(String text1, String text2, String text3) {
@@ -81,8 +81,8 @@ public class AddQuestionController extends Controller implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
     }
     /**
-     * Añade una nueva pregunta al juego. La pregunta y sus respuestas son guardadas en la base de datos.
-     * Muestra una alerta de información si la operación es exitosa o una alerta de error en caso de problemas.
+     * Adds a new question and its answers to the database.
+     * Displays error or information alerts based on success or failure.
      */
     public void addQuestion() {
         GameDAO gameDAO = new GameDAO();
@@ -110,12 +110,12 @@ public class AddQuestionController extends Controller implements Initializable {
         closeWindow();
     }
     /**
-     * Guarda una respuesta asociada a una pregunta en la base de datos.
+     * Saves an answer to the database.
      *
-     * @param answerText El texto de la respuesta.
-     * @param isCorrect Indica si la respuesta es correcta o no.
-     * @param questionID El ID de la pregunta a la que está asociada la respuesta.
-     * @param player El jugador que proporciona la respuesta.
+     * @param answerText   The text of the answer.
+     * @param isCorrect    Indicates whether the answer is correct or not.
+     * @param questionID   The ID of the question to which the answer belongs.
+     * @param player       The player who provided the answer.
      */
     private void saveAnswer(String answerText, boolean isCorrect, int questionID, Player player) {
         if (answerText != null && !answerText.trim().isEmpty()) {
@@ -129,15 +129,13 @@ public class AddQuestionController extends Controller implements Initializable {
         }
     }
     /**
-     * Muestra una alerta de información al usuario con detalles sobre la respuesta 1.
-     * La alerta informa que la respuesta número 1 siempre será la correcta y que las respuestas se ordenarán aleatoriamente al jugar.
+     * Displays an information alert about the first answer.
      */
     public void infoAlert() {
         informationAlert("INFORMACION SOBRE LA RESPUESTA 1","RESPUESTA Nº1","la respuesta Nº1 siempre sera la correcta, asegurate de que lo introducido sea la respuesta correcta.Cuando juegues las respuestas de ordenaran de manera aleatoria.");
     }
     /**
-     * Cierra la ventana actual de la aplicación.
-     * Obtiene la ventana actual a través del nodo 'add' y la cierra.
+     * Closes the current window.
      */
     public void closeWindow() {
         Stage stage = (Stage) add.getScene().getWindow();

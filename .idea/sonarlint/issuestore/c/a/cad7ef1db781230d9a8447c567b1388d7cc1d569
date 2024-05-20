@@ -1,0 +1,14 @@
+
+†	java:S112a"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚ÒιόÿÿÿÿJ$ef639fd3-f14c-4869-ad33-b41a3f54a4c2
+‰
+java:S2095Ι"GUse try-with-resources or close this "PlayerDAO" in a "finally" clause.(τÒ¥®ÿÿÿÿÿJ$76b3ed76-ecf3-4c57-a1e9-b88f6cd19110
+†
+java:S2095n"JUse try-with-resources or close this "QuestionsDAO" in a "finally" clause.(Λ€τJ$f2140618-5fe8-4f4f-92f4-94f4debf8f4c
+ƒ
+java:S2095"GUse try-with-resources or close this "AnswerDAO" in a "finally" clause.(ΠΟ­όJ$c03317eb-328e-431f-a443-ed6f4cbfe806
+½
+java:S1186)"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(χ’²ΙJ$726b3703-293d-4e71-b40e-f30f82dd2895
+Β
+java:S1186."€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(―®ÒκϊÿÿÿÿJ$6b31aae4-831e-4455-a31e-7f0ac8d010ec
+Β
+java:S1186Q"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(°ω¶τόÿÿÿÿJ$09f7c1d2-fad3-4a8a-b25c-06bcf97238aa

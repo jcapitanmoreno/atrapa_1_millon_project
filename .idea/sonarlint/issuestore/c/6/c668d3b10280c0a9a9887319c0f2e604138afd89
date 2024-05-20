@@ -1,9 +1,11 @@
 
-X
-java:S4973?"<Strings and Boxed types should be compared using "equals()".(ûŞÏC8”Öªø1
-£
-java:S11863"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¯®Òêúÿÿÿÿ8ú”Öªø1
-z
-java:S1450""XRemove the "questions" field and declare it as a local variable in the relevant methods.(¨×ıÊşÿÿÿÿ8ÿ”Öªø1
-l
-java:S1128"JRemove this unused import 'com.github.jcapitanmoreno.model.entity.Player'.(‡¨âÎÿÿÿÿÿ8¾•Öªø1
+~
+java:S4973f"<Strings and Boxed types should be compared using "equals()".(ûŞÏC8€ö…¦ù1J$b0925dd5-2dcb-4688-a78b-6386c90565d2
+É
+java:S1186:"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¯®Òêúÿÿÿÿ8Õú…¦ù1J$66159c84-5945-424c-9049-d9f918b2f005
+É
+java:S1186?"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ª¤æûÿÿÿÿ8Øú…¦ù1J$ba0bd86d-7fa7-4a7c-8360-1190120bc40e
+É
+java:S1186S"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(°ù¶ôüÿÿÿÿ8Úú…¦ù1J$1bea6e84-81b3-480c-8399-9df475c042d3
+’
+java:S1128"JRemove this unused import 'com.github.jcapitanmoreno.model.entity.Player'.(‡¨âÎÿÿÿÿÿ8¸Ù²¨ù1J$103092f5-7fdb-46ea-85b7-39dfce4f4e4f

@@ -1,16 +1,16 @@
 
-	java:S112?"FDefine and throw a dedicated exception instead of using a generic one.(óê’ÿÿÿÿÿ8¹Ë·‹ö1J$c31ae5ad-51c7-48dd-9ecc-6580b3c3b1e5
+	java:S112k"FDefine and throw a dedicated exception instead of using a generic one.(óê’ÿÿÿÿÿ8¹Ë·‹ö1J$9fb1a320-2ed6-4afb-86ec-8da13df0cabe
 ”
-java:S1104"QMake stage a static final constant or non-public and provide accessors if needed.(œ‰à8½Ë·‹ö1J$ffa1b176-42c1-4319-b666-b5fd80e7d2a0
+java:S1104"QMake stage a static final constant or non-public and provide accessors if needed.(œ‰à8½Ë·‹ö1J$7cc47ba6-3e41-48f5-a326-505296182434
 n
-java:S1444"+Make this "public static stage" field final(œ‰à8¾Ë·‹ö1J$5bda70af-9cd3-4520-ba16-a1a002eb018e
+java:S1444"+Make this "public static stage" field final(œ‰à8¾Ë·‹ö1J$865718b3-d45d-4add-9f88-f4e9984d00b7
 Ä
-java:S1186 "€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(÷’²É8”Ì·‹ö1J$d70a9072-3e96-4a57-8fb8-0a0513ac2c5f
+java:S1186""€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(÷’²É8”Ì·‹ö1J$1230bc42-871a-424d-b734-8095abac3883
 É
-java:S1186%"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¯®Òêúÿÿÿÿ8•Ì·‹ö1J$03cad534-735b-4b59-9281-5044141efc8b
+java:S1186'"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¯®Òêúÿÿÿÿ8•Ì·‹ö1J$3ad3a452-7925-48c7-a456-4fe712040c80
 É
-java:S1186*"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(•‘İŸüÿÿÿÿ8–Ì·‹ö1J$52242b0e-044a-4608-9c45-0c5878fe6a5e
-´
-java:S1130?"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(óê’ÿÿÿÿÿ8»Ì·‹ö1J$d8c47eb1-b25e-40e0-b38b-cc5019ec72f4
-{
-java:S1172?"3Remove this unused method parameter "primaryStage".(óê’ÿÿÿÿÿ8½Ì·‹ö1J$2087aec4-938e-406b-a4f9-a4b7d9223f7f
+java:S1186,"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ª¤æûÿÿÿÿ8Öİ³§ù1J$b48863d2-fe1f-4241-8926-384e5ce8159b
+É
+java:S1186@"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(°ù¶ôüÿÿÿÿ8×İ³§ù1J$49edd885-d4c9-4869-a2e8-656c6e0a0baa
+É
+java:S1186E"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(•‘İŸüÿÿÿÿ8–Ì·‹ö1J$e95b6cc8-0f88-4fd6-a4ab-cbbc154a999f

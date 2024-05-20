@@ -45,20 +45,19 @@ public class AdmGestorController extends Controller implements Initializable {
 
     }
     /**
-     * Cambia la escena actual a la pantalla del gestor de preguntas.
-     * Llama al método 'changeScene' del controlador actual para cambiar la escena a la del gestor de preguntas.
-     * @throws IOException Si hay un error al cargar la escena del gestor de preguntas.
+     * Changes the scene to the question management view.
+     *
+     * @throws IOException if an error occurs during scene change.
      */
     public void changeToQuestionGestor() throws IOException {
         App.currentController.changeScene(Scenes.ADMQUESTIONGESTOR, null);
     }
     /**
-     * Cambia la escena actual a la pantalla de información del juego.
-     * Llama al método 'changeScene' del controlador actual para cambiar la escena a la de información del juego.
-     * @throws IOException Sí hay un error al cargar la escena de información del juego.
+     * Changes the scene to the game information view.
+     *
+     * @throws IOException if an error occurs during scene change.
      */
     public void changeToGameInformation() throws IOException {
         App.currentController.changeScene(Scenes.GAMEINFORMATION, null);
     }
-
 }

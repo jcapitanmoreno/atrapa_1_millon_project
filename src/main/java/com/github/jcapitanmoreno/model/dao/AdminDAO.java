@@ -14,7 +14,12 @@ import java.util.List;
 public class AdminDAO {
     private final static String LOGIN="SELECT * FROM admin WHERE user=? AND pasword=?";
 
-
+    /**
+     * Attempts to log in an admin user based on the provided credentials.
+     *
+     * @param entity The Admin entity containing the username and password.
+     * @return true if the login is successful, false otherwise.
+     */
     public boolean logIn(Admin entity) {
         boolean result = false;
         if (entity == null || entity.getUser() == null || entity.getPassword() == null){

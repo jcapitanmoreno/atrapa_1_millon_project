@@ -29,9 +29,9 @@ public class UsersNameController extends Controller implements Initializable {
     private Circle secretAdminEnter;
 
     /**
-     * Cambia la escena actual a la escena de inicio de sesión de administrador.
+     * Changes the scene to the administrator login scene.
      *
-     * @throws IOException Si hay un error al cambiar a la escena de inicio de sesión de administrador.
+     * @throws IOException If an I/O error occurs.
      */
     @FXML
     public void changeToADM() throws IOException {
@@ -68,10 +68,9 @@ public class UsersNameController extends Controller implements Initializable {
 
     }
     /**
-     * Inicia una sesión de juego.
-     * Guarda el nombre del jugador en la base de datos, inicia sesión con ese jugador y cambia a la escena del menú de usuario.
+     * Starts a new session for the player.
      *
-     * @throws IOException Si hay un error al cambiar a la escena del menú de usuario.
+     * @throws IOException If an I/O error occurs.
      */
     public void startSession() throws IOException {
         player.setName(name.getText());

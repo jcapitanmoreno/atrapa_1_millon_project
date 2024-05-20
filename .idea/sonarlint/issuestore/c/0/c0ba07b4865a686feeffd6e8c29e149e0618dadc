@@ -1,0 +1,17 @@
+
+Â
+java:S11866"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¯®ÒêúÿÿÿÿJ$80fba13e-828c-4b3c-8263-df0932574d80
+Â
+java:S1186;"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ª¤æûÿÿÿÿJ$b02153ac-49c0-453b-8f5e-0328aa1263a5
+¼
+java:S1186@"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(öò¯J$d8d073a1-b986-48ec-a229-ae6d7624e5e0
+Â
+java:S1186E"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(°ù¶ôüÿÿÿÿJ$80c2ac3e-38e8-47b6-b243-f77ada58f59d
+—
+java:S1450#"VRemove the "players" field and declare it as a local variable in the relevant methods.(‚ßÏçûÿÿÿÿJ$574881b2-f6b1-4ecc-9dc0-21b0cdcc6c79
+
+java:S1128"MRemove this unused import 'com.github.jcapitanmoreno.model.dao.QuestionsDAO'.(¯ñ‹·şÿÿÿÿJ$f5378bab-ed4e-470e-beea-e94247eec28b
+
+java:S1128"LRemove this unused import 'com.github.jcapitanmoreno.model.entity.Question'.(éîåÜıÿÿÿÿJ$c5de6bbe-0dbf-466f-bd28-6fe4a38096bc
+Š
+java:S1128"IRemove this unused import 'javafx.scene.control.cell.TextFieldTableCell'.(¦’âÄùÿÿÿÿJ$0b0553dd-3ea9-444c-a7bb-b693c5a8a052

@@ -11,9 +11,7 @@ public class ConnectionMariaDB {
     private static ConnectionMariaDB _instance;
     private static Connection conn;
     /**
-     * Establece la conexión con la base de datos MariaDB.
-     * Lee las propiedades de conexión desde un archivo XML y utiliza estas propiedades para establecer la conexión.
-     * Si la conexión no se puede establecer, se establece a null y se imprime la traza de la excepción.
+     * Constructor for creating a MariaDB connection using connection properties from an XML file.
      */
     private ConnectionMariaDB(){
         ConnectionProperties properties = (ConnectionProperties) XMLManager.readXML(new ConnectionProperties(),FILE);
@@ -26,10 +24,9 @@ public class ConnectionMariaDB {
         }
     }
     /**
-     * Devuelve una instancia de conexión a la base de datos MariaDB.
-     * Si no existe una instancia de conexión, crea una nueva llamando al método ConnectionMariaDB().
+     * Retrieves the connection to the MariaDB database.
      *
-     * @return La instancia de conexión a la base de datos MariaDB.
+     * @return The connection to the MariaDB database.
      */
     public static Connection getConnection(){
         if(_instance==null){
@@ -38,8 +35,7 @@ public class ConnectionMariaDB {
         return conn;
     }
     /**
-     * Cierra la conexión a la base de datos si está abierta.
-     * Si la conexión no es nula, la cierra. Si ocurre una excepción durante el cierre, se imprime la traza de la excepción.
+     * Closes the connection to the MariaDB database.
      */
     public static void closeConnection(){
         if(conn!=null){

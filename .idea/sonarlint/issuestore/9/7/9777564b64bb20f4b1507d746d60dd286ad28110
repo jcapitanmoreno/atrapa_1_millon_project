@@ -1,13 +1,15 @@
 
 ˆ
-java:S2095;"EUse try-with-resources or close this "GameDAO" in a "finally" clause.(ö®íª8éš½‹ø1J$6f1cce38-985d-43b6-afec-3eb7392a8a0e
+java:S2095X"EUse try-with-resources or close this "GameDAO" in a "finally" clause.(ö®íª8±øˆ§ù1J$33ff8a1f-1410-46f4-9c47-fcc5aba67f08
 Ä
-java:S1186+"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(÷’²É8‚¶­‹ø1J$af870671-f65e-4d0b-bec3-d3aad8ae8317
+java:S1186*"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(÷’²É8Áøˆ§ù1J$aa9872dd-5c20-47f8-9b6f-e07c593975db
 É
-java:S11861"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¯®Òêúÿÿÿÿ8‚¶­‹ø1J$3ad62c3c-4b9e-48be-be91-0d10564c5bd6
+java:S1186-"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¯®Òêúÿÿÿÿ8Äøˆ§ù1J$fb7bfae2-0b5f-461d-a439-b8d676e482fc
 É
-java:S11866"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(•‘İŸüÿÿÿÿ8‚¶­‹ø1J$8895d12b-4809-40a0-942a-afc009a325e0
+java:S1186N"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(°ù¶ôüÿÿÿÿ8Çøˆ§ù1J$2ed80d18-6765-4c28-9d59-e60cc91e8b83
+É
+java:S1186Q"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(•‘İŸüÿÿÿÿ8Ğøˆ§ù1J$be1288e2-7982-41d6-a72c-fe9d1ad33308
 |
-java:S1117c":Rename "answer" which hides the field declared at line 24.(ûÖ“{8Şš¹‹ø1J$45ce096b-7cdb-44f5-93a6-72fa30c1715c
+java:S1117z":Rename "answer" which hides the field declared at line 24.(ûÖ“{8™ùˆ§ù1J$a261401a-e0d0-4f18-9f64-5cd38a0614b8
 }
-java:S1128":Remove this unused import 'com.github.jcapitanmoreno.App'.(ˆŞß8Ü½µ‹ø1J$1f2ff377-8008-4a6e-aa6b-d5fd86853186
+java:S1128":Remove this unused import 'com.github.jcapitanmoreno.App'.(ˆŞß8Ü½µ‹ø1J$f11bc70d-fa23-49fc-9266-41097009c389

@@ -1,19 +1,17 @@
 
-Â
-java:S1186{"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(æÔ«÷şÿÿÿÿJ$56926803-bab2-4fac-b9c7-58ce95f37220
-†
-java:S1124"EReorder the modifiers to comply with the Java Language Specification.(˜æÊ®şÿÿÿÿJ$2eac9706-4b28-432b-a336-758c7311a89c
-
-java:S1124"EReorder the modifiers to comply with the Java Language Specification.(ŸĞ¿°J$ef78d94b-a584-459d-a985-813c8d101850
-
-java:S1124"EReorder the modifiers to comply with the Java Language Specification.(›üÕJ$7a2ff5d4-605a-49ba-979e-1a718f8b3ec5
-†
-java:S1124"EReorder the modifiers to comply with the Java Language Specification.(¬Ş¨‰ıÿÿÿÿJ$10fc961c-2ba1-4c94-b592-0c5e771f5f80
-†
-java:S1124"EReorder the modifiers to comply with the Java Language Specification.(£€¢úÿÿÿÿJ$531ebbf8-589e-4c5c-97b1-f4ba08b1675f
-`
-java:S6905"Don't use the query "SELECT *".(¬Ş¨‰ıÿÿÿÿJ$c5788a8a-a17d-41e4-b406-06be51918a93
-ƒ	java:S125X"<This block of commented-out lines of code should be removed.(„âõØûÿÿÿÿ8¤ëõ1J$36fdaa82-8c12-4e6b-99b9-b797c5bf963c
-[
-java:S6905"Don't use the query "SELECT *".(›üÕJ$f4d63e28-076d-49b2-8d86-8c9b82ee3142
-w	java:S125p"<This block of commented-out lines of code should be removed.(âµïÁJ$574d65a0-5957-4c09-a8c4-de095f2afae5
+Ê
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(æÔ«÷şÿÿÿÿ8Ôì…¦ù1J$81eb25c4-c805-4f5d-8e10-81ee9b48e72a
+€
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(ÕÓ“6J$98db5a73-48eb-42e4-900a-b6bc5cf56996
+ˆ
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(ŸĞ¿°8ší…¦ù1J$07057c54-da9c-4bc1-9917-4ec993cc55bf
+ˆ
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(›üÕ8í…¦ù1J$85c25765-5584-4432-a8cb-7b2ca4847571
+
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(¬Ş¨‰ıÿÿÿÿ8¡í…¦ù1J$574e61cd-1557-481b-8f72-182112b11f02
+
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(£€¢úÿÿÿÿ8£í…¦ù1J$d4c81ae1-3c38-4b47-add6-9c19e4a1f7eb
+g
+java:S6905"Don't use the query "SELECT *".(¬Ş¨‰ıÿÿÿÿ8›î…¦ù1J$77dbd971-9683-496c-bdeb-fd8ef7a6a530
+b
+java:S6905"Don't use the query "SELECT *".(›üÕ8¼î…¦ù1J$8742bdcf-f5a1-43b2-bfc6-49a55b86f36d

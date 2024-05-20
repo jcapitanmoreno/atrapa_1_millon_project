@@ -38,12 +38,12 @@ public class UserGestorController extends Controller implements Initializable {
     private Button back;
 
     /**
-     * Se llama cuando se abre la vista.
-     * Realiza la visualización aumentada.
-     * Carga la lista de preguntas desde la base de datos y la muestra en la tabla.
-     *
-     * @param input El objeto de entrada, no se utiliza en esta implementación.
-     * @throws IOException Si hay un error al realizar alguna acción relacionada con la visualización.
+     * Executes tasks when the scene is opened.
+     * Augments the display by resizing the stage.
+     * Retrieves a list of questions from the database and populates the table view with them.
+     * Assumes the database access is managed by the QuestionsDAO class.
+     * Assumes the table view is managed by the current controller instance.
+     * Throws an IOException if an error occurs during the database query or table view population.
      */
     @Override
     public void onOpen(Object input) throws IOException {
@@ -64,11 +64,11 @@ public class UserGestorController extends Controller implements Initializable {
 
     }
     /**
-     * Muestra una alerta de error con los textos especificados.
+     * Displays an error alert dialog box with the provided title, header, and content text.
      *
-     * @param text1 El título de la alerta de error.
-     * @param text2 El encabezado de la alerta de error.
-     * @param text3 El contenido de la alerta de error.
+     * @param text1 The title of the error alert.
+     * @param text2 The header text of the error alert.
+     * @param text3 The content text of the error alert.
      */
     @Override
     public void errorAlert(String text1, String text2, String text3) {
@@ -84,12 +84,12 @@ public class UserGestorController extends Controller implements Initializable {
 
     }
     /**
-     * Inicializa la vista cuando se carga.
-     * Configura la tabla para mostrar las preguntas y permite la edición del texto de las preguntas.
-     * También maneja los eventos de edición de las celdas de pregunta.
+     * Initializes the controller after its root element has been completely processed.
+     * Configures the table view columns and sets up cell editing functionality for the question column.
+     * If the new value of the edited question is longer than 230 characters, displays an error alert.
      *
-     * @param url La ubicación relativa del archivo FXML.
-     * @param resourceBundle Los recursos localizados.
+     * @param url            The location used to resolve relative paths for the root object, or null if the location is not known.
+     * @param resourceBundle The resources used to localize the root object, or null if the root object was not localized.
      */
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -112,10 +112,11 @@ public class UserGestorController extends Controller implements Initializable {
         });
     }
     /**
-     * Abre una ventana modal para agregar una nueva pregunta y respuestas.
-     * Después de agregar la pregunta, recarga la lista de preguntas en la vista.
+     * Opens a modal dialog to add a new question.
+     * The modal dialog is opened using the ADDQUESTION scene.
+     * After adding the question, reloads the questions displayed in the table view.
      *
-     * @throws IOException Si hay un error al abrir la ventana modal o al recargar las preguntas.
+     * @throws IOException If an I/O error occurs while opening the modal dialog.
      */
     @FXML
     private void addQuestion() throws IOException {
@@ -123,9 +124,9 @@ public class UserGestorController extends Controller implements Initializable {
         reloadQuestions();
     }
     /**
-     * Recarga la lista de preguntas en la tabla de la vista.
-     * Esto implica recuperar todas las preguntas de la base de datos, actualizar la lista observable de preguntas
-     * y refrescar la vista de la tabla para mostrar los cambios.
+     * Reloads the questions displayed in the table view.
+     * Retrieves the list of questions from the database using QuestionsDAO,
+     * sets the observable list of questions, and refreshes the table view.
      */
     private void reloadQuestions() {
         List<Question> questionList = QuestionsDAO.build().findAll();
@@ -133,16 +134,16 @@ public class UserGestorController extends Controller implements Initializable {
         tableView.refresh();
     }
     /**
-     * Cambia la escena actual a la escena del menú de usuario.
-     *
-     * @throws IOException Si hay un error al cambiar a la escena del menú de usuario.
+     * Changes the scene to the user menu.
+     * Uses the App.currentController to change the scene to the user menu scene.
+     * Throws an IOException if there is an error during the scene change.
      */
     public void backToUserMenu() throws IOException {
         App.currentController.changeScene(Scenes.USERMENU, null);
     }
     /**
-     * Realiza una visualización aumentada ajustando el tamaño de la ventana principal.
-     * Este método cambia el ancho y la altura de la ventana principal.
+     * Adjusts the display of the stage to the specified dimensions.
+     * Retrieves the stage from the tableView's scene and sets its width to 800 and height to 600.
      */
     public void augmentedDisplay() {
         Stage stage = (Stage) tableView.getScene().getWindow();

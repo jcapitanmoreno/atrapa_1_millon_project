@@ -27,11 +27,11 @@ public class GameInformationController extends Controller implements Initializab
 
     }
     /**
-     * Muestra una alerta de información con el título, el encabezado y el contenido especificados.
+     * Displays an information alert dialog.
      *
-     * @param text1 El título de la alerta.
-     * @param text2 El texto del encabezado de la alerta.
-     * @param text3 El contenido de la alerta.
+     * @param text1 The title of the alert dialog.
+     * @param text2 The header text of the alert dialog.
+     * @param text3 The content text of the alert dialog.
      */
     @Override
     public void informationAlert(String text1, String text2, String text3) {
@@ -57,16 +57,15 @@ public class GameInformationController extends Controller implements Initializab
 
     }
     /**
-     * Muestra una alerta de información con un mensaje predefinido.
-     * Esta alerta proporciona información sobre las restricciones del juego.
+     * Displays an information alert dialog with specific content.
      */
     public void infoAlert() {
         informationAlert("INFORMACIÓN AÑADIDA","MAS INFORMACION","Una vez empiezas a jugar no puedes volver atras, termina de jugar o cierra el programa. Gracias por su atención.");
     }
     /**
-     * Cambia la escena actual a la escena del juego.
+     * Changes the scene to the game scene.
      *
-     * @throws IOException Si hay un error al cambiar a la escena del juego.
+     * @throws IOException If an I/O exception occurs.
      */
     public void changeSceneToGame() throws IOException {
         App.currentController.changeScene(Scenes.GAMEGAME, null);

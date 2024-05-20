@@ -45,12 +45,11 @@ public class AdmLoginController extends Controller implements Initializable {
 
     }
     /**
-     * Muestra una alerta de error al usuario con un título, un encabezado y un contenido de texto especificados.
-     * Este método bloquea la ejecución hasta que el usuario cierra la alerta.
+     * Displays an error alert dialog with the specified title, header, and content text.
      *
-     * @param text1 El título de la alerta.
-     * @param text2 El texto del encabezado de la alerta.
-     * @param text3 El contenido del texto de la alerta.
+     * @param text1 The title of the error alert.
+     * @param text2 The header text of the error alert.
+     * @param text3 The content text of the error alert.
      */
     @Override
     public void errorAlert(String text1, String text2, String text3) {
@@ -71,11 +70,9 @@ public class AdmLoginController extends Controller implements Initializable {
 
     }
     /**
-     * Realiza el inicio de sesión para un administrador.
-     * Si el nombre de usuario y la contraseña no son nulos, intenta iniciar sesión.
-     * Si el inicio de sesión es exitoso, cambia a la pantalla de gestor de administrador.
-     * Si el inicio de sesión falla, muestra una alerta de error.
-     * @throws Exception Si hay un error durante el inicio de sesión.
+     * Attempts to log in an admin user.
+     *
+     * @throws Exception if there is an error during the login process.
      */
     public void logInAdm() throws Exception {
         if (password != null && user != null) {
@@ -102,10 +99,10 @@ public class AdmLoginController extends Controller implements Initializable {
         App.currentController.changeScene(Scenes.ADMGESTOR, null);
     }
     /**
-     * Muestra una alerta de error al usuario con un título predeterminado y un mensaje de error específico.
-     * Este método sobrecargado asume que el escenario principal (primaryStage) ya está disponible y se utiliza para mostrar la alerta.
-     * @param primaryStage El escenario principal de la aplicación donde se mostrará la alerta de error.
-     * @throws Exception Si hay un error al mostrar la alerta de error.
+     * Displays an error alert when there is an issue with logging in.
+     *
+     * @param primaryStage The primary stage of the application, though it is not used directly in this method.
+     * @throws Exception if there is an error during the alert display process.
      */
     public void errorAlert(Stage primaryStage) throws Exception {
         errorAlert("707 ERROR","ERROR DE INICIO DE SESSION","no tienes acceso. Prueba otra vez o contacta con un administrador autorizado baby");
