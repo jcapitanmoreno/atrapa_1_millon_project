@@ -2,6 +2,7 @@ package com.github.jcapitanmoreno.model.dao;
 
 import com.github.jcapitanmoreno.model.connection.ConnectionXamp;
 import com.github.jcapitanmoreno.model.entity.Answer;
+import com.github.jcapitanmoreno.utils.LogRead;
 
 import java.io.IOException;
 import java.sql.PreparedStatement;
@@ -78,6 +79,7 @@ public  class AnswerDAO implements DAO<Answer, String>{
                 res.close();
             } catch (SQLException e) {
                 e.printStackTrace();
+                LogRead.logWritter(results);
             }
         }
         return results;

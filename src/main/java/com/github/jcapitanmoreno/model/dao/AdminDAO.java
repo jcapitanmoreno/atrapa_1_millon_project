@@ -2,6 +2,7 @@ package com.github.jcapitanmoreno.model.dao;
 
 import com.github.jcapitanmoreno.model.connection.ConnectionXamp;
 import com.github.jcapitanmoreno.model.entity.Admin;
+import com.github.jcapitanmoreno.utils.LogRead;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -33,6 +34,7 @@ public class AdminDAO {
 
             } catch (SQLException e) {
                 e.printStackTrace();
+                LogRead.logWritter(result);
             }
         }
         return result;
